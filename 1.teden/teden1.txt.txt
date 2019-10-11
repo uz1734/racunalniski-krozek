@@ -1,0 +1,15 @@
+- https://www.oracle.com/technetwork/java/javase/downloads/jdk13-downloads-5672538.html 
+    Namestite jdk-13_windows-x64_bin.exe, pred prenosom si morate ustvarit brezplačni račun, na to Vas bo stran tudi opozorila. Ko se Vam prenese namestite program. Po končani namestitvi poiščite na vašem PC lokacijo namestitvene datoteke, ki se verjetno nahaja na C:\Program Files\Java\jdk-13\bin . Skopirajte to lokacijo in pojdite v Control Panel\System and Security\System" in potem klik na "Advance system settings", nato "Environment Varibles", poščite spremenljivko Path in dodajte skopiran vnos in vse skupaj shranite. Ko to naredite odprite program cmd na vašem windowsu in vtipkajte ukaz "java -version". YouTube tutorial za namestitev in testiranje delovanja: https://www.youtube.com/watch?v=f9HHp1Kv6VE 
+
+- Primarno razvojno ogrodje: vs-code https://code.visualstudio.com/ , lahko pa tudi samo notepad++ 
+- Processing, da naredimo še kaj enostavnega z grafiko (https://processing.org/download/) tudi temelji na javi.
+
+Ko bomo v drugem delu prišli do spletnih tehnologij, Vam napišem, kaj bomo uporabljali tam.
+
+Programček, ki se Vam ga danes kazal imate zraven v priponki. Zaženete ga tako da se v Winows raziskovalcu navigirate do mapce, kjer imate datoteko HeloWorld.java in v iskalno polje Windows razikovalca vpišete cmd in pritisnete ENTER .. odpre se vam cmd v pravi mapci. Najprej morate program prevesti z ukazom: javac HelloWorld.java nato ga zaženete z ukazom: java HelloWorld.java. 
+
+- https://www.codewars.com/  (stran, kjer se lahko brezplano prijavite in rešujete programske izive. Razporejeni so po težavnosti.. Kakšnega bomo pri učenju poskusili rešiti skupaj)
+
+To bi bilo zaenkrat in se vidimo naslednji teden. (Nič se ne sekirat... bomo šli počas v easy da boste razumel kaj se dogaja) -- prišli bomo do tam ko bomo.
+
+Če slučajno kdo od Vas ni dobil maila, da ga danes ni bilo ali pa sem se pri katerem mailu zatipkal, si prosim sporočite med seboj pa bom tistim poslal še enkrat oz. bomo to rešili naslednji petek.
