@@ -1,0 +1,98 @@
+Path=C:\Program Files\Java\jdk-13\bin
+echo %Path%
+
+Path=c:\program files\Java\jdk-13\bin;%path%
+
+
+1. Naloga:
+-----------------
+
+Poišči in izpiši maksimum izmed trojice številk. Trojice števil preberi iz standardnega vhoda.
+
+2. naloga.
+-------------
+
+Iz standardnega vhoda preberi dolžino poti in količino opravljene poti po dnevih. Nato na standardni izhod ipiši njegovo pot po dnevih:
+Program se zaključi ko zmanjka poti.
+
+--> D.␣dan:␣Z␣->␣K␣(prehodil␣H)
+
+Primer: 20 (dolžinskih enot) 4 (dolžinske enote prehodi vsak dan)
+Izhod: 
+1. dan: 20 -> 16 (prehodil 4)
+2. dan: 16 -> 12 (prehodil 4)
+3. dan: 12 -> 8 (prehodil 4)
+4. dan: 8 -> 4 (prehodil 4)
+5. dan: 4 -> 0 (prehodil 4)
+
+-- Nadgradnja: 
+
+Vsak dan prehodi po k dolžinskih enot manj. Ko je na koncu ali mu zmanjka korakov zaključi s programom:
+
+Primer: 
+a)
+28 10 1 (vsak dan naredi po en korak manj) 
+
+1. dan: 28 -> 18 (prehodil 10)
+2. dan: 18 -> 9 (prehodil 9)
+3. dan: 9 -> 1 (prehodil 8)
+4. dan: 1 -> 0 (prehodil 1)
+
+b)
+28 10 2
+
+1. dan: 28 -> 18 (prehodil 10)
+2. dan: 18 -> 10 (prehodil 8)
+3. dan: 10 -> 4 (prehodil 6)
+4. dan: 4 -> 0 (prehodil 4)
+
+c)
+28 10 3
+
+1. dan: 28 -> 18 (prehodil 10)
+2. dan: 18 -> 11 (prehodil 7)
+3. dan: 11 -> 7 (prehodil 4)
+4. dan: 7 -> 6 (prehodil 1)
+
+
+3. naloga
+--------------------
+Napiši program, ki prebere število in in na standardni izhod izpiše števke v obratnem vrstnem redu:
+Vhod: 
+9384
+
+Izhod: 
+4
+8
+3
+9
+
+
+4. naloga (v razmislek)
+-----------------------------
+Iz standardega vhoda preberi velikost piramide in jo izriši
+
+Primer:
+
+Vhod: 4 // pomeni, da želimo 4 nivoje piramide žilimo izpisati.
+
+␣␣␣*
+␣␣***
+␣*****
+*******
+
+Primer: 
+
+Vhod: 6
+
+␣␣␣␣␣*
+␣␣␣␣***
+␣␣␣*****
+␣␣*******
+␣*********
+***********
+
+
+
+
+
