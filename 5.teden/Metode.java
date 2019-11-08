@@ -1,7 +1,7 @@
 
 import java.util.*;
 
-public class Funkcije {
+public class Metode {
 	
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
