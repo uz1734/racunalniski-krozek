@@ -1,0 +1,161 @@
+Path=C:\Program Files\Java\jdk-13\bin
+echo %Path%
+
+Path=c:\program files\Java\jdk-13\bin;%path%
+
+
+␣ --> v navodilih pomeni presledek
+------------------------------
+1. naloga
+-----------------------------
+Iz standardega vhoda preberi velikost piramide in jo izriši
+
+Primer:
+
+Vhod: 4 // pomeni, da želimo 4 nivoje piramide žilimo izpisati.
+
+␣␣␣*
+␣␣***
+␣*****
+*******
+
+Primer: 
+
+Vhod: 6
+
+␣␣␣␣␣*
+␣␣␣␣***
+␣␣␣*****
+␣␣*******
+␣*********
+***********
+
+
+-----------------------------
+2. naloga
+-----------------------------
+Dopolni prvo nalogo tako, da izrišeš v nasladnjih vrstcah še obrnjeno piramido.
+
+Primer:
+
+Vhod: 4 // pomeni, da želimo 4 nivoje piramide žilimo izpisati.
+
+␣␣␣*
+␣␣***
+␣*****
+*******
+*******
+␣*****
+␣␣***
+␣␣␣*
+
+Primer: 
+
+Vhod: 6
+
+␣␣␣␣␣*
+␣␣␣␣***
+␣␣␣*****
+␣␣*******
+␣*********
+***********
+***********
+␣*********
+␣␣*******
+␣␣␣*****
+␣␣␣␣***
+␣␣␣␣␣*
+
+-----------------------------
+3. naloga
+-----------------------------
+Iz standardega vhoda preberi velikost smreke in jo izriši.
+
+NAMIG: spremeni izris piramide v metodo in jo dopolni
+
+Primer:
+
+Vhod: 4 // pomeni, da želimo 4 nivoje piramide žilimo izpisati.
+
+␣␣*
+␣␣*
+␣***
+␣␣*
+␣***
+*****
+
+Vhod: 6
+
+␣␣␣␣␣*
+␣␣␣␣␣*
+␣␣␣␣***
+␣␣␣␣␣*
+␣␣␣␣***
+␣␣␣*****
+␣␣␣␣␣*
+␣␣␣␣***
+␣␣␣*****
+␣␣*******
+␣␣␣␣␣*
+␣␣␣␣***
+␣␣␣*****
+␣␣*******
+␣*********
+␣␣␣␣␣*
+␣␣␣␣***
+␣␣␣*****
+␣␣*******
+␣*********
+***********
+
+--------------------------------
+4. naloga (v razmislek)
+--------------------------------
+Napišite program, ki prične s številom 1, nato pa v skladu z ukazi, ki jih zaporedoma bere
+s standardnega vhoda, številu dodaja in odvzema števke ter ga sproti izpisuje. Ukazi so
+sledeči:
+• 1␣<stevka>
+Doda števko stevka na začetek števila. Števka je različna od 0.
+• 2␣<stevka>
+Doda števko <stevka> na konec števila.
+• -1
+Odstrani prvo števko iz števila.
+• -2
+Odstrani zadnjo števko iz števila.
+
+Vhod
+Na vhodu je podano zaporedje ukazov. Vsak ukaz je zapisan v svoji vrstici. Dolžina
+zaporedja ukazov ni znana vnaprej. Vsa testna zaporedja so izbrana tako, da se tekoče
+število vedno nahaja v intervalu r1, 109s.
+Izhod
+V i-ti vrstici izhoda izpišite število po izvedbi prvih i ukazov.
+
+Testni vhod: 
+1 5
+2 3
+2 7
+-1
+2 4
+-2
+1 9
+2 0
+-1
+-2
+
+
+Pričakovani izhod:
+51
+513
+5137
+137
+1374
+137
+9137
+91370
+1370
+137
+
+
+
+
+
