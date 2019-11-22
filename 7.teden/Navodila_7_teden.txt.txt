@@ -1,0 +1,69 @@
+Path=C:\Program Files\Java\jdk-13\bin
+echo %Path%
+
+Path=c:\program files\Java\jdk-13\bin;%path%
+
+--------------------------------
+1. naloga
+--------------------------------
+Napišite program, ki prične s številom 1, nato pa v skladu z ukazi, ki jih zaporedoma bere
+s standardnega vhoda, številu dodaja in odvzema števke ter ga sproti izpisuje. Ukazi so
+sledeči:
+• 1␣<stevka>
+Doda števko <stevka> na začetek števila. Števka je različna od 0.
+• 2␣<stevka>
+Doda števko <stevka> na konec števila.
+• -1
+Odstrani prvo <števko> iz števila.
+• -2
+Odstrani zadnjo <števko> iz števila.
+
+Vhod
+
+Na vhodu je podano zaporedje ukazov. Vsak ukaz je zapisan v svoji vrstici. Dolžina
+zaporedja ukazov ni znana vnaprej.
+
+Izhod
+V i-ti vrstici izhoda izpišite število po izvedbi prvih i ukazov.
+
+Testni vhod: 
+1 5
+2 3
+2 7
+-1
+2 4
+-2
+1 9
+2 0
+-1
+-2
+
+
+Pričakovani izhod:
+51
+513
+5137
+137
+1374
+137
+9137
+91370
+1370
+137
+
+--------------------------------
+2. naloga
+--------------------------------
+
+Napišite program, ki iz standardnega vhoda prebere števila in na standardni izhod 
+izpiše urejena števila od najmanjšega do največjega
+
+V prvi vrstici je zapisano število števk. V drugi vrstici pa so podane števke ločene s presledkom.
+
+Testni vhod:
+5
+64 25 12 22 11
+
+Pričakovani izhod:
+11 12 22 25 64
+
