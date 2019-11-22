@@ -38,7 +38,6 @@ Testni vhod:
 -1
 -2
 
-
 Pričakovani izhod:
 51
 513
