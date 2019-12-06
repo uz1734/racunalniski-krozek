@@ -3,14 +3,17 @@ import java.util.*;
 class NasProgram {
 	
 	public static void main(String[] args){
+		
+		
 		String toJeString = "nas string";
 		// int
 		// float, double 
 		// int[]  
 		
-		System.out.println(toJeString);
+		/*System.out.println(toJeString);
+		System.out.println("nas string");
 		prvaMetoda(5);
-		prvaMetoda(10);
+		prvaMetoda(10);*/
 		
 		int[] imeTabele = new int[5];
 		System.out.println(imeTabele[0]);
@@ -23,8 +26,8 @@ class NasProgram {
 		
 		System.out.println("nova tabela: " + novaTabela[0]);
 		
-		int[] t = new int[]{64, 25, 88, 11};
-		System.out.println(izpisiTabelo(t));
+		/*int[] t = new int[]{64, 25, 88, 11};
+		System.out.println(izpisiTabelo(t));*/
 	}
 	
 	
@@ -33,6 +36,8 @@ class NasProgram {
 		System.out.println(num);
 	}
 	
+	// int, String, float
+	// void --nc ne vračam...
 	public static int[] izpisiTabelo(int[] imeTabele123) {
 		
 		for (int i = 0; i < imeTabele123.length; i = i +1) {

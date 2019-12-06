@@ -15,8 +15,13 @@ class Sortiranje
 			} 
                  
             int temp = arr[min_idx]; 
-            arr[min_idx] = arr[i]; 
-            arr[i] = temp; 
+            System.out.println(temp);
+			System.out.println(Arrays.toString(arr));
+			arr[min_idx] = arr[i]; 
+			System.out.println(Arrays.toString(arr));
+			arr[i] = temp;
+			System.out.println(Arrays.toString(arr));
+			System.out.println("-------------");
         } 
     } 
   
@@ -34,7 +39,7 @@ class Sortiranje
 		Scanner sc = new Scanner(System.in);
 		
 		int velikostTabele = sc.nextInt();
-		int arr[] = new int[velikostTabele];
+		int[] arr = new int[velikostTabele];
 		
 		for (int i = 0; i < velikostTabele; i++) {
 			arr[i] = sc.nextInt();
