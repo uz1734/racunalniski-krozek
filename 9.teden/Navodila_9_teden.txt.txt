@@ -1,0 +1,51 @@
+Path=C:\Program Files\Java\jdk-13\bin
+echo %Path%
+
+Path=c:\program files\Java\jdk-13\bin;%path%
+
+---------------------------------
+1.naloga
+--------------------------------
+
+Napišite program, ki iz standardnega vhoda prebere dva niza in na standardni izhod in ju na izhod izpiše v pravilnem abecednem redu
+
+******
+Vhod:
+	abdd
+	abcd
+
+Pričakovani izhod: 
+	Urejena para: abcd abdd
+****
+
+Vhod: 
+	danesjelepsoncendan
+	danesje
+	
+Izhod:
+	Urejena para: danesje danesjelepsoncendan
+	
+Vhod: 
+	danesje
+	danesje
+	
+Izhod:
+	ENAKA
+
+--------------------------------
+2.naloga.
+--------------------------------
+Na standardnega vhoda preberite N nizov in jih uredite po abecednem vrstnem redu. V prvi vrstici vhoda je podano število nizov, v drugi vrstici pa njihov seznam.
+
+Vhod:
+	7
+	geeksforgeeks  is the  best place for learning
+
+Izhod: 
+	best, for, geeksforgeeks, is, learning, place, the
+
+Namig za reševanje 2. naloge in njene nadgradnje: https://www.cs.cmu.edu/~pattis/15-1XX/common/handouts/ascii.html  --> na vhodu lahko pričakujete znake iz tabele ASCII
+
+
+
+
