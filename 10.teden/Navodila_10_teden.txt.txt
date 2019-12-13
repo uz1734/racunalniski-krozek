@@ -33,7 +33,7 @@ Vhod: število n
 Izhod: n-to fibbonaccijevo števio
 
 -------------------------------------
-2.naloga -- Rekurzivno sestevanje stevil
+3.naloga -- Rekurzivno sestevanje stevil
 ------------------------------------
 
 stevila na vhodu  = {11, 7, 10, 10, 11, 6, 3, 4, 12, 3, 7, 8, 4}
@@ -41,4 +41,16 @@ stevila na vhodu  = {11, 7, 10, 10, 11, 6, 3, 4, 12, 3, 7, 8, 4}
 Napiši rekurzivno metodo, ki bo sestela elemente stevil in vrnila vsoto na izhod.
 
 Izhod: 96
+
+-------------------------------------
+4.naloga -- stevilo poti
+------------------------------------
+Stena je obložena s h x w enako velikimi ploščicami. Mravlja se odpravi na pohod od
+zgornje leve do spodnje desne ploščice, pri tem pa se premika samo desno in navzdol.
+Koliko različnih poti lahko opravi?
+Na primer, če velja h = 3 in w = 4, lahko opravi 10 različnih poti:
+
+
+
+
 
