@@ -16,7 +16,7 @@ class Fibbonaci {
 	public static void main(String[] args) {
 		
 		// System.out.println("dela fib");
-		int fibbStevilo =   fibb(9);
+		int fibbStevilo =   fibb(5);
 		System.out.println("fibbStevilo: " + fibbStevilo);
 		
 	}

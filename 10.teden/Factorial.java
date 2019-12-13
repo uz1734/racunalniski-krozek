@@ -7,9 +7,7 @@ class Factorial {
 		if (stevilo <= 1) {
 			return 1;
 		}
-		
 		return stevilo * factorial(stevilo - 1);
-		
 	}
 	
 	

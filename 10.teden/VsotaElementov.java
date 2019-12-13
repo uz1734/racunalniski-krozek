@@ -8,28 +8,26 @@ public class VsotaElementov {
 		//ali smo pregledali celoten seznam
 		if (index >= array.length){
 			System.out.println("Konec: "+v);
-			// return v;
+			return v;
 			//System.out.println(vs);
-			return 0;
+			// return 0;
 		}
 		
 		else
 			/*vs += array[index];
 			return vsota(array, index+1); */
 			
-			// v += array[index];
-			// System.out.println("Pred klicem: "+v);
+			v += array[index];
+			System.out.println("Pred klicem: "+v);
 			// nivo++;
-			// int n = vsota(array, index + 1, v);
-			// System.out.println(n);
+			int n = vsota(array, index + 1, v);
+			System.out.println(n);
 			// nivo--;
 			
 			//return v;
 			//return v;
-			return array[index] + vsota(array, index + 1, v);
-			// return n;
-			
-			
+			// return array[index] + vsota(array, index + 1, v);
+			return n;
 	}
 		
 	public static void main(String[] args) {

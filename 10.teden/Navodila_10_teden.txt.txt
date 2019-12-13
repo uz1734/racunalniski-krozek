@@ -40,7 +40,7 @@ stevila na vhodu  = {11, 7, 10, 10, 11, 6, 3, 4, 12, 3, 7, 8, 4}
 
 Napiši rekurzivno metodo, ki bo sestela elemente stevil in vrnila vsoto na izhod.
 
-Izhod: 86
+Izhod: 96
 
 -------------------------------------
 4.naloga -- stevilo poti
