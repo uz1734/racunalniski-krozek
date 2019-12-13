@@ -1,0 +1,44 @@
+Path=C:\Program Files\Java\jdk-13\bin
+echo %Path%
+
+Path=c:\program files\Java\jdk-13\bin;%path%
+
+---------------------------------
+1.naloga -- n! (n - fakulteta)
+--------------------------------
+
+S pomočjo rekurzije izračunaj n!. 
+Iz Standardnega vhoda preberi število n in nato izračunaj n!.
+
+Primer: 5! => 5 * 4 *3 *2 * 1 = 120
+	0! => 1
+	1! => 1
+	
+	zakonitost v enačbi: n * (n - 1) * (n - 2) * (n - 3) ... // gremo do n == 1
+
+
+-------------------------------------
+2.naloga -- Fibbonaccijeva števila
+------------------------------------
+
+F0 = 0
+F1 = 1
+Fn = Fn-1 + Fn-2
+
+Zaporedje: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, ...
+
+Napiši program, ki bo vrnil n-to fibbonacijevo število. Program naj bo napisan rekurzivno
+
+Vhod: število n
+Izhod: n-to fibbonaccijevo števio
+
+-------------------------------------
+2.naloga -- Rekurzivno sestevanje stevil
+------------------------------------
+
+stevila na vhodu  = {11, 7, 10, 10, 11, 6, 3, 4, 12, 3, 7, 8, 4}
+
+Napiši rekurzivno metodo, ki bo sestela elemente stevil in vrnila vsoto na izhod.
+
+Izhod: 86
+
