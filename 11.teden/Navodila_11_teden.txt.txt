@@ -1,0 +1,93 @@
+Path=C:\Program Files\Java\jdk-13\bin
+echo %Path%
+
+Path=c:\program files\Java\jdk-13\bin;%path%
+
+
+VSEBINA KROŽKA
+
+ Bolj natančno bomo predstavili objekte in njihovo predstavitev v kodi. Zgradili bomo svoj objekt.
+ Reševanje rekrzivne naloge z iskanjem poti v prostoru.
+
+
+---------------------------------
+1.naloga -- Labirint, iskanje poti. (rešimo skupaj na krožku)
+--------------------------------
+
+Na vhodu je podam labirint: 
+char[][] labirint = {	{'#','#','#','#','#','#','#','#','#'},
+			{'#',' ',' ',' ',' ',' ','#',' ','#'},
+			{'#',' ','#','#','#',' ','#',' ','#'},
+			{'#',' ','#','#','#',' ','#',' ','#'},
+			{'#',' ',' ',' ','#','#','#',' ','#'},
+			{'#',' ','#',' ','#',' ',' ',' ','#'},
+			{'#',' ','#',' ',' ',' ','#',' ','#'},
+			{'#',' ','#','#','#','#','#',' ','#'},
+			{'#',' ',' ',' ','#',' ',' ','C','#'},
+			{'#','#','#','#','#','#','#','#','#'}};
+
+Postavimo se na lokacijo (5, 3)  (dolžina, višina)
+
+char[][] labirint = {	{'#','#','#','#','#','#','#','#','#'},
+			{'#',' ',' ',' ',' ',' ','#',' ','#'},
+			{'#',' ','#','#','#',' ','#',' ','#'},
+			{'#',' ','#','#','#','.','#',' ','#'},
+			{'#',' ',' ',' ','#','#','#',' ','#'},
+			{'#',' ','#',' ','#',' ',' ',' ','#'},
+			{'#',' ','#',' ',' ',' ','#',' ','#'},
+			{'#',' ','#','#','#','#','#',' ','#'},
+			{'#',' ',' ',' ','#',' ',' ','C','#'},
+			{'#','#','#','#','#','#','#','#','#'}};
+
+Oznake: 
+# 	-> zid
+' ' 	-> prazen prostor
+.	-> označena pot
+C	-> ciljna točka poti
+
+Naloga: S pomočjo rekurzije poišči in izpiši pot skozi labirint, ki pripelje do končne točke C
+
+Pričakovani izhod (izpis v terminalu): 
+#########
+#.....# #
+#.###.# #
+#.###.# #
+#...### #
+# #.#...#
+# #...#.#
+# #####.#
+#   #  C#
+#########
+
+-------------------------------------------------
+2. naloga: FloodFill algoritem.
+------------------------------------------------
+
+Smo v programu Slikar. V zabeli zaslon imamo prikazano trenutno situacijo z barvami. Posamezna številka v tabeli predstavlja eno barvo.
+Čopič v progamu slikar imamo na koordinatah x = 4 (dolžina) , y = 4 (višina) (piksel). Naša naloga je, da ob kliku z miško na koordinato (4, 4) zamenjamo barvo
+iz številke 2 na 3 tudi vsem okolišim pikslom z enako barvo.
+
+int zaslon [][] = {{1, 1, 1, 1, 1, 1, 1, 1},
+                      {1, 1, 1, 1, 1, 1, 0, 0},
+                      {1, 0, 0, 1, 1, 0, 1, 1},
+                      {1, 2, 2, 2, 2, 0, 1, 0},
+                      {1, 1, 1, 2, 2, 0, 1, 0},
+                      {1, 1, 1, 2, 2, 2, 2, 0},
+                      {1, 1, 1, 1, 1, 2, 1, 1},
+                      {1, 1, 1, 1, 1, 2, 2, 1},
+                      };
+
+
+Izhod: 
+
+int zaslon [][] = {{1, 1, 1, 1, 1, 1, 1, 1},
+                      {1, 1, 1, 1, 1, 1, 0, 0},
+                      {1, 0, 0, 1, 1, 0, 1, 1},
+                      {1, 3, 3, 3, 3, 0, 1, 0},
+                      {1, 1, 1, 3, 3, 0, 1, 0},
+                      {1, 1, 1, 3, 3, 3, 3, 0},
+                      {1, 1, 1, 1, 1, 3, 1, 1},
+                      {1, 1, 1, 1, 1, 3, 3, 1},
+                      };
+
+
