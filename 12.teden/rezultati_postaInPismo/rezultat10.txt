@@ -1,0 +1,4 @@
+Posta@2ff4acd0 -> Posta@54bedef2 (130 km) [P]
+Posta@404b9385 -> Posta@54bedef2 (75 km) [N]
+Posta@2ff4acd0 -> Posta@404b9385 (60 km) [P]
+Posta@2ff4acd0 -> Posta@2ff4acd0 (0 km) [P]

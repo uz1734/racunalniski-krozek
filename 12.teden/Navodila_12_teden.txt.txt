@@ -1,0 +1,118 @@
+Path=C:\Program Files\Java\jdk-13\bin
+echo %Path%
+
+Path=c:\program files\Java\jdk-13\bin;%path%
+za poganjanje in testiranje programov bomo uporabili programček tj.exe
+Zagon:   tj.exe	<mapa_z razredi> <mapa_testov>	<mapa_rezultatov>
+
+
+VSEBINA KROŽKA
+Naloge z objekti
+
+---------------------------------
+1.naloga -- Pošta in pismo
+--------------------------------
+
+V skladu s sledečimi navodili napišite razreda Posta in Pismo.
+
+Razred Posta
+
+Razred Posta definirajte tako, da bo vsak njegov objekt predstavljal neko pošto s poštno
+številko (npr. 1000) in nazivom (npr. Ljubljana). Razred naj vsebuje sledeče konstruktorje/
+metode:
+• public Posta(int stevilka, String naziv)
+	Ustvari nov objekt tipa Posta, ki predstavlja pošto s podano poštno številko in
+	nazivom.
+• public int vrniStevilko()
+	Vrne poštno številko pošte this.
+• public String vrniNaziv()
+	Vrne naziv pošte this.
+• public String toString()
+	Za pošto this vrne niz sledeče oblike:
+	stevilka␣naziv
+	Na primer:
+	1000 Ljubljana
+	
+	
+Razred Pismo
+
+Razred Pismo definirajte tako, da bo vsak njegov objekt predstavljal neko pismo s sledečimi
+
+podatki:
+• izvorna pošta (npr. 1000 Ljubljana);
+• ciljna pošta (npr. 2000 Maribor);
+• podatek o tem, ali je pismo priporočeno ali navadno;
+• razdalja (v kilometrih) med izvorno in ciljno pošto.
+
+V razredu definirajte sledeče javno dosopne konstruktorje/metode:
+• public Pismo(Posta izvorna, Posta ciljna, boolean jePriporoceno, int razdalja)
+	Ustvari nov objekt tipa Pismo, ki predstavlja pismo s podano izvorno in ciljno pošto,
+	»priporočenostjo« (true: priporočeno; false: navadno) ter razdaljo (v kilometrih)
+	med izvorno in ciljno pošto.
+• public String toString()
+	Za pismo this vrne niz oblike
+	izvorna_pošta -> ciljna_pošta (razdalja km) [vrsta]
+	pri čemer je vrsta bodisi P (priporočeno) ali pa N (navadno). Na primer:
+	1000 Ljubljana -> 2000 Maribor (130 km) [P]
+• public boolean izviraOd(Posta posta)
+	Vrne true natanko v primeru, če je pošta posta izvorna pošta za pismo this.
+• public boolean staIzvorInCiljIsta()
+	Vrne true natanko v primeru, če ima pismo this isto izvorno in ciljno pošto (npr.
+	če je pismo poslano s pošte 1000 Ljubljana na pošto 1000 Ljubljana).
+• public boolean imaIstiCiljKot(Pismo pismo)
+	Vrne true natanko v primeru, če ima pismo this isto ciljno pošto kot pismo pismo.
+• public static boolean imataIstiCilj(Pismo p1, Pismo p2)
+	Vrne true natanko v primeru, če imata obe podani pismi isto ciljno pošto.
+• public int cena()
+	Vrne ceno (v stotinih) oddaje pisma this. Za navadno pismo se cena izračuna glede
+	na razdaljo: za razdaljo od 0 do vključno pr ´ 1q km je cena enaka k stotinov, za
+	razdaljo od r km do vključno p2r´1q km je cena enaka 2k stotinov, za razdaljo od 2r
+	km do vključno p3r´1q km je cena enaka 3k stotinov itd. Ceno priporočenega pisma
+	izračunamo tako, da ceni navadnega pisma prištejemo priporočnino p stotinov, ki je
+	neodvisna od razdalje. Konstante k, r in p se nastavijo z metodo, ki jo predstavljamo
+	v naslednji alineji.
+• public static void nastaviKonstanteZaCeno(
+	int enotaRazdalje, int enotaCene, int priporocnina)
+	Konstante r, k in p, ki se uporabljajo za izračun cene oddaje pisma (gl. prejšnjo
+	alinejo), nastavi na vrednosti enotaRazdalje, enotaCene in priporocnina (v tem
+	vrstnem redu).
+• public boolean jeDrazjeOd(Pismo pismo)
+	Vrne true natanko v primeru, če je cena pisma this večja od cene pisma pismo.
+• public static Pismo vrniDrazje(Pismo p1, Pismo p2)
+	Vrne tisto pismo izmed p1 in p2, ki ima večjo ceno. Če imata obe pismi enako ceno,
+	naj vrne pismo p2.
+• public Pismo izdelajPovratno()
+	Ustvari in vrne nov objekt tipa Pismo, ki predstavlja povratnico pisma this. Povratnica
+	ima enake podatke kot pismo this, le izvorna in ciljna pošta sta med seboj
+	zamenjani.
+	
+-----------------------------------------------
+2.naloga
+------------------------------------------------
+Napišite razred Ulomek tako, da bodo njegovi objekti predstavljali posamezne okrajšane
+ulomke. Razred Ulomek naj vsebuje sledeče konstruktorje/metode:
+• public Ulomek(int a, int b)
+	Ustvari nov objekt tipa Ulomek, ki predstavlja okrajšano različico ulomka a{b. Ulomek
+	p/q je okrajšan natanko tedaj, ko velja q > 0 in gcd(p, q) = 1. Na primer,
+	okrajšana različica ulomka 15/5 je ulomek 3/1, okrajšana različica ulomka 10/-20 pa je ulomek -1/2. Lahko predpostavite, da sta števili a in b različni od 0.
+• public String toString()
+	Vrne okrajšani ulomek this v obliki niza števec/imenovalec, npr. 3/1 ali -1/2.
+• public boolean jeEnakKot(Ulomek u)
+	Vrne true natanko v primeru, če sta ulomka this in u enaka.
+• public Ulomek negacija()
+	Ustvari in vrne nov objekt, ki predstavlja nasprotno vrednost ulomka this (torej
+	-x, če je x dani ulomek).
+• public Ulomek obrat()
+	Ustvari in vrne nov objekt, ki predstavlja obratno vrednost ulomka this (torej 1{x,
+	če je x dani ulomek).
+• public Ulomek vsota(Ulomek u)
+• public Ulomek razlika(Ulomek u)
+• public Ulomek zmnozek(Ulomek u)
+• public Ulomek kolicnik(Ulomek u)
+	Ustvari in vrne nov objekt, ki predstavlja vsoto, razliko, zmnožek oziroma količnik
+	ulomka this in ulomka u.
+• public Ulomek potenca(int eksponent)
+	Vrne potenco ulomka this na podani eksponent. Eksponent ni nujno pozitiven!
+• public boolean jeManjsiOd(Ulomek u)
+V	rne true natanko v primeru, če je ulomek this manjši od ulomka u.
+
