@@ -65,9 +65,9 @@ V razredu definirajte sledeče javno dosopne konstruktorje/metode:
 	Vrne true natanko v primeru, če imata obe podani pismi isto ciljno pošto.
 • public int cena()
 	Vrne ceno (v stotinih) oddaje pisma this. Za navadno pismo se cena izračuna glede
-	na razdaljo: za razdaljo od 0 do vključno pr ´ 1q km je cena enaka k stotinov, za
-	razdaljo od r km do vključno p2r´1q km je cena enaka 2k stotinov, za razdaljo od 2r
-	km do vključno p3r´1q km je cena enaka 3k stotinov itd. Ceno priporočenega pisma
+	na razdaljo: za razdaljo od 0 do vključno pr r - 1 km je cena enaka k stotinov, za
+	razdaljo od r km do vključno 2r - 1q km je cena enaka 2k stotinov, za razdaljo od 2r
+	km do vključno 3r - 1q km je cena enaka 3k stotinov itd. Ceno priporočenega pisma
 	izračunamo tako, da ceni navadnega pisma prištejemo priporočnino p stotinov, ki je
 	neodvisna od razdalje. Konstante k, r in p se nastavijo z metodo, ki jo predstavljamo
 	v naslednji alineji.
