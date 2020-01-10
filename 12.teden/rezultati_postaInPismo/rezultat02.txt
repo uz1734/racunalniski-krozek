@@ -1,2 +1,2 @@
-Posta@2ff4acd0 -> Posta@54bedef2 (130 km) [P]
-Posta@2ff4acd0 -> Posta@404b9385 (75 km) [N]
+1000 Ljubljana -> 2000 Maribor (130 km) [P]
+1000 Ljubljana -> 3000 Celje (75 km) [N]

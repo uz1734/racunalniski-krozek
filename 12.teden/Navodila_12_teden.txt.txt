@@ -86,9 +86,9 @@ V razredu definirajte sledeče javno dosopne konstruktorje/metode:
 	ima enake podatke kot pismo this, le izvorna in ciljna pošta sta med seboj
 	zamenjani.
 	
------------------------------------------------
+-------------------------------------------------
 2.naloga
-------------------------------------------------
+--------------------------------------------------
 Napišite razred Ulomek tako, da bodo njegovi objekti predstavljali posamezne okrajšane
 ulomke. Razred Ulomek naj vsebuje sledeče konstruktorje/metode:
 • public Ulomek(int a, int b)
