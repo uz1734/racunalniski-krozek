@@ -9,9 +9,9 @@ Zagon:   tj.exe	<mapa_z razredi> <mapa_testov>	<mapa_rezultatov>
 VSEBINA KROŽKA
 Rekurzivni algoritem floodfill in naloga z objekti. Naloga z objekti ima svoje pripadajoče teste.
 
--------------------------------------------------
+-----------------------------------------------------
 1. naloga: FloodFill algoritem.
-------------------------------------------------
+---------------------------------------------------
 
 Smo v programu Slikar. V zabeli zaslon imamo prikazano trenutno situacijo z barvami. Posamezna številka v tabeli predstavlja eno barvo.
 Čopič v progamu slikar imamo na koordinatah x = 4 (dolžina) , y = 4 (višina) (piksel). Naša naloga je, da ob kliku z miško na koordinato (4, 4) zamenjamo barvo
@@ -101,6 +101,7 @@ dopolnite s sledečimi metodami:
 	šahovski, rokodelski in dramski krožek, Bojan pa šahovski, dramski in planinski
 	krožek. Člana krožka this tako obiskujeta štiri različne dejavnosti: šah, rokodelstvo,
 	dramo in planinstvo.
+
 	
 
 
