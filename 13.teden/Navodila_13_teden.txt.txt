@@ -1,0 +1,71 @@
+Path=C:\Program Files\Java\jdk-13\bin
+echo %Path%
+
+Path=c:\program files\Java\jdk-13\bin;%path%
+za poganjanje in testiranje programov bomo uporabili programček tj.exe. V tem tednu jo bomo rabili pri 2.nalogi
+Zagon:   tj.exe	<mapa_z razredi> <mapa_testov>	<mapa_rezultatov>
+
+
+VSEBINA KROŽKA
+Rekurzivni algoritem floodfill in naloga z objekti. Naloga z objekti ima svoje pripadajoče teste.
+
+-------------------------------------------------
+1. naloga: FloodFill algoritem.
+------------------------------------------------
+
+Smo v programu Slikar. V zabeli zaslon imamo prikazano trenutno situacijo z barvami. Posamezna številka v tabeli predstavlja eno barvo.
+Čopič v progamu slikar imamo na koordinatah x = 4 (dolžina) , y = 4 (višina) (piksel). Naša naloga je, da ob kliku z miško na koordinato (4, 4) zamenjamo barvo
+iz številke 2 na 3 tudi vsem okolišim pikslom z enako barvo.
+
+int zaslon [][] = {{1, 1, 1, 1, 1, 1, 1, 1},
+                      {1, 1, 1, 1, 1, 1, 0, 0},
+                      {1, 0, 0, 1, 1, 0, 1, 1},
+                      {1, 2, 2, 2, 2, 0, 1, 0},
+                      {1, 1, 1, 2, 2, 0, 1, 0},
+                      {1, 1, 1, 2, 2, 2, 2, 0},
+                      {1, 1, 1, 1, 1, 2, 1, 1},
+                      {1, 1, 1, 1, 1, 2, 2, 1},
+                      };
+
+
+Izhod (zamenjamo vse 2 z 3):
+ 
+11111111
+11111100
+10011011
+13333010
+11133010
+11133330
+11111311
+11111331
+
+
+
+-------------------------------------------------
+2.naloga: računanje ulomkov z objekti.
+--------------------------------------------------
+Napišite razred Ulomek tako, da bodo njegovi objekti predstavljali posamezne okrajšane
+ulomke. Razred Ulomek naj vsebuje sledeče konstruktorje/metode:
+• public Ulomek(int a, int b)
+	Ustvari nov objekt tipa Ulomek, ki predstavlja okrajšano različico ulomka a{b. Ulomek
+	p/q je okrajšan natanko tedaj, ko velja q > 0 in gcd(p, q) = 1. Na primer,
+	okrajšana različica ulomka 15/5 je ulomek 3/1, okrajšana različica ulomka 10/-20 pa je ulomek -1/2. Lahko predpostavite, da sta števili a in b različni od 0.
+• public String toString()
+	Vrne okrajšani ulomek this v obliki niza števec/imenovalec, npr. 3/1 ali -1/2.
+• public boolean jeEnakKot(Ulomek u)
+	Vrne true natanko v primeru, če sta ulomka this in u enaka.
+• public Ulomek negacija()
+	Ustvari in vrne nov objekt, ki predstavlja nasprotno vrednost ulomka this (torej -x, če je x dani ulomek).
+• public Ulomek obrat()
+	Ustvari in vrne nov objekt, ki predstavlja obratno vrednost ulomka this (torej 1/x, če je x dani ulomek).
+• public Ulomek vsota(Ulomek u)
+• public Ulomek razlika(Ulomek u)
+• public Ulomek zmnozek(Ulomek u)
+• public Ulomek kolicnik(Ulomek u)
+	Ustvari in vrne nov objekt, ki predstavlja vsoto, razliko, zmnožek oziroma količnik
+	ulomka this in ulomka u.
+• public Ulomek potenca(int eksponent)
+	Vrne potenco ulomka this na podani eksponent. Eksponent ni nujno pozitiven!
+• public boolean jeManjsiOd(Ulomek u)
+V	rne true natanko v primeru, če je ulomek this manjši od ulomka u.
+
