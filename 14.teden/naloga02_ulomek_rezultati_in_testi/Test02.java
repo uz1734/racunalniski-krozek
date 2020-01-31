@@ -11,5 +11,7 @@ public class Test02 {
         System.out.println(b.negacija().toString());
         System.out.println(c.negacija().toString());
         System.out.println(d.negacija().toString());
+		
+		
     }
 }

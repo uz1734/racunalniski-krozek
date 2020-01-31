@@ -69,39 +69,6 @@ ulomke. Razred Ulomek naj vsebuje sledeče konstruktorje/metode:
 • public boolean jeManjsiOd(Ulomek u)
 V	rne true natanko v primeru, če je ulomek this manjši od ulomka u.
 
----------------------------------------------------
-3.naloga: tabele objektov
--------------------------------------------------------
-
-Učenci obiskujejo različne krožke. Člani krožkov se sestajajo enkrat tedensko po dve polni
-uri. Vsak krožek ima svoj termin izvajanja, ki je določen z dnevom v tednu in uro pričetka.
-Učence predstavimo z objekti tipa Ucenec, krožke pa z objekti tipa Krozek.
-Razreda Ucenec in Krozek, ki ju boste našli v mapi z izhodiščnimi datotekami za to nalogo,
-dopolnite s sledečimi metodami:
-
-• public String toString() v razredu Ucenec:
-	Vrne niz s podatki o učencu this. Niz naj ima takšno obliko:
-	<ip>, <razred>. <razred>
-	Na primer:
-	Mojca Jamnik, 6. razred
-	
-• public boolean imaCasZa(Krozek k) v razredu Ucenec:
-	Vrne true natanko v primeru, če se termin krožka k ne prekriva z nobenim od
-	krožkov, ki jih učenec this že obiskuje. Ne pozabite, da vsak krožek traja dve uri!
-	
-• public int steviloSosolcevVKrozku(Krozek k) v razredu Ucenec:
-	Vrne število članov krožka k, ki hodijo v isti razred kot učenec this. Če je učenec
-	this tudi član krožka k, ga seveda ne smete šteti poleg.
-	
-• public int steviloRazlicnihDejavnosti() v razredu Krozek:
-	Vrne skupno število različnih dejavnosti, ki jih obiskujejo člani krožka this. Upoštevajte
-	možnost, da imata dva različna krožka (dva različna objekta tipa Krozek) isto
-	dejavnost.
-	Za primer vzemimo, da sta v krožek this včlanjena Ana in Bojan. Ana obiskuje
-	šahovski, rokodelski in dramski krožek, Bojan pa šahovski, dramski in planinski
-	krožek. Člana krožka this tako obiskujeta štiri različne dejavnosti: šah, rokodelstvo,
-	dramo in planinstvo.
-
 	
 
 
