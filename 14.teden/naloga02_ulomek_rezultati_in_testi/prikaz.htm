@@ -73,10 +73,10 @@
                 background: linear-gradient(to right, #E0E0E0 , white);
             }
             #grad2 {
-                background: -webkit-linear-gradient(left, #9F9 , white);
-                background: -o-linear-gradient(right, #9F9, white);
-                background: -moz-linear-gradient(right, #9F9, white);
-                background: linear-gradient(to right, #9F9 , white);
+                background: -webkit-linear-gradient(left, #FFBF00 , white);
+                background: -o-linear-gradient(right, #FFBF00, white);
+                background: -moz-linear-gradient(right, #FFBF00, white);
+                background: linear-gradient(to right, #FFBF00 , white);
             }
             .capSlika { display:block; height: 25px; margin:0 auto; font-size: 1.0em; text-align: left; }
             .dborder { padding: 0px; border: 1px solid #CACACA; }
@@ -86,23 +86,23 @@
     <body>
         <div class="container">
         <a name="top"></a>
-        <h1 id="grad2" style="padding: 10px; border: 0px solid black; color: #000000;">Rezultati preverjanja metod programa (10/10)</h1>
+        <h1 id="grad2" style="padding: 10px; border: 0px solid black; color: #000000;">Rezultati preverjanja metod programa (0/10)</h1>
         <div style="height: 20px"></div>
         <a name="summary"></a>
         <h2>Povzetek rezultatov</h2>
         <table id="nasredini" class="tableBase tableResults">
             <tbody>
                 <tr>
-                <td class="hoverOk"><a href="#testcase1">1</a></td>
-                <td class="hoverOk"><a href="#testcase2">2</a></td>
-                <td class="hoverOk"><a href="#testcase3">3</a></td>
-                <td class="hoverOk"><a href="#testcase4">4</a></td>
-                <td class="hoverOk"><a href="#testcase5">5</a></td>
-                <td class="hoverOk"><a href="#testcase6">6</a></td>
-                <td class="hoverOk"><a href="#testcase7">7</a></td>
-                <td class="hoverOk"><a href="#testcase8">8</a></td>
-                <td class="hoverOk"><a href="#testcase9">9</a></td>
-                <td class="hoverOk"><a href="#testcase10">10</a></td>
+                <td class="hoverErr"><a href="#testcase1">1</a></td>
+                <td class="hoverCompile"><a href="#testcase2">2</a></td>
+                <td class="hoverCompile"><a href="#testcase3">3</a></td>
+                <td class="hoverCompile"><a href="#testcase4">4</a></td>
+                <td class="hoverCompile"><a href="#testcase5">5</a></td>
+                <td class="hoverCompile"><a href="#testcase6">6</a></td>
+                <td class="hoverCompile"><a href="#testcase7">7</a></td>
+                <td class="hoverCompile"><a href="#testcase8">8</a></td>
+                <td class="hoverCompile"><a href="#testcase9">9</a></td>
+                <td class="hoverCompile"><a href="#testcase10">10</a></td>
                 </tr>
                 <tr></tr>
             </tbody>
@@ -110,11 +110,11 @@
         <div style="height: 20px"></div>
         <h2>Rezultati</h2>
         <a name="testcase1"></a>
-        <div style="border: 1px solid #63B563">
-            <table class="tableOK tableCommon" style="width: 100%; border: 3px solid #9F9;">
+        <div style="border: 1px solid #CB9800">
+            <table class="tableError tableCommon" style="width: 100%; border: 3px solid #FFBF00;">
                 <tbody>
                     <tr>
-                        <td colspan="2" style="background-color: #9F9; color: black;">Testni primer 1</td>
+                        <td colspan="2" style="background-color: #FFBF00; color: black;">Testni primer 1</td>
                     </tr>
                     <tr>
                         <td style="width: 200px;">Vhod</td>
@@ -142,6 +142,11 @@
                     <tr>
                         <td>Izhod programa</td>
                         <td class="texttt">
+                            Ulomek@279f2327<br/>Ulomek@2ff4acd0<br/>Ulomek@54bedef2<br/>Ulomek@5caf905d<br/><br/>
+                        </td>
+                    </tr>
+                    <td>Referenčni izhod</td>
+                        <td class="texttt">
                             2/3<br/>4/3<br/>-7/1<br/>2/25<br/><br/>
                         </td>
                     </tr>
@@ -153,39 +158,22 @@
 <a href="#summary">Povzetek</a> | 
 <a href="#testcase1">Rezultati</a> ]</div><div style="height: 30px"></div>
         <a name="testcase2"></a>
-        <div style="border: 1px solid #63B563">
-            <table class="tableOK tableCommon" style="width: 100%; border: 3px solid #9F9;">
+        <div style="border: 1px solid #710B0B">
+            <table class="tableCompiler tableCommon" style="width: 100%; border: 3px solid #C00000;">
                 <tbody>
                     <tr>
-                        <td colspan="2" style="background-color: #9F9; color: black;">Testni primer 2</td>
+                        <td colspan="2" style="background-color: #C00000; color: white;">Testni primer 2</td>
                     </tr>
                     <tr>
                         <td style="width: 200px;">Vhod</td>
                         <td class="texttt">
-                            <br/>
-<span class="rwordv">public</span> class Test<span class="stevilo">02</span> {<br/>
-<br/>
-<tab><span class="rwordv">public</span> <span class="rwordv">static</span> <span class="rwordv">void</span> main(String[] args) {<br/>
-<tab><tab>Ulomek a = <span class="rwordb">new</span> Ulomek<span class="stevilo">(2</span>,<span class="stevilo"> 3</span>);<br/>
-<tab><tab>Ulomek b = <span class="rwordb">new</span> Ulomek<span class="stevilo">(288</span>,<span class="stevilo"> 216</span>);<br/>
-<tab><tab>Ulomek c = <span class="rwordb">new</span> Ulomek<span class="stevilo">(14</span>, -2);<br/>
-<tab><tab>Ulomek d = <span class="rwordb">new</span> Ulomek(-<span class="stevilo">12</span>, -<span class="stevilo">150</span>);<br/>
-<br/>
-<tab><tab>System.out.println(a.negacija().toString());<br/>
-<tab><tab>System.out.println(b.negacija().toString());<br/>
-<tab><tab>System.out.println(c.negacija().toString());<br/>
-<tab><tab>System.out.println(d.negacija().toString());<br/>
-<tab>}<br/>
-}<br/>
-
-
-<br/>
+                            <br/>
                         </td>
                     </tr>
                     <tr>
-                        <td>Izhod programa</td>
+                        <td>Izhod prevajalnika</td>
                         <td class="texttt">
-                            -2/3<br/>-4/3<br/>7/1<br/>-2/25<br/><br/>
+                            Test02.java:10:&nbsp;error:&nbsp;cannot&nbsp;find&nbsp;symbol<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(a.negacija().toString());<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br/>&nbsp;&nbsp;symbol:&nbsp;&nbsp;&nbsp;method&nbsp;negacija()<br/>&nbsp;&nbsp;location:&nbsp;variable&nbsp;a&nbsp;of&nbsp;type&nbsp;Ulomek<br/>Test02.java:11:&nbsp;error:&nbsp;cannot&nbsp;find&nbsp;symbol<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(b.negacija().toString());<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br/>&nbsp;&nbsp;symbol:&nbsp;&nbsp;&nbsp;method&nbsp;negacija()<br/>&nbsp;&nbsp;location:&nbsp;variable&nbsp;b&nbsp;of&nbsp;type&nbsp;Ulomek<br/>Test02.java:12:&nbsp;error:&nbsp;cannot&nbsp;find&nbsp;symbol<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(c.negacija().toString());<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br/>&nbsp;&nbsp;symbol:&nbsp;&nbsp;&nbsp;method&nbsp;negacija()<br/>&nbsp;&nbsp;location:&nbsp;variable&nbsp;c&nbsp;of&nbsp;type&nbsp;Ulomek<br/>Test02.java:13:&nbsp;error:&nbsp;cannot&nbsp;find&nbsp;symbol<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(d.negacija().toString());<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br/>&nbsp;&nbsp;symbol:&nbsp;&nbsp;&nbsp;method&nbsp;negacija()<br/>&nbsp;&nbsp;location:&nbsp;variable&nbsp;d&nbsp;of&nbsp;type&nbsp;Ulomek<br/>4&nbsp;errors<br/><br/>
                         </td>
                     </tr>
                 </tbody>
@@ -196,39 +184,22 @@
 <a href="#summary">Povzetek</a> | 
 <a href="#testcase1">Rezultati</a> ]</div><div style="height: 30px"></div>
         <a name="testcase3"></a>
-        <div style="border: 1px solid #63B563">
-            <table class="tableOK tableCommon" style="width: 100%; border: 3px solid #9F9;">
+        <div style="border: 1px solid #710B0B">
+            <table class="tableCompiler tableCommon" style="width: 100%; border: 3px solid #C00000;">
                 <tbody>
                     <tr>
-                        <td colspan="2" style="background-color: #9F9; color: black;">Testni primer 3</td>
+                        <td colspan="2" style="background-color: #C00000; color: white;">Testni primer 3</td>
                     </tr>
                     <tr>
                         <td style="width: 200px;">Vhod</td>
                         <td class="texttt">
-                            <br/>
-<span class="rwordv">public</span> class Test<span class="stevilo">03</span> {<br/>
-<br/>
-<tab><span class="rwordv">public</span> <span class="rwordv">static</span> <span class="rwordv">void</span> main(String[] args) {<br/>
-<tab><tab>Ulomek a = <span class="rwordb">new</span> Ulomek<span class="stevilo">(2</span>,<span class="stevilo"> 3</span>);<br/>
-<tab><tab>Ulomek b = <span class="rwordb">new</span> Ulomek<span class="stevilo">(288</span>,<span class="stevilo"> 216</span>);<br/>
-<tab><tab>Ulomek c = <span class="rwordb">new</span> Ulomek<span class="stevilo">(14</span>, -2);<br/>
-<tab><tab>Ulomek d = <span class="rwordb">new</span> Ulomek(-<span class="stevilo">12</span>, -<span class="stevilo">150</span>);<br/>
-<br/>
-<tab><tab>System.out.println(a.obrat().toString());<br/>
-<tab><tab>System.out.println(b.obrat().toString());<br/>
-<tab><tab>System.out.println(c.obrat().toString());<br/>
-<tab><tab>System.out.println(d.obrat().toString());<br/>
-<tab>}<br/>
-}<br/>
-
-
-<br/>
+                            <br/>
                         </td>
                     </tr>
                     <tr>
-                        <td>Izhod programa</td>
+                        <td>Izhod prevajalnika</td>
                         <td class="texttt">
-                            3/2<br/>3/4<br/>-1/7<br/>25/2<br/><br/>
+                            Test03.java:10:&nbsp;error:&nbsp;cannot&nbsp;find&nbsp;symbol<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(a.obrat().toString());<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br/>&nbsp;&nbsp;symbol:&nbsp;&nbsp;&nbsp;method&nbsp;obrat()<br/>&nbsp;&nbsp;location:&nbsp;variable&nbsp;a&nbsp;of&nbsp;type&nbsp;Ulomek<br/>Test03.java:11:&nbsp;error:&nbsp;cannot&nbsp;find&nbsp;symbol<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(b.obrat().toString());<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br/>&nbsp;&nbsp;symbol:&nbsp;&nbsp;&nbsp;method&nbsp;obrat()<br/>&nbsp;&nbsp;location:&nbsp;variable&nbsp;b&nbsp;of&nbsp;type&nbsp;Ulomek<br/>Test03.java:12:&nbsp;error:&nbsp;cannot&nbsp;find&nbsp;symbol<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(c.obrat().toString());<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br/>&nbsp;&nbsp;symbol:&nbsp;&nbsp;&nbsp;method&nbsp;obrat()<br/>&nbsp;&nbsp;location:&nbsp;variable&nbsp;c&nbsp;of&nbsp;type&nbsp;Ulomek<br/>Test03.java:13:&nbsp;error:&nbsp;cannot&nbsp;find&nbsp;symbol<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(d.obrat().toString());<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br/>&nbsp;&nbsp;symbol:&nbsp;&nbsp;&nbsp;method&nbsp;obrat()<br/>&nbsp;&nbsp;location:&nbsp;variable&nbsp;d&nbsp;of&nbsp;type&nbsp;Ulomek<br/>4&nbsp;errors<br/><br/>
                         </td>
                     </tr>
                 </tbody>
@@ -239,41 +210,22 @@
 <a href="#summary">Povzetek</a> | 
 <a href="#testcase1">Rezultati</a> ]</div><div style="height: 30px"></div>
         <a name="testcase4"></a>
-        <div style="border: 1px solid #63B563">
-            <table class="tableOK tableCommon" style="width: 100%; border: 3px solid #9F9;">
+        <div style="border: 1px solid #710B0B">
+            <table class="tableCompiler tableCommon" style="width: 100%; border: 3px solid #C00000;">
                 <tbody>
                     <tr>
-                        <td colspan="2" style="background-color: #9F9; color: black;">Testni primer 4</td>
+                        <td colspan="2" style="background-color: #C00000; color: white;">Testni primer 4</td>
                     </tr>
                     <tr>
                         <td style="width: 200px;">Vhod</td>
                         <td class="texttt">
-                            <br/>
-<span class="rwordv">public</span> class Test<span class="stevilo">04</span> {<br/>
-<br/>
-<tab><span class="rwordv">public</span> <span class="rwordv">static</span> <span class="rwordv">void</span> main(String[] args) {<br/>
-<tab><tab>Ulomek a = <span class="rwordb">new</span> Ulomek<span class="stevilo">(2</span>,<span class="stevilo"> 3</span>);<br/>
-<tab><tab>Ulomek b = <span class="rwordb">new</span> Ulomek<span class="stevilo">(288</span>,<span class="stevilo"> 216</span>);<br/>
-<tab><tab>Ulomek c = <span class="rwordb">new</span> Ulomek<span class="stevilo">(14</span>, -2);<br/>
-<tab><tab>Ulomek d = <span class="rwordb">new</span> Ulomek(-<span class="stevilo">12</span>, -<span class="stevilo">150</span>);<br/>
-<br/>
-<tab><tab>System.out.println(a.vsota(b).toString());<br/>
-<tab><tab>System.out.println(a.vsota(c).toString());<br/>
-<tab><tab>System.out.println(a.vsota(d).toString());<br/>
-<tab><tab>System.out.println(b.vsota(c).toString());<br/>
-<tab><tab>System.out.println(b.vsota(d).toString());<br/>
-<tab><tab>System.out.println(c.vsota(d).toString());<br/>
-<tab>}<br/>
-}<br/>
-
-
-<br/>
+                            <br/>
                         </td>
                     </tr>
                     <tr>
-                        <td>Izhod programa</td>
+                        <td>Izhod prevajalnika</td>
                         <td class="texttt">
-                            2/1<br/>-19/3<br/>56/75<br/>-17/3<br/>106/75<br/>-173/25<br/><br/>
+                            Test04.java:10:&nbsp;error:&nbsp;cannot&nbsp;find&nbsp;symbol<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(a.vsota(b).toString());<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br/>&nbsp;&nbsp;symbol:&nbsp;&nbsp;&nbsp;method&nbsp;vsota(Ulomek)<br/>&nbsp;&nbsp;location:&nbsp;variable&nbsp;a&nbsp;of&nbsp;type&nbsp;Ulomek<br/>Test04.java:11:&nbsp;error:&nbsp;cannot&nbsp;find&nbsp;symbol<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(a.vsota(c).toString());<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br/>&nbsp;&nbsp;symbol:&nbsp;&nbsp;&nbsp;method&nbsp;vsota(Ulomek)<br/>&nbsp;&nbsp;location:&nbsp;variable&nbsp;a&nbsp;of&nbsp;type&nbsp;Ulomek<br/>Test04.java:12:&nbsp;error:&nbsp;cannot&nbsp;find&nbsp;symbol<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(a.vsota(d).toString());<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br/>&nbsp;&nbsp;symbol:&nbsp;&nbsp;&nbsp;method&nbsp;vsota(Ulomek)<br/>&nbsp;&nbsp;location:&nbsp;variable&nbsp;a&nbsp;of&nbsp;type&nbsp;Ulomek<br/>Test04.java:13:&nbsp;error:&nbsp;cannot&nbsp;find&nbsp;symbol<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(b.vsota(c).toString());<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br/>&nbsp;&nbsp;symbol:&nbsp;&nbsp;&nbsp;method&nbsp;vsota(Ulomek)<br/>&nbsp;&nbsp;location:&nbsp;variable&nbsp;b&nbsp;of&nbsp;type&nbsp;Ulomek<br/>Test04.java:14:&nbsp;error:&nbsp;cannot&nbsp;find&nbsp;symbol<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(b.vsota(d).toString());<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br/>&nbsp;&nbsp;symbol:&nbsp;&nbsp;&nbsp;method&nbsp;vsota(Ulomek)<br/>&nbsp;&nbsp;location:&nbsp;variable&nbsp;b&nbsp;of&nbsp;type&nbsp;Ulomek<br/>Test04.java:15:&nbsp;error:&nbsp;cannot&nbsp;find&nbsp;symbol<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(c.vsota(d).toString());<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br/>&nbsp;&nbsp;symbol:&nbsp;&nbsp;&nbsp;method&nbsp;vsota(Ulomek)<br/>&nbsp;&nbsp;location:&nbsp;variable&nbsp;c&nbsp;of&nbsp;type&nbsp;Ulomek<br/>6&nbsp;errors<br/><br/>
                         </td>
                     </tr>
                 </tbody>
@@ -284,41 +236,22 @@
 <a href="#summary">Povzetek</a> | 
 <a href="#testcase1">Rezultati</a> ]</div><div style="height: 30px"></div>
         <a name="testcase5"></a>
-        <div style="border: 1px solid #63B563">
-            <table class="tableOK tableCommon" style="width: 100%; border: 3px solid #9F9;">
+        <div style="border: 1px solid #710B0B">
+            <table class="tableCompiler tableCommon" style="width: 100%; border: 3px solid #C00000;">
                 <tbody>
                     <tr>
-                        <td colspan="2" style="background-color: #9F9; color: black;">Testni primer 5</td>
+                        <td colspan="2" style="background-color: #C00000; color: white;">Testni primer 5</td>
                     </tr>
                     <tr>
                         <td style="width: 200px;">Vhod</td>
                         <td class="texttt">
-                            <br/>
-<span class="rwordv">public</span> class Test<span class="stevilo">05</span> {<br/>
-<br/>
-<tab><span class="rwordv">public</span> <span class="rwordv">static</span> <span class="rwordv">void</span> main(String[] args) {<br/>
-<tab><tab>Ulomek a = <span class="rwordb">new</span> Ulomek<span class="stevilo">(2</span>,<span class="stevilo"> 3</span>);<br/>
-<tab><tab>Ulomek b = <span class="rwordb">new</span> Ulomek<span class="stevilo">(288</span>,<span class="stevilo"> 216</span>);<br/>
-<tab><tab>Ulomek c = <span class="rwordb">new</span> Ulomek<span class="stevilo">(14</span>, -2);<br/>
-<tab><tab>Ulomek d = <span class="rwordb">new</span> Ulomek(-<span class="stevilo">12</span>, -<span class="stevilo">150</span>);<br/>
-<br/>
-<tab><tab>System.out.println(a.razlika(b).toString());<br/>
-<tab><tab>System.out.println(a.razlika(c).toString());<br/>
-<tab><tab>System.out.println(a.razlika(d).toString());<br/>
-<tab><tab>System.out.println(b.razlika(c).toString());<br/>
-<tab><tab>System.out.println(b.razlika(d).toString());<br/>
-<tab><tab>System.out.println(c.razlika(d).toString());<br/>
-<tab>}<br/>
-}<br/>
-
-
-<br/>
+                            <br/>
                         </td>
                     </tr>
                     <tr>
-                        <td>Izhod programa</td>
+                        <td>Izhod prevajalnika</td>
                         <td class="texttt">
-                            -2/3<br/>23/3<br/>44/75<br/>25/3<br/>94/75<br/>-177/25<br/><br/>
+                            Test05.java:10:&nbsp;error:&nbsp;cannot&nbsp;find&nbsp;symbol<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(a.razlika(b).toString());<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br/>&nbsp;&nbsp;symbol:&nbsp;&nbsp;&nbsp;method&nbsp;razlika(Ulomek)<br/>&nbsp;&nbsp;location:&nbsp;variable&nbsp;a&nbsp;of&nbsp;type&nbsp;Ulomek<br/>Test05.java:11:&nbsp;error:&nbsp;cannot&nbsp;find&nbsp;symbol<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(a.razlika(c).toString());<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br/>&nbsp;&nbsp;symbol:&nbsp;&nbsp;&nbsp;method&nbsp;razlika(Ulomek)<br/>&nbsp;&nbsp;location:&nbsp;variable&nbsp;a&nbsp;of&nbsp;type&nbsp;Ulomek<br/>Test05.java:12:&nbsp;error:&nbsp;cannot&nbsp;find&nbsp;symbol<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(a.razlika(d).toString());<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br/>&nbsp;&nbsp;symbol:&nbsp;&nbsp;&nbsp;method&nbsp;razlika(Ulomek)<br/>&nbsp;&nbsp;location:&nbsp;variable&nbsp;a&nbsp;of&nbsp;type&nbsp;Ulomek<br/>Test05.java:13:&nbsp;error:&nbsp;cannot&nbsp;find&nbsp;symbol<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(b.razlika(c).toString());<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br/>&nbsp;&nbsp;symbol:&nbsp;&nbsp;&nbsp;method&nbsp;razlika(Ulomek)<br/>&nbsp;&nbsp;location:&nbsp;variable&nbsp;b&nbsp;of&nbsp;type&nbsp;Ulomek<br/>Test05.java:14:&nbsp;error:&nbsp;cannot&nbsp;find&nbsp;symbol<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(b.razlika(d).toString());<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br/>&nbsp;&nbsp;symbol:&nbsp;&nbsp;&nbsp;method&nbsp;razlika(Ulomek)<br/>&nbsp;&nbsp;location:&nbsp;variable&nbsp;b&nbsp;of&nbsp;type&nbsp;Ulomek<br/>Test05.java:15:&nbsp;error:&nbsp;cannot&nbsp;find&nbsp;symbol<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(c.razlika(d).toString());<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br/>&nbsp;&nbsp;symbol:&nbsp;&nbsp;&nbsp;method&nbsp;razlika(Ulomek)<br/>&nbsp;&nbsp;location:&nbsp;variable&nbsp;c&nbsp;of&nbsp;type&nbsp;Ulomek<br/>6&nbsp;errors<br/><br/>
                         </td>
                     </tr>
                 </tbody>
@@ -329,41 +262,22 @@
 <a href="#summary">Povzetek</a> | 
 <a href="#testcase1">Rezultati</a> ]</div><div style="height: 30px"></div>
         <a name="testcase6"></a>
-        <div style="border: 1px solid #63B563">
-            <table class="tableOK tableCommon" style="width: 100%; border: 3px solid #9F9;">
+        <div style="border: 1px solid #710B0B">
+            <table class="tableCompiler tableCommon" style="width: 100%; border: 3px solid #C00000;">
                 <tbody>
                     <tr>
-                        <td colspan="2" style="background-color: #9F9; color: black;">Testni primer 6</td>
+                        <td colspan="2" style="background-color: #C00000; color: white;">Testni primer 6</td>
                     </tr>
                     <tr>
                         <td style="width: 200px;">Vhod</td>
                         <td class="texttt">
-                            <br/>
-<span class="rwordv">public</span> class Test<span class="stevilo">06</span> {<br/>
-<br/>
-<tab><span class="rwordv">public</span> <span class="rwordv">static</span> <span class="rwordv">void</span> main(String[] args) {<br/>
-<tab><tab>Ulomek a = <span class="rwordb">new</span> Ulomek<span class="stevilo">(2</span>,<span class="stevilo"> 3</span>);<br/>
-<tab><tab>Ulomek b = <span class="rwordb">new</span> Ulomek<span class="stevilo">(288</span>,<span class="stevilo"> 216</span>);<br/>
-<tab><tab>Ulomek c = <span class="rwordb">new</span> Ulomek<span class="stevilo">(14</span>, -2);<br/>
-<tab><tab>Ulomek d = <span class="rwordb">new</span> Ulomek(-<span class="stevilo">12</span>, -<span class="stevilo">150</span>);<br/>
-<br/>
-<tab><tab>System.out.println(a.zmnozek(b).toString());<br/>
-<tab><tab>System.out.println(a.zmnozek(c).toString());<br/>
-<tab><tab>System.out.println(a.zmnozek(d).toString());<br/>
-<tab><tab>System.out.println(b.zmnozek(c).toString());<br/>
-<tab><tab>System.out.println(b.zmnozek(d).toString());<br/>
-<tab><tab>System.out.println(c.zmnozek(d).toString());<br/>
-<tab>}<br/>
-}<br/>
-
-
-<br/>
+                            <br/>
                         </td>
                     </tr>
                     <tr>
-                        <td>Izhod programa</td>
+                        <td>Izhod prevajalnika</td>
                         <td class="texttt">
-                            8/9<br/>-14/3<br/>4/75<br/>-28/3<br/>8/75<br/>-14/25<br/><br/>
+                            Test06.java:10:&nbsp;error:&nbsp;cannot&nbsp;find&nbsp;symbol<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(a.zmnozek(b).toString());<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br/>&nbsp;&nbsp;symbol:&nbsp;&nbsp;&nbsp;method&nbsp;zmnozek(Ulomek)<br/>&nbsp;&nbsp;location:&nbsp;variable&nbsp;a&nbsp;of&nbsp;type&nbsp;Ulomek<br/>Test06.java:11:&nbsp;error:&nbsp;cannot&nbsp;find&nbsp;symbol<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(a.zmnozek(c).toString());<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br/>&nbsp;&nbsp;symbol:&nbsp;&nbsp;&nbsp;method&nbsp;zmnozek(Ulomek)<br/>&nbsp;&nbsp;location:&nbsp;variable&nbsp;a&nbsp;of&nbsp;type&nbsp;Ulomek<br/>Test06.java:12:&nbsp;error:&nbsp;cannot&nbsp;find&nbsp;symbol<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(a.zmnozek(d).toString());<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br/>&nbsp;&nbsp;symbol:&nbsp;&nbsp;&nbsp;method&nbsp;zmnozek(Ulomek)<br/>&nbsp;&nbsp;location:&nbsp;variable&nbsp;a&nbsp;of&nbsp;type&nbsp;Ulomek<br/>Test06.java:13:&nbsp;error:&nbsp;cannot&nbsp;find&nbsp;symbol<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(b.zmnozek(c).toString());<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br/>&nbsp;&nbsp;symbol:&nbsp;&nbsp;&nbsp;method&nbsp;zmnozek(Ulomek)<br/>&nbsp;&nbsp;location:&nbsp;variable&nbsp;b&nbsp;of&nbsp;type&nbsp;Ulomek<br/>Test06.java:14:&nbsp;error:&nbsp;cannot&nbsp;find&nbsp;symbol<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(b.zmnozek(d).toString());<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br/>&nbsp;&nbsp;symbol:&nbsp;&nbsp;&nbsp;method&nbsp;zmnozek(Ulomek)<br/>&nbsp;&nbsp;location:&nbsp;variable&nbsp;b&nbsp;of&nbsp;type&nbsp;Ulomek<br/>Test06.java:15:&nbsp;error:&nbsp;cannot&nbsp;find&nbsp;symbol<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(c.zmnozek(d).toString());<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br/>&nbsp;&nbsp;symbol:&nbsp;&nbsp;&nbsp;method&nbsp;zmnozek(Ulomek)<br/>&nbsp;&nbsp;location:&nbsp;variable&nbsp;c&nbsp;of&nbsp;type&nbsp;Ulomek<br/>6&nbsp;errors<br/><br/>
                         </td>
                     </tr>
                 </tbody>
@@ -374,41 +288,22 @@
 <a href="#summary">Povzetek</a> | 
 <a href="#testcase1">Rezultati</a> ]</div><div style="height: 30px"></div>
         <a name="testcase7"></a>
-        <div style="border: 1px solid #63B563">
-            <table class="tableOK tableCommon" style="width: 100%; border: 3px solid #9F9;">
+        <div style="border: 1px solid #710B0B">
+            <table class="tableCompiler tableCommon" style="width: 100%; border: 3px solid #C00000;">
                 <tbody>
                     <tr>
-                        <td colspan="2" style="background-color: #9F9; color: black;">Testni primer 7</td>
+                        <td colspan="2" style="background-color: #C00000; color: white;">Testni primer 7</td>
                     </tr>
                     <tr>
                         <td style="width: 200px;">Vhod</td>
                         <td class="texttt">
-                            <br/>
-<span class="rwordv">public</span> class Test<span class="stevilo">07</span> {<br/>
-<br/>
-<tab><span class="rwordv">public</span> <span class="rwordv">static</span> <span class="rwordv">void</span> main(String[] args) {<br/>
-<tab><tab>Ulomek a = <span class="rwordb">new</span> Ulomek<span class="stevilo">(2</span>,<span class="stevilo"> 3</span>);<br/>
-<tab><tab>Ulomek b = <span class="rwordb">new</span> Ulomek<span class="stevilo">(288</span>,<span class="stevilo"> 216</span>);<br/>
-<tab><tab>Ulomek c = <span class="rwordb">new</span> Ulomek<span class="stevilo">(14</span>, -2);<br/>
-<tab><tab>Ulomek d = <span class="rwordb">new</span> Ulomek(-<span class="stevilo">12</span>, -<span class="stevilo">150</span>);<br/>
-<br/>
-<tab><tab>System.out.println(a.kolicnik(b).toString());<br/>
-<tab><tab>System.out.println(a.kolicnik(c).toString());<br/>
-<tab><tab>System.out.println(a.kolicnik(d).toString());<br/>
-<tab><tab>System.out.println(b.kolicnik(c).toString());<br/>
-<tab><tab>System.out.println(b.kolicnik(d).toString());<br/>
-<tab><tab>System.out.println(c.kolicnik(d).toString());<br/>
-<tab>}<br/>
-}<br/>
-
-
-<br/>
+                            <br/>
                         </td>
                     </tr>
                     <tr>
-                        <td>Izhod programa</td>
+                        <td>Izhod prevajalnika</td>
                         <td class="texttt">
-                            1/2<br/>-2/21<br/>25/3<br/>-4/21<br/>50/3<br/>-175/2<br/><br/>
+                            Test07.java:10:&nbsp;error:&nbsp;cannot&nbsp;find&nbsp;symbol<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(a.kolicnik(b).toString());<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br/>&nbsp;&nbsp;symbol:&nbsp;&nbsp;&nbsp;method&nbsp;kolicnik(Ulomek)<br/>&nbsp;&nbsp;location:&nbsp;variable&nbsp;a&nbsp;of&nbsp;type&nbsp;Ulomek<br/>Test07.java:11:&nbsp;error:&nbsp;cannot&nbsp;find&nbsp;symbol<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(a.kolicnik(c).toString());<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br/>&nbsp;&nbsp;symbol:&nbsp;&nbsp;&nbsp;method&nbsp;kolicnik(Ulomek)<br/>&nbsp;&nbsp;location:&nbsp;variable&nbsp;a&nbsp;of&nbsp;type&nbsp;Ulomek<br/>Test07.java:12:&nbsp;error:&nbsp;cannot&nbsp;find&nbsp;symbol<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(a.kolicnik(d).toString());<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br/>&nbsp;&nbsp;symbol:&nbsp;&nbsp;&nbsp;method&nbsp;kolicnik(Ulomek)<br/>&nbsp;&nbsp;location:&nbsp;variable&nbsp;a&nbsp;of&nbsp;type&nbsp;Ulomek<br/>Test07.java:13:&nbsp;error:&nbsp;cannot&nbsp;find&nbsp;symbol<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(b.kolicnik(c).toString());<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br/>&nbsp;&nbsp;symbol:&nbsp;&nbsp;&nbsp;method&nbsp;kolicnik(Ulomek)<br/>&nbsp;&nbsp;location:&nbsp;variable&nbsp;b&nbsp;of&nbsp;type&nbsp;Ulomek<br/>Test07.java:14:&nbsp;error:&nbsp;cannot&nbsp;find&nbsp;symbol<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(b.kolicnik(d).toString());<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br/>&nbsp;&nbsp;symbol:&nbsp;&nbsp;&nbsp;method&nbsp;kolicnik(Ulomek)<br/>&nbsp;&nbsp;location:&nbsp;variable&nbsp;b&nbsp;of&nbsp;type&nbsp;Ulomek<br/>Test07.java:15:&nbsp;error:&nbsp;cannot&nbsp;find&nbsp;symbol<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(c.kolicnik(d).toString());<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br/>&nbsp;&nbsp;symbol:&nbsp;&nbsp;&nbsp;method&nbsp;kolicnik(Ulomek)<br/>&nbsp;&nbsp;location:&nbsp;variable&nbsp;c&nbsp;of&nbsp;type&nbsp;Ulomek<br/>6&nbsp;errors<br/><br/>
                         </td>
                     </tr>
                 </tbody>
@@ -419,41 +314,22 @@
 <a href="#summary">Povzetek</a> | 
 <a href="#testcase1">Rezultati</a> ]</div><div style="height: 30px"></div>
         <a name="testcase8"></a>
-        <div style="border: 1px solid #63B563">
-            <table class="tableOK tableCommon" style="width: 100%; border: 3px solid #9F9;">
+        <div style="border: 1px solid #710B0B">
+            <table class="tableCompiler tableCommon" style="width: 100%; border: 3px solid #C00000;">
                 <tbody>
                     <tr>
-                        <td colspan="2" style="background-color: #9F9; color: black;">Testni primer 8</td>
+                        <td colspan="2" style="background-color: #C00000; color: white;">Testni primer 8</td>
                     </tr>
                     <tr>
                         <td style="width: 200px;">Vhod</td>
                         <td class="texttt">
-                            <br/>
-<span class="rwordv">public</span> class Test<span class="stevilo">08</span> {<br/>
-<br/>
-<tab><span class="rwordv">public</span> <span class="rwordv">static</span> <span class="rwordv">void</span> main(String[] args) {<br/>
-<tab><tab>Ulomek a = <span class="rwordb">new</span> Ulomek<span class="stevilo">(2</span>,<span class="stevilo"> 3</span>);<br/>
-<tab><tab>Ulomek b = <span class="rwordb">new</span> Ulomek<span class="stevilo">(288</span>,<span class="stevilo"> 216</span>);<br/>
-<tab><tab>Ulomek c = <span class="rwordb">new</span> Ulomek<span class="stevilo">(14</span>, -2);<br/>
-<tab><tab>Ulomek d = <span class="rwordb">new</span> Ulomek(-<span class="stevilo">12</span>, -<span class="stevilo">150</span>);<br/>
-<br/>
-<tab><tab><span class="rwordb">for</span> (<span class="rwordv">int</span> i = -3;  i <=<span class="stevilo"> 3</span>;  i++) {<br/>
-<tab><tab><tab>System.out.println(a.potenca(i).toString());<br/>
-<tab><tab><tab>System.out.println(b.potenca(i).toString());<br/>
-<tab><tab><tab>System.out.println(c.potenca(i).toString());<br/>
-<tab><tab><tab>System.out.println(d.potenca(i).toString());<br/>
-<tab><tab>}<br/>
-<tab>}<br/>
-}<br/>
-
-
-<br/>
+                            <br/>
                         </td>
                     </tr>
                     <tr>
-                        <td>Izhod programa</td>
+                        <td>Izhod prevajalnika</td>
                         <td class="texttt">
-                            27/8<br/>27/64<br/>-1/343<br/>15625/8<br/>9/4<br/>9/16<br/>1/49<br/>625/4<br/>3/2<br/>3/4<br/>-1/7<br/>25/2<br/>1/1<br/>1/1<br/>1/1<br/>1/1<br/>2/3<br/>4/3<br/>-7/1<br/>2/25<br/>4/9<br/>16/9<br/>49/1<br/>4/625<br/>8/27<br/>64/27<br/>-343/1<br/>8/15625<br/><br/>
+                            Test08.java:11:&nbsp;error:&nbsp;cannot&nbsp;find&nbsp;symbol<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(a.potenca(i).toString());<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br/>&nbsp;&nbsp;symbol:&nbsp;&nbsp;&nbsp;method&nbsp;potenca(int)<br/>&nbsp;&nbsp;location:&nbsp;variable&nbsp;a&nbsp;of&nbsp;type&nbsp;Ulomek<br/>Test08.java:12:&nbsp;error:&nbsp;cannot&nbsp;find&nbsp;symbol<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(b.potenca(i).toString());<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br/>&nbsp;&nbsp;symbol:&nbsp;&nbsp;&nbsp;method&nbsp;potenca(int)<br/>&nbsp;&nbsp;location:&nbsp;variable&nbsp;b&nbsp;of&nbsp;type&nbsp;Ulomek<br/>Test08.java:13:&nbsp;error:&nbsp;cannot&nbsp;find&nbsp;symbol<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(c.potenca(i).toString());<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br/>&nbsp;&nbsp;symbol:&nbsp;&nbsp;&nbsp;method&nbsp;potenca(int)<br/>&nbsp;&nbsp;location:&nbsp;variable&nbsp;c&nbsp;of&nbsp;type&nbsp;Ulomek<br/>Test08.java:14:&nbsp;error:&nbsp;cannot&nbsp;find&nbsp;symbol<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(d.potenca(i).toString());<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br/>&nbsp;&nbsp;symbol:&nbsp;&nbsp;&nbsp;method&nbsp;potenca(int)<br/>&nbsp;&nbsp;location:&nbsp;variable&nbsp;d&nbsp;of&nbsp;type&nbsp;Ulomek<br/>4&nbsp;errors<br/><br/>
                         </td>
                     </tr>
                 </tbody>
@@ -464,36 +340,22 @@
 <a href="#summary">Povzetek</a> | 
 <a href="#testcase1">Rezultati</a> ]</div><div style="height: 30px"></div>
         <a name="testcase9"></a>
-        <div style="border: 1px solid #63B563">
-            <table class="tableOK tableCommon" style="width: 100%; border: 3px solid #9F9;">
+        <div style="border: 1px solid #710B0B">
+            <table class="tableCompiler tableCommon" style="width: 100%; border: 3px solid #C00000;">
                 <tbody>
                     <tr>
-                        <td colspan="2" style="background-color: #9F9; color: black;">Testni primer 9</td>
+                        <td colspan="2" style="background-color: #C00000; color: white;">Testni primer 9</td>
                     </tr>
                     <tr>
                         <td style="width: 200px;">Vhod</td>
                         <td class="texttt">
-                            <br/>
-<span class="rwordv">public</span> class Test<span class="stevilo">09</span> {<br/>
-<br/>
-<tab><span class="rwordv">public</span> <span class="rwordv">static</span> <span class="rwordv">void</span> main(String[] args) {<br/>
-<tab><tab>Ulomek a = <span class="rwordb">new</span> Ulomek<span class="stevilo">(2</span>,<span class="stevilo"> 3</span>);<br/>
-<tab><tab>Ulomek b = <span class="rwordb">new</span> Ulomek<span class="stevilo">(288</span>,<span class="stevilo"> 216</span>);<br/>
-<tab><tab>Ulomek c = <span class="rwordb">new</span> Ulomek<span class="stevilo">(14</span>, -2);<br/>
-<tab><tab>Ulomek d = <span class="rwordb">new</span> Ulomek(-<span class="stevilo">12</span>, -<span class="stevilo">150</span>);<br/>
-<br/>
-<tab><tab>System.out.println(<span class="rwordb">new</span> Ulomek(-1,<span class="stevilo"> 1</span>).vsota(a).razlika(b).zmnozek(c).kolicnik(d).potenca(-2).toString());<br/>
-<tab>}<br/>
-}<br/>
-
-
-<br/>
+                            <br/>
                         </td>
                     </tr>
                     <tr>
-                        <td>Izhod programa</td>
+                        <td>Izhod prevajalnika</td>
                         <td class="texttt">
-                            36/765625<br/><br/>
+                            Test09.java:10:&nbsp;error:&nbsp;cannot&nbsp;find&nbsp;symbol<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(new&nbsp;Ulomek(-1,&nbsp;1).vsota(a).razlika(b).zmnozek(c).kolicnik(d).potenca(-2).toString());<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br/>&nbsp;&nbsp;symbol:&nbsp;&nbsp;&nbsp;method&nbsp;vsota(Ulomek)<br/>&nbsp;&nbsp;location:&nbsp;class&nbsp;Ulomek<br/>1&nbsp;error<br/><br/>
                         </td>
                     </tr>
                 </tbody>
@@ -504,49 +366,22 @@
 <a href="#summary">Povzetek</a> | 
 <a href="#testcase1">Rezultati</a> ]</div><div style="height: 30px"></div>
         <a name="testcase10"></a>
-        <div style="border: 1px solid #63B563">
-            <table class="tableOK tableCommon" style="width: 100%; border: 3px solid #9F9;">
+        <div style="border: 1px solid #710B0B">
+            <table class="tableCompiler tableCommon" style="width: 100%; border: 3px solid #C00000;">
                 <tbody>
                     <tr>
-                        <td colspan="2" style="background-color: #9F9; color: black;">Testni primer 10</td>
+                        <td colspan="2" style="background-color: #C00000; color: white;">Testni primer 10</td>
                     </tr>
                     <tr>
                         <td style="width: 200px;">Vhod</td>
                         <td class="texttt">
-                            <br/>
-<span class="rwordv">public</span> class Test<span class="stevilo">10</span> {<br/>
-<br/>
-<tab><span class="rwordv">public</span> <span class="rwordv">static</span> <span class="rwordv">void</span> main(String[] args) {<br/>
-<tab><tab>Ulomek a = <span class="rwordb">new</span> Ulomek<span class="stevilo">(2</span>,<span class="stevilo"> 3</span>);<br/>
-<tab><tab>Ulomek b = <span class="rwordb">new</span> Ulomek<span class="stevilo">(288</span>,<span class="stevilo"> 216</span>);<br/>
-<tab><tab>Ulomek c = <span class="rwordb">new</span> Ulomek<span class="stevilo">(14</span>, -2);<br/>
-<tab><tab>Ulomek d = <span class="rwordb">new</span> Ulomek(-<span class="stevilo">12</span>, -<span class="stevilo">150</span>);<br/>
-<br/>
-<tab><tab>System.out.println(a.jeManjsiOd(a));<br/>
-<tab><tab>System.out.println(a.jeManjsiOd(b));<br/>
-<tab><tab>System.out.println(a.jeManjsiOd(c));<br/>
-<tab><tab>System.out.println(a.jeManjsiOd(d));<br/>
-<br/>
-<tab><tab>System.out.println(b.jeManjsiOd(a));<br/>
-<tab><tab>System.out.println(b.jeManjsiOd(b));<br/>
-<tab><tab>System.out.println(b.jeManjsiOd(c));<br/>
-<tab><tab>System.out.println(b.jeManjsiOd(d));<br/>
-<br/>
-<tab><tab>System.out.println(c.jeManjsiOd(a));<br/>
-<tab><tab>System.out.println(c.jeManjsiOd(b));<br/>
-<tab><tab>System.out.println(c.jeManjsiOd(c));<br/>
-<tab><tab>System.out.println(c.jeManjsiOd(d));<br/>
-<tab>}<br/>
-}<br/>
-
-
-<br/>
+                            <br/>
                         </td>
                     </tr>
                     <tr>
-                        <td>Izhod programa</td>
+                        <td>Izhod prevajalnika</td>
                         <td class="texttt">
-                            false<br/>true<br/>false<br/>false<br/>false<br/>false<br/>false<br/>false<br/>true<br/>true<br/>false<br/>true<br/><br/>
+                            Test10.java:10:&nbsp;error:&nbsp;cannot&nbsp;find&nbsp;symbol<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(a.jeManjsiOd(a));<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br/>&nbsp;&nbsp;symbol:&nbsp;&nbsp;&nbsp;method&nbsp;jeManjsiOd(Ulomek)<br/>&nbsp;&nbsp;location:&nbsp;variable&nbsp;a&nbsp;of&nbsp;type&nbsp;Ulomek<br/>Test10.java:11:&nbsp;error:&nbsp;cannot&nbsp;find&nbsp;symbol<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(a.jeManjsiOd(b));<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br/>&nbsp;&nbsp;symbol:&nbsp;&nbsp;&nbsp;method&nbsp;jeManjsiOd(Ulomek)<br/>&nbsp;&nbsp;location:&nbsp;variable&nbsp;a&nbsp;of&nbsp;type&nbsp;Ulomek<br/>Test10.java:12:&nbsp;error:&nbsp;cannot&nbsp;find&nbsp;symbol<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(a.jeManjsiOd(c));<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br/>&nbsp;&nbsp;symbol:&nbsp;&nbsp;&nbsp;method&nbsp;jeManjsiOd(Ulomek)<br/>&nbsp;&nbsp;location:&nbsp;variable&nbsp;a&nbsp;of&nbsp;type&nbsp;Ulomek<br/>Test10.java:13:&nbsp;error:&nbsp;cannot&nbsp;find&nbsp;symbol<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(a.jeManjsiOd(d));<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br/>&nbsp;&nbsp;symbol:&nbsp;&nbsp;&nbsp;method&nbsp;jeManjsiOd(Ulomek)<br/>&nbsp;&nbsp;location:&nbsp;variable&nbsp;a&nbsp;of&nbsp;type&nbsp;Ulomek<br/>Test10.java:15:&nbsp;error:&nbsp;cannot&nbsp;find&nbsp;symbol<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(b.jeManjsiOd(a));<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br/>&nbsp;&nbsp;symbol:&nbsp;&nbsp;&nbsp;method&nbsp;jeManjsiOd(Ulomek)<br/>&nbsp;&nbsp;location:&nbsp;variable&nbsp;b&nbsp;of&nbsp;type&nbsp;Ulomek<br/>Test10.java:16:&nbsp;error:&nbsp;cannot&nbsp;find&nbsp;symbol<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(b.jeManjsiOd(b));<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br/>&nbsp;&nbsp;symbol:&nbsp;&nbsp;&nbsp;method&nbsp;jeManjsiOd(Ulomek)<br/>&nbsp;&nbsp;location:&nbsp;variable&nbsp;b&nbsp;of&nbsp;type&nbsp;Ulomek<br/>Test10.java:17:&nbsp;error:&nbsp;cannot&nbsp;find&nbsp;symbol<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(b.jeManjsiOd(c));<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br/>&nbsp;&nbsp;symbol:&nbsp;&nbsp;&nbsp;method&nbsp;jeManjsiOd(Ulomek)<br/>&nbsp;&nbsp;location:&nbsp;variable&nbsp;b&nbsp;of&nbsp;type&nbsp;Ulomek<br/>Test10.java:18:&nbsp;error:&nbsp;cannot&nbsp;find&nbsp;symbol<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(b.jeManjsiOd(d));<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br/>&nbsp;&nbsp;symbol:&nbsp;&nbsp;&nbsp;method&nbsp;jeManjsiOd(Ulomek)<br/>&nbsp;&nbsp;location:&nbsp;variable&nbsp;b&nbsp;of&nbsp;type&nbsp;Ulomek<br/>Test10.java:20:&nbsp;error:&nbsp;cannot&nbsp;find&nbsp;symbol<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(c.jeManjsiOd(a));<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br/>&nbsp;&nbsp;symbol:&nbsp;&nbsp;&nbsp;method&nbsp;jeManjsiOd(Ulomek)<br/>&nbsp;&nbsp;location:&nbsp;variable&nbsp;c&nbsp;of&nbsp;type&nbsp;Ulomek<br/>Test10.java:21:&nbsp;error:&nbsp;cannot&nbsp;find&nbsp;symbol<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(c.jeManjsiOd(b));<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br/>&nbsp;&nbsp;symbol:&nbsp;&nbsp;&nbsp;method&nbsp;jeManjsiOd(Ulomek)<br/>&nbsp;&nbsp;location:&nbsp;variable&nbsp;c&nbsp;of&nbsp;type&nbsp;Ulomek<br/>Test10.java:22:&nbsp;error:&nbsp;cannot&nbsp;find&nbsp;symbol<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(c.jeManjsiOd(c));<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br/>&nbsp;&nbsp;symbol:&nbsp;&nbsp;&nbsp;method&nbsp;jeManjsiOd(Ulomek)<br/>&nbsp;&nbsp;location:&nbsp;variable&nbsp;c&nbsp;of&nbsp;type&nbsp;Ulomek<br/>Test10.java:23:&nbsp;error:&nbsp;cannot&nbsp;find&nbsp;symbol<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(c.jeManjsiOd(d));<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br/>&nbsp;&nbsp;symbol:&nbsp;&nbsp;&nbsp;method&nbsp;jeManjsiOd(Ulomek)<br/>&nbsp;&nbsp;location:&nbsp;variable&nbsp;c&nbsp;of&nbsp;type&nbsp;Ulomek<br/>12&nbsp;errors<br/><br/>
                         </td>
                     </tr>
                 </tbody>
@@ -617,6 +452,6 @@
         </div>
     </body>
     <!-- java class tester version "1.40.2" -->
-    <!-- 31.1.2020 9:13.54 -->
-    <!-- DESKTOP-624KS5K, fe80::b0c2:fb87:e553:55e5%21 -->
+    <!-- 31.1.2020 13:17.36 -->
+    <!-- DESKTOP-624KS5K, fe80::a494:94c5:c739:2bc6%18 -->
 </html>
