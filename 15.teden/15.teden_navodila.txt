@@ -19,8 +19,8 @@ dopolnite s sledečimi metodami:
 	krožkov, ki jih učenec this že obiskuje. Ne pozabite, da vsak krožek traja dve uri!
 	
 • public int steviloSosolcevVKrozku(Krozek k) v razredu Ucenec:
-	Vrne število članov krožka k, ki hodijo v isti razred kot učenec this. Če je učenec
-	this tudi član krožka k, ga seveda ne smete šteti poleg.
+	Vrne število članov krožka k, ki hodijo v isti razred kot učenec this. 
+	Če je učenec this tudi član krožka k, ga seveda ne smete šteti poleg.
 	
 • public int steviloRazlicnihDejavnosti() v razredu Krozek:
 	Vrne skupno število različnih dejavnosti, ki jih obiskujejo člani krožka this. Upoštevajte

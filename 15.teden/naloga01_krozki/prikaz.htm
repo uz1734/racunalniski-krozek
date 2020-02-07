@@ -73,10 +73,10 @@
                 background: linear-gradient(to right, #E0E0E0 , white);
             }
             #grad2 {
-                background: -webkit-linear-gradient(left, #FFBF00 , white);
-                background: -o-linear-gradient(right, #FFBF00, white);
-                background: -moz-linear-gradient(right, #FFBF00, white);
-                background: linear-gradient(to right, #FFBF00 , white);
+                background: -webkit-linear-gradient(left, #9F9 , white);
+                background: -o-linear-gradient(right, #9F9, white);
+                background: -moz-linear-gradient(right, #9F9, white);
+                background: linear-gradient(to right, #9F9 , white);
             }
             .capSlika { display:block; height: 25px; margin:0 auto; font-size: 1.0em; text-align: left; }
             .dborder { padding: 0px; border: 1px solid #CACACA; }
@@ -86,23 +86,23 @@
     <body>
         <div class="container">
         <a name="top"></a>
-        <h1 id="grad2" style="padding: 10px; border: 0px solid black; color: #000000;">Rezultati preverjanja metod programa (0/10)</h1>
+        <h1 id="grad2" style="padding: 10px; border: 0px solid black; color: #000000;">Rezultati preverjanja metod programa (10/10)</h1>
         <div style="height: 20px"></div>
         <a name="summary"></a>
         <h2>Povzetek rezultatov</h2>
         <table id="nasredini" class="tableBase tableResults">
             <tbody>
                 <tr>
-                <td class="hoverErr"><a href="#testcase1">1</a></td>
-                <td class="hoverCompile"><a href="#testcase2">2</a></td>
-                <td class="hoverCompile"><a href="#testcase3">3</a></td>
-                <td class="hoverCompile"><a href="#testcase4">4</a></td>
-                <td class="hoverCompile"><a href="#testcase5">5</a></td>
-                <td class="hoverCompile"><a href="#testcase6">6</a></td>
-                <td class="hoverCompile"><a href="#testcase7">7</a></td>
-                <td class="hoverCompile"><a href="#testcase8">8</a></td>
-                <td class="hoverCompile"><a href="#testcase9">9</a></td>
-                <td class="hoverCompile"><a href="#testcase10">10</a></td>
+                <td class="hoverOk"><a href="#testcase1">1</a></td>
+                <td class="hoverOk"><a href="#testcase2">2</a></td>
+                <td class="hoverOk"><a href="#testcase3">3</a></td>
+                <td class="hoverOk"><a href="#testcase4">4</a></td>
+                <td class="hoverOk"><a href="#testcase5">5</a></td>
+                <td class="hoverOk"><a href="#testcase6">6</a></td>
+                <td class="hoverOk"><a href="#testcase7">7</a></td>
+                <td class="hoverOk"><a href="#testcase8">8</a></td>
+                <td class="hoverOk"><a href="#testcase9">9</a></td>
+                <td class="hoverOk"><a href="#testcase10">10</a></td>
                 </tr>
                 <tr></tr>
             </tbody>
@@ -110,11 +110,11 @@
         <div style="height: 20px"></div>
         <h2>Rezultati</h2>
         <a name="testcase1"></a>
-        <div style="border: 1px solid #CB9800">
-            <table class="tableError tableCommon" style="width: 100%; border: 3px solid #FFBF00;">
+        <div style="border: 1px solid #63B563">
+            <table class="tableOK tableCommon" style="width: 100%; border: 3px solid #9F9;">
                 <tbody>
                     <tr>
-                        <td colspan="2" style="background-color: #FFBF00; color: black;">Testni primer 1</td>
+                        <td colspan="2" style="background-color: #9F9; color: black;">Testni primer 1</td>
                     </tr>
                     <tr>
                         <td style="width: 200px;">Vhod</td>
@@ -147,11 +147,6 @@
                     <tr>
                         <td>Izhod programa</td>
                         <td class="texttt">
-                            Ucenec@279f2327<br/>Ucenec@2ff4acd0<br/>Ucenec@54bedef2<br/>Ucenec@5caf905d<br/>Ucenec@27716f4<br/>Ucenec@8efb846<br/>Ucenec@2a84aee7<br/><br/>
-                        </td>
-                    </tr>
-                    <td>Referenčni izhod</td>
-                        <td class="texttt">
                             Ana&nbsp;Anclin,&nbsp;7.&nbsp;razred<br/>Bojan&nbsp;Bizjak,&nbsp;5.&nbsp;razred<br/>Cene&nbsp;Cajzek,&nbsp;6.&nbsp;razred<br/>Dejan&nbsp;Dolenc,&nbsp;6.&nbsp;razred<br/>Eva&nbsp;Ertl,&nbsp;5.&nbsp;razred<br/>Franci&nbsp;Finzgar,&nbsp;6.&nbsp;razred<br/>Gorazd&nbsp;Gornik,&nbsp;6.&nbsp;razred<br/><br/>
                         </td>
                     </tr>
@@ -163,22 +158,80 @@
 <a href="#summary">Povzetek</a> | 
 <a href="#testcase1">Rezultati</a> ]</div><div style="height: 30px"></div>
         <a name="testcase2"></a>
-        <div style="border: 1px solid #710B0B">
-            <table class="tableCompiler tableCommon" style="width: 100%; border: 3px solid #C00000;">
+        <div style="border: 1px solid #63B563">
+            <table class="tableOK tableCommon" style="width: 100%; border: 3px solid #9F9;">
                 <tbody>
                     <tr>
-                        <td colspan="2" style="background-color: #C00000; color: white;">Testni primer 2</td>
+                        <td colspan="2" style="background-color: #9F9; color: black;">Testni primer 2</td>
                     </tr>
                     <tr>
                         <td style="width: 200px;">Vhod</td>
                         <td class="texttt">
-                            <br/>
+                            <br/>
+<span class="rwordv">public</span> class Test<span class="stevilo">02</span> {<br/>
+<br/>
+<tab><span class="rwordv">public</span> <span class="rwordv">static</span> <span class="rwordv">void</span> main(String[] args) {<br/>
+<br/>
+<tab><tab>Ucenec[] ucenci = {<br/>
+<tab><tab><tab><span class="rwordb">new</span> Ucenec(<span class="niz">"Ana Anclin"</span>,    <span class="stevilo"> 7</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Ucenec(<span class="niz">"Bojan Bizjak"</span>,  <span class="stevilo"> 5</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Ucenec(<span class="niz">"Cene Cajzek"</span>,   <span class="stevilo"> 6</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Ucenec(<span class="niz">"Dejan Dolenc"</span>,  <span class="stevilo"> 6</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Ucenec(<span class="niz">"Eva Ertl"</span>,      <span class="stevilo"> 5</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Ucenec(<span class="niz">"Franci Finžgar"</span>,<span class="stevilo"> 6</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Ucenec(<span class="niz">"Gorazd Gornik"</span>, <span class="stevilo"> 6</span>),<br/>
+<tab><tab>};<br/>
+<br/>
+<tab><tab>Krozek[] krozki = {<br/>
+<tab><tab><tab><span class="rwordb">new</span> Krozek(<span class="niz">"šah"</span>,        <span class="stevilo"> 2</span>,<span class="stevilo"> 15</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Krozek(<span class="niz">"planinstvo"</span>, <span class="stevilo"> 3</span>,<span class="stevilo"> 14</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Krozek(<span class="niz">"rokodelstvo"</span>,<span class="stevilo"> 4</span>,<span class="stevilo"> 12</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Krozek(<span class="niz">"fizika"</span>,     <span class="stevilo"> 2</span>,<span class="stevilo"> 12</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Krozek(<span class="niz">"matematika"</span>, <span class="stevilo"> 2</span>,<span class="stevilo"> 14</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Krozek(<span class="niz">"fizika"</span>,     <span class="stevilo"> 3</span>,<span class="stevilo"> 15</span>),<br/>
+<tab><tab>};<br/>
+<br/>
+<tab><tab>ucenci<span class="stevilo">[0</span>].nastaviKrozke(<span class="rwordb">new</span> Krozek[]{krozki<span class="stevilo">[0</span>], krozki<span class="stevilo">[1</span>]});<br/>
+<tab><tab>ucenci<span class="stevilo">[1</span>].nastaviKrozke(<span class="rwordb">new</span> Krozek[]{krozki<span class="stevilo">[0</span>], krozki<span class="stevilo">[5</span>]});<br/>
+<tab><tab>ucenci<span class="stevilo">[2</span>].nastaviKrozke(<span class="rwordb">new</span> Krozek[]{krozki<span class="stevilo">[0</span>], krozki<span class="stevilo">[1</span>], krozki<span class="stevilo">[2</span>]});<br/>
+<tab><tab>ucenci<span class="stevilo">[3</span>].nastaviKrozke(<span class="rwordb">new</span> Krozek[]{krozki<span class="stevilo">[0</span>], krozki<span class="stevilo">[2</span>], krozki<span class="stevilo">[3</span>]});<br/>
+<tab><tab>ucenci<span class="stevilo">[4</span>].nastaviKrozke(<span class="rwordb">new</span> Krozek[]{krozki<span class="stevilo">[3</span>], krozki<span class="stevilo">[5</span>]});<br/>
+<tab><tab>ucenci<span class="stevilo">[5</span>].nastaviKrozke(<span class="rwordb">new</span> Krozek[]{krozki<span class="stevilo">[4</span>], krozki<span class="stevilo">[5</span>]});<br/>
+<tab><tab>ucenci<span class="stevilo">[6</span>].nastaviKrozke(<span class="rwordb">new</span> Krozek[]{krozki<span class="stevilo">[0</span>], krozki<span class="stevilo">[5</span>]});<br/>
+<br/>
+<tab><tab>krozki<span class="stevilo">[0</span>].nastaviClane(<span class="rwordb">new</span> Ucenec[]{ucenci<span class="stevilo">[0</span>], ucenci<span class="stevilo">[2</span>], ucenci<span class="stevilo">[3</span>], ucenci<span class="stevilo">[1</span>], ucenci<span class="stevilo">[6</span>]});<br/>
+<tab><tab>krozki<span class="stevilo">[1</span>].nastaviClane(<span class="rwordb">new</span> Ucenec[]{ucenci<span class="stevilo">[0</span>], ucenci<span class="stevilo">[2</span>]});<br/>
+<tab><tab>krozki<span class="stevilo">[2</span>].nastaviClane(<span class="rwordb">new</span> Ucenec[]{ucenci<span class="stevilo">[2</span>], ucenci<span class="stevilo">[3</span>]});<br/>
+<tab><tab>krozki<span class="stevilo">[3</span>].nastaviClane(<span class="rwordb">new</span> Ucenec[]{ucenci<span class="stevilo">[3</span>], ucenci<span class="stevilo">[4</span>]});<br/>
+<tab><tab>krozki<span class="stevilo">[4</span>].nastaviClane(<span class="rwordb">new</span> Ucenec[]{ucenci<span class="stevilo">[5</span>]});<br/>
+<tab><tab>krozki<span class="stevilo">[5</span>].nastaviClane(<span class="rwordb">new</span> Ucenec[]{ucenci<span class="stevilo">[1</span>], ucenci<span class="stevilo">[4</span>], ucenci<span class="stevilo">[5</span>], ucenci<span class="stevilo">[6</span>]});<br/>
+<br/>
+<tab><tab>System.out.println(ucenci<span class="stevilo">[0</span>].imaCasZa(krozki<span class="stevilo">[2</span>]));<br/>
+<tab><tab>System.out.println(ucenci<span class="stevilo">[0</span>].imaCasZa(krozki<span class="stevilo">[3</span>]));<br/>
+<tab><tab>System.out.println(ucenci<span class="stevilo">[0</span>].imaCasZa(krozki<span class="stevilo">[4</span>]));<br/>
+<tab><tab>System.out.println(ucenci<span class="stevilo">[0</span>].imaCasZa(krozki<span class="stevilo">[5</span>]));<br/>
+<tab><tab>System.out.println(<span class="niz">"----------"</span>);<br/>
+<br/>
+<tab><tab>System.out.println(ucenci<span class="stevilo">[1</span>].imaCasZa(krozki<span class="stevilo">[1</span>]));<br/>
+<tab><tab>System.out.println(ucenci<span class="stevilo">[1</span>].imaCasZa(krozki<span class="stevilo">[2</span>]));<br/>
+<tab><tab>System.out.println(ucenci<span class="stevilo">[1</span>].imaCasZa(krozki<span class="stevilo">[3</span>]));<br/>
+<tab><tab>System.out.println(ucenci<span class="stevilo">[1</span>].imaCasZa(krozki<span class="stevilo">[4</span>]));<br/>
+<tab><tab>System.out.println(<span class="niz">"----------"</span>);<br/>
+<br/>
+<tab><tab>System.out.println(ucenci<span class="stevilo">[2</span>].imaCasZa(krozki<span class="stevilo">[3</span>]));<br/>
+<tab><tab>System.out.println(ucenci<span class="stevilo">[2</span>].imaCasZa(krozki<span class="stevilo">[4</span>]));<br/>
+<tab><tab>System.out.println(ucenci<span class="stevilo">[2</span>].imaCasZa(krozki<span class="stevilo">[5</span>]));<br/>
+<tab>}<br/>
+}<br/>
+
+
+<br/>
                         </td>
                     </tr>
                     <tr>
-                        <td>Izhod prevajalnika</td>
+                        <td>Izhod programa</td>
                         <td class="texttt">
-                            Test02.java:40:&nbsp;error:&nbsp;cannot&nbsp;find&nbsp;symbol<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(ucenci[0].imaCasZa(krozki[2]));<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br/>&nbsp;&nbsp;symbol:&nbsp;&nbsp;&nbsp;method&nbsp;imaCasZa(Krozek)<br/>&nbsp;&nbsp;location:&nbsp;class&nbsp;Ucenec<br/>Test02.java:41:&nbsp;error:&nbsp;cannot&nbsp;find&nbsp;symbol<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(ucenci[0].imaCasZa(krozki[3]));<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br/>&nbsp;&nbsp;symbol:&nbsp;&nbsp;&nbsp;method&nbsp;imaCasZa(Krozek)<br/>&nbsp;&nbsp;location:&nbsp;class&nbsp;Ucenec<br/>Test02.java:42:&nbsp;error:&nbsp;cannot&nbsp;find&nbsp;symbol<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(ucenci[0].imaCasZa(krozki[4]));<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br/>&nbsp;&nbsp;symbol:&nbsp;&nbsp;&nbsp;method&nbsp;imaCasZa(Krozek)<br/>&nbsp;&nbsp;location:&nbsp;class&nbsp;Ucenec<br/>Test02.java:43:&nbsp;error:&nbsp;cannot&nbsp;find&nbsp;symbol<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(ucenci[0].imaCasZa(krozki[5]));<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br/>&nbsp;&nbsp;symbol:&nbsp;&nbsp;&nbsp;method&nbsp;imaCasZa(Krozek)<br/>&nbsp;&nbsp;location:&nbsp;class&nbsp;Ucenec<br/>Test02.java:46:&nbsp;error:&nbsp;cannot&nbsp;find&nbsp;symbol<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(ucenci[1].imaCasZa(krozki[1]));<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br/>&nbsp;&nbsp;symbol:&nbsp;&nbsp;&nbsp;method&nbsp;imaCasZa(Krozek)<br/>&nbsp;&nbsp;location:&nbsp;class&nbsp;Ucenec<br/>Test02.java:47:&nbsp;error:&nbsp;cannot&nbsp;find&nbsp;symbol<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(ucenci[1].imaCasZa(krozki[2]));<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br/>&nbsp;&nbsp;symbol:&nbsp;&nbsp;&nbsp;method&nbsp;imaCasZa(Krozek)<br/>&nbsp;&nbsp;location:&nbsp;class&nbsp;Ucenec<br/>Test02.java:48:&nbsp;error:&nbsp;cannot&nbsp;find&nbsp;symbol<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(ucenci[1].imaCasZa(krozki[3]));<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br/>&nbsp;&nbsp;symbol:&nbsp;&nbsp;&nbsp;method&nbsp;imaCasZa(Krozek)<br/>&nbsp;&nbsp;location:&nbsp;class&nbsp;Ucenec<br/>Test02.java:49:&nbsp;error:&nbsp;cannot&nbsp;find&nbsp;symbol<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(ucenci[1].imaCasZa(krozki[4]));<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br/>&nbsp;&nbsp;symbol:&nbsp;&nbsp;&nbsp;method&nbsp;imaCasZa(Krozek)<br/>&nbsp;&nbsp;location:&nbsp;class&nbsp;Ucenec<br/>Test02.java:52:&nbsp;error:&nbsp;cannot&nbsp;find&nbsp;symbol<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(ucenci[2].imaCasZa(krozki[3]));<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br/>&nbsp;&nbsp;symbol:&nbsp;&nbsp;&nbsp;method&nbsp;imaCasZa(Krozek)<br/>&nbsp;&nbsp;location:&nbsp;class&nbsp;Ucenec<br/>Test02.java:53:&nbsp;error:&nbsp;cannot&nbsp;find&nbsp;symbol<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(ucenci[2].imaCasZa(krozki[4]));<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br/>&nbsp;&nbsp;symbol:&nbsp;&nbsp;&nbsp;method&nbsp;imaCasZa(Krozek)<br/>&nbsp;&nbsp;location:&nbsp;class&nbsp;Ucenec<br/>Test02.java:54:&nbsp;error:&nbsp;cannot&nbsp;find&nbsp;symbol<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(ucenci[2].imaCasZa(krozki[5]));<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br/>&nbsp;&nbsp;symbol:&nbsp;&nbsp;&nbsp;method&nbsp;imaCasZa(Krozek)<br/>&nbsp;&nbsp;location:&nbsp;class&nbsp;Ucenec<br/>11&nbsp;errors<br/><br/>
+                            true<br/>true<br/>false<br/>false<br/>----------<br/>false<br/>true<br/>true<br/>false<br/>----------<br/>true<br/>false<br/>false<br/><br/>
                         </td>
                     </tr>
                 </tbody>
@@ -189,22 +242,74 @@
 <a href="#summary">Povzetek</a> | 
 <a href="#testcase1">Rezultati</a> ]</div><div style="height: 30px"></div>
         <a name="testcase3"></a>
-        <div style="border: 1px solid #710B0B">
-            <table class="tableCompiler tableCommon" style="width: 100%; border: 3px solid #C00000;">
+        <div style="border: 1px solid #63B563">
+            <table class="tableOK tableCommon" style="width: 100%; border: 3px solid #9F9;">
                 <tbody>
                     <tr>
-                        <td colspan="2" style="background-color: #C00000; color: white;">Testni primer 3</td>
+                        <td colspan="2" style="background-color: #9F9; color: black;">Testni primer 3</td>
                     </tr>
                     <tr>
                         <td style="width: 200px;">Vhod</td>
                         <td class="texttt">
-                            <br/>
+                            <br/>
+<span class="rwordv">public</span> class Test<span class="stevilo">03</span> {<br/>
+<br/>
+<tab><span class="rwordv">public</span> <span class="rwordv">static</span> <span class="rwordv">void</span> main(String[] args) {<br/>
+<br/>
+<tab><tab>Ucenec[] ucenci = {<br/>
+<tab><tab><tab><span class="rwordb">new</span> Ucenec(<span class="niz">"Ana Anclin"</span>,    <span class="stevilo"> 7</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Ucenec(<span class="niz">"Bojan Bizjak"</span>,  <span class="stevilo"> 5</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Ucenec(<span class="niz">"Cene Cajzek"</span>,   <span class="stevilo"> 6</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Ucenec(<span class="niz">"Dejan Dolenc"</span>,  <span class="stevilo"> 6</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Ucenec(<span class="niz">"Eva Ertl"</span>,      <span class="stevilo"> 5</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Ucenec(<span class="niz">"Franci Finžgar"</span>,<span class="stevilo"> 6</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Ucenec(<span class="niz">"Gorazd Gornik"</span>, <span class="stevilo"> 6</span>),<br/>
+<tab><tab>};<br/>
+<br/>
+<tab><tab>Krozek[] krozki = {<br/>
+<tab><tab><tab><span class="rwordb">new</span> Krozek(<span class="niz">"šah"</span>,        <span class="stevilo"> 2</span>,<span class="stevilo"> 15</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Krozek(<span class="niz">"planinstvo"</span>, <span class="stevilo"> 3</span>,<span class="stevilo"> 14</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Krozek(<span class="niz">"rokodelstvo"</span>,<span class="stevilo"> 4</span>,<span class="stevilo"> 12</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Krozek(<span class="niz">"fizika"</span>,     <span class="stevilo"> 2</span>,<span class="stevilo"> 12</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Krozek(<span class="niz">"matematika"</span>, <span class="stevilo"> 2</span>,<span class="stevilo"> 14</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Krozek(<span class="niz">"fizika"</span>,     <span class="stevilo"> 3</span>,<span class="stevilo"> 15</span>),<br/>
+<tab><tab>};<br/>
+<br/>
+<tab><tab>ucenci<span class="stevilo">[0</span>].nastaviKrozke(<span class="rwordb">new</span> Krozek[]{krozki<span class="stevilo">[0</span>], krozki<span class="stevilo">[1</span>]});<br/>
+<tab><tab>ucenci<span class="stevilo">[1</span>].nastaviKrozke(<span class="rwordb">new</span> Krozek[]{krozki<span class="stevilo">[0</span>], krozki<span class="stevilo">[5</span>]});<br/>
+<tab><tab>ucenci<span class="stevilo">[2</span>].nastaviKrozke(<span class="rwordb">new</span> Krozek[]{krozki<span class="stevilo">[0</span>], krozki<span class="stevilo">[1</span>], krozki<span class="stevilo">[2</span>]});<br/>
+<tab><tab>ucenci<span class="stevilo">[3</span>].nastaviKrozke(<span class="rwordb">new</span> Krozek[]{krozki<span class="stevilo">[0</span>], krozki<span class="stevilo">[2</span>], krozki<span class="stevilo">[3</span>]});<br/>
+<tab><tab>ucenci<span class="stevilo">[4</span>].nastaviKrozke(<span class="rwordb">new</span> Krozek[]{krozki<span class="stevilo">[3</span>], krozki<span class="stevilo">[5</span>]});<br/>
+<tab><tab>ucenci<span class="stevilo">[5</span>].nastaviKrozke(<span class="rwordb">new</span> Krozek[]{krozki<span class="stevilo">[4</span>], krozki<span class="stevilo">[5</span>]});<br/>
+<tab><tab>ucenci<span class="stevilo">[6</span>].nastaviKrozke(<span class="rwordb">new</span> Krozek[]{krozki<span class="stevilo">[0</span>], krozki<span class="stevilo">[5</span>]});<br/>
+<br/>
+<tab><tab>krozki<span class="stevilo">[0</span>].nastaviClane(<span class="rwordb">new</span> Ucenec[]{ucenci<span class="stevilo">[0</span>], ucenci<span class="stevilo">[2</span>], ucenci<span class="stevilo">[3</span>], ucenci<span class="stevilo">[1</span>], ucenci<span class="stevilo">[6</span>]});<br/>
+<tab><tab>krozki<span class="stevilo">[1</span>].nastaviClane(<span class="rwordb">new</span> Ucenec[]{ucenci<span class="stevilo">[0</span>], ucenci<span class="stevilo">[2</span>]});<br/>
+<tab><tab>krozki<span class="stevilo">[2</span>].nastaviClane(<span class="rwordb">new</span> Ucenec[]{ucenci<span class="stevilo">[2</span>], ucenci<span class="stevilo">[3</span>]});<br/>
+<tab><tab>krozki<span class="stevilo">[3</span>].nastaviClane(<span class="rwordb">new</span> Ucenec[]{ucenci<span class="stevilo">[3</span>], ucenci<span class="stevilo">[4</span>]});<br/>
+<tab><tab>krozki<span class="stevilo">[4</span>].nastaviClane(<span class="rwordb">new</span> Ucenec[]{ucenci<span class="stevilo">[5</span>]});<br/>
+<tab><tab>krozki<span class="stevilo">[5</span>].nastaviClane(<span class="rwordb">new</span> Ucenec[]{ucenci<span class="stevilo">[1</span>], ucenci<span class="stevilo">[4</span>], ucenci<span class="stevilo">[5</span>], ucenci<span class="stevilo">[6</span>]});<br/>
+<br/>
+<tab><tab>System.out.println(ucenci<span class="stevilo">[3</span>].imaCasZa(krozki<span class="stevilo">[1</span>]));<br/>
+<tab><tab>System.out.println(ucenci<span class="stevilo">[3</span>].imaCasZa(krozki<span class="stevilo">[4</span>]));<br/>
+<tab><tab>System.out.println(ucenci<span class="stevilo">[3</span>].imaCasZa(krozki<span class="stevilo">[5</span>]));<br/>
+<tab><tab>System.out.println(<span class="niz">"----------"</span>);<br/>
+<br/>
+<tab><tab>System.out.println(ucenci<span class="stevilo">[4</span>].imaCasZa(krozki<span class="stevilo">[0</span>]));<br/>
+<tab><tab>System.out.println(ucenci<span class="stevilo">[4</span>].imaCasZa(krozki<span class="stevilo">[1</span>]));<br/>
+<tab><tab>System.out.println(ucenci<span class="stevilo">[4</span>].imaCasZa(krozki<span class="stevilo">[2</span>]));<br/>
+<tab><tab>System.out.println(ucenci<span class="stevilo">[4</span>].imaCasZa(krozki<span class="stevilo">[4</span>]));<br/>
+<tab>}<br/>
+}<br/>
+
+
+<br/>
                         </td>
                     </tr>
                     <tr>
-                        <td>Izhod prevajalnika</td>
+                        <td>Izhod programa</td>
                         <td class="texttt">
-                            Test03.java:40:&nbsp;error:&nbsp;cannot&nbsp;find&nbsp;symbol<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(ucenci[3].imaCasZa(krozki[1]));<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br/>&nbsp;&nbsp;symbol:&nbsp;&nbsp;&nbsp;method&nbsp;imaCasZa(Krozek)<br/>&nbsp;&nbsp;location:&nbsp;class&nbsp;Ucenec<br/>Test03.java:41:&nbsp;error:&nbsp;cannot&nbsp;find&nbsp;symbol<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(ucenci[3].imaCasZa(krozki[4]));<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br/>&nbsp;&nbsp;symbol:&nbsp;&nbsp;&nbsp;method&nbsp;imaCasZa(Krozek)<br/>&nbsp;&nbsp;location:&nbsp;class&nbsp;Ucenec<br/>Test03.java:42:&nbsp;error:&nbsp;cannot&nbsp;find&nbsp;symbol<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(ucenci[3].imaCasZa(krozki[5]));<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br/>&nbsp;&nbsp;symbol:&nbsp;&nbsp;&nbsp;method&nbsp;imaCasZa(Krozek)<br/>&nbsp;&nbsp;location:&nbsp;class&nbsp;Ucenec<br/>Test03.java:45:&nbsp;error:&nbsp;cannot&nbsp;find&nbsp;symbol<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(ucenci[4].imaCasZa(krozki[0]));<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br/>&nbsp;&nbsp;symbol:&nbsp;&nbsp;&nbsp;method&nbsp;imaCasZa(Krozek)<br/>&nbsp;&nbsp;location:&nbsp;class&nbsp;Ucenec<br/>Test03.java:46:&nbsp;error:&nbsp;cannot&nbsp;find&nbsp;symbol<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(ucenci[4].imaCasZa(krozki[1]));<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br/>&nbsp;&nbsp;symbol:&nbsp;&nbsp;&nbsp;method&nbsp;imaCasZa(Krozek)<br/>&nbsp;&nbsp;location:&nbsp;class&nbsp;Ucenec<br/>Test03.java:47:&nbsp;error:&nbsp;cannot&nbsp;find&nbsp;symbol<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(ucenci[4].imaCasZa(krozki[2]));<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br/>&nbsp;&nbsp;symbol:&nbsp;&nbsp;&nbsp;method&nbsp;imaCasZa(Krozek)<br/>&nbsp;&nbsp;location:&nbsp;class&nbsp;Ucenec<br/>Test03.java:48:&nbsp;error:&nbsp;cannot&nbsp;find&nbsp;symbol<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(ucenci[4].imaCasZa(krozki[4]));<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br/>&nbsp;&nbsp;symbol:&nbsp;&nbsp;&nbsp;method&nbsp;imaCasZa(Krozek)<br/>&nbsp;&nbsp;location:&nbsp;class&nbsp;Ucenec<br/>7&nbsp;errors<br/><br/>
+                            true<br/>false<br/>true<br/>----------<br/>true<br/>false<br/>true<br/>true<br/><br/>
                         </td>
                     </tr>
                 </tbody>
@@ -215,22 +320,75 @@
 <a href="#summary">Povzetek</a> | 
 <a href="#testcase1">Rezultati</a> ]</div><div style="height: 30px"></div>
         <a name="testcase4"></a>
-        <div style="border: 1px solid #710B0B">
-            <table class="tableCompiler tableCommon" style="width: 100%; border: 3px solid #C00000;">
+        <div style="border: 1px solid #63B563">
+            <table class="tableOK tableCommon" style="width: 100%; border: 3px solid #9F9;">
                 <tbody>
                     <tr>
-                        <td colspan="2" style="background-color: #C00000; color: white;">Testni primer 4</td>
+                        <td colspan="2" style="background-color: #9F9; color: black;">Testni primer 4</td>
                     </tr>
                     <tr>
                         <td style="width: 200px;">Vhod</td>
                         <td class="texttt">
-                            <br/>
+                            <br/>
+<span class="rwordv">public</span> class Test<span class="stevilo">04</span> {<br/>
+<br/>
+<tab><span class="rwordv">public</span> <span class="rwordv">static</span> <span class="rwordv">void</span> main(String[] args) {<br/>
+<br/>
+<tab><tab>Ucenec[] ucenci = {<br/>
+<tab><tab><tab><span class="rwordb">new</span> Ucenec(<span class="niz">"Ana Anclin"</span>,    <span class="stevilo"> 7</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Ucenec(<span class="niz">"Bojan Bizjak"</span>,  <span class="stevilo"> 5</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Ucenec(<span class="niz">"Cene Cajzek"</span>,   <span class="stevilo"> 6</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Ucenec(<span class="niz">"Dejan Dolenc"</span>,  <span class="stevilo"> 6</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Ucenec(<span class="niz">"Eva Ertl"</span>,      <span class="stevilo"> 5</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Ucenec(<span class="niz">"Franci Finžgar"</span>,<span class="stevilo"> 6</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Ucenec(<span class="niz">"Gorazd Gornik"</span>, <span class="stevilo"> 6</span>),<br/>
+<tab><tab>};<br/>
+<br/>
+<tab><tab>Krozek[] krozki = {<br/>
+<tab><tab><tab><span class="rwordb">new</span> Krozek(<span class="niz">"šah"</span>,        <span class="stevilo"> 2</span>,<span class="stevilo"> 15</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Krozek(<span class="niz">"planinstvo"</span>, <span class="stevilo"> 3</span>,<span class="stevilo"> 14</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Krozek(<span class="niz">"rokodelstvo"</span>,<span class="stevilo"> 4</span>,<span class="stevilo"> 12</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Krozek(<span class="niz">"fizika"</span>,     <span class="stevilo"> 2</span>,<span class="stevilo"> 12</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Krozek(<span class="niz">"matematika"</span>, <span class="stevilo"> 2</span>,<span class="stevilo"> 14</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Krozek(<span class="niz">"fizika"</span>,     <span class="stevilo"> 3</span>,<span class="stevilo"> 15</span>),<br/>
+<tab><tab>};<br/>
+<br/>
+<tab><tab>ucenci<span class="stevilo">[0</span>].nastaviKrozke(<span class="rwordb">new</span> Krozek[]{krozki<span class="stevilo">[0</span>], krozki<span class="stevilo">[1</span>]});<br/>
+<tab><tab>ucenci<span class="stevilo">[1</span>].nastaviKrozke(<span class="rwordb">new</span> Krozek[]{krozki<span class="stevilo">[0</span>], krozki<span class="stevilo">[5</span>]});<br/>
+<tab><tab>ucenci<span class="stevilo">[2</span>].nastaviKrozke(<span class="rwordb">new</span> Krozek[]{krozki<span class="stevilo">[0</span>], krozki<span class="stevilo">[1</span>], krozki<span class="stevilo">[2</span>]});<br/>
+<tab><tab>ucenci<span class="stevilo">[3</span>].nastaviKrozke(<span class="rwordb">new</span> Krozek[]{krozki<span class="stevilo">[0</span>], krozki<span class="stevilo">[2</span>], krozki<span class="stevilo">[3</span>]});<br/>
+<tab><tab>ucenci<span class="stevilo">[4</span>].nastaviKrozke(<span class="rwordb">new</span> Krozek[]{krozki<span class="stevilo">[3</span>], krozki<span class="stevilo">[5</span>]});<br/>
+<tab><tab>ucenci<span class="stevilo">[5</span>].nastaviKrozke(<span class="rwordb">new</span> Krozek[]{krozki<span class="stevilo">[4</span>], krozki<span class="stevilo">[5</span>]});<br/>
+<tab><tab>ucenci<span class="stevilo">[6</span>].nastaviKrozke(<span class="rwordb">new</span> Krozek[]{krozki<span class="stevilo">[0</span>], krozki<span class="stevilo">[5</span>]});<br/>
+<br/>
+<tab><tab>krozki<span class="stevilo">[0</span>].nastaviClane(<span class="rwordb">new</span> Ucenec[]{ucenci<span class="stevilo">[0</span>], ucenci<span class="stevilo">[2</span>], ucenci<span class="stevilo">[3</span>], ucenci<span class="stevilo">[1</span>], ucenci<span class="stevilo">[6</span>]});<br/>
+<tab><tab>krozki<span class="stevilo">[1</span>].nastaviClane(<span class="rwordb">new</span> Ucenec[]{ucenci<span class="stevilo">[0</span>], ucenci<span class="stevilo">[2</span>]});<br/>
+<tab><tab>krozki<span class="stevilo">[2</span>].nastaviClane(<span class="rwordb">new</span> Ucenec[]{ucenci<span class="stevilo">[2</span>], ucenci<span class="stevilo">[3</span>]});<br/>
+<tab><tab>krozki<span class="stevilo">[3</span>].nastaviClane(<span class="rwordb">new</span> Ucenec[]{ucenci<span class="stevilo">[3</span>], ucenci<span class="stevilo">[4</span>]});<br/>
+<tab><tab>krozki<span class="stevilo">[4</span>].nastaviClane(<span class="rwordb">new</span> Ucenec[]{ucenci<span class="stevilo">[5</span>]});<br/>
+<tab><tab>krozki<span class="stevilo">[5</span>].nastaviClane(<span class="rwordb">new</span> Ucenec[]{ucenci<span class="stevilo">[1</span>], ucenci<span class="stevilo">[4</span>], ucenci<span class="stevilo">[5</span>], ucenci<span class="stevilo">[6</span>]});<br/>
+<br/>
+<tab><tab>System.out.println(ucenci<span class="stevilo">[5</span>].imaCasZa(krozki<span class="stevilo">[0</span>]));<br/>
+<tab><tab>System.out.println(ucenci<span class="stevilo">[5</span>].imaCasZa(krozki<span class="stevilo">[1</span>]));<br/>
+<tab><tab>System.out.println(ucenci<span class="stevilo">[5</span>].imaCasZa(krozki<span class="stevilo">[2</span>]));<br/>
+<tab><tab>System.out.println(ucenci<span class="stevilo">[5</span>].imaCasZa(krozki<span class="stevilo">[3</span>]));<br/>
+<tab><tab>System.out.println(<span class="niz">"----------"</span>);<br/>
+<br/>
+<tab><tab>System.out.println(ucenci<span class="stevilo">[6</span>].imaCasZa(krozki<span class="stevilo">[1</span>]));<br/>
+<tab><tab>System.out.println(ucenci<span class="stevilo">[6</span>].imaCasZa(krozki<span class="stevilo">[2</span>]));<br/>
+<tab><tab>System.out.println(ucenci<span class="stevilo">[6</span>].imaCasZa(krozki<span class="stevilo">[3</span>]));<br/>
+<tab><tab>System.out.println(ucenci<span class="stevilo">[6</span>].imaCasZa(krozki<span class="stevilo">[4</span>]));<br/>
+<tab>}<br/>
+}<br/>
+
+
+<br/>
                         </td>
                     </tr>
                     <tr>
-                        <td>Izhod prevajalnika</td>
+                        <td>Izhod programa</td>
                         <td class="texttt">
-                            Test04.java:40:&nbsp;error:&nbsp;cannot&nbsp;find&nbsp;symbol<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(ucenci[5].imaCasZa(krozki[0]));<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br/>&nbsp;&nbsp;symbol:&nbsp;&nbsp;&nbsp;method&nbsp;imaCasZa(Krozek)<br/>&nbsp;&nbsp;location:&nbsp;class&nbsp;Ucenec<br/>Test04.java:41:&nbsp;error:&nbsp;cannot&nbsp;find&nbsp;symbol<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(ucenci[5].imaCasZa(krozki[1]));<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br/>&nbsp;&nbsp;symbol:&nbsp;&nbsp;&nbsp;method&nbsp;imaCasZa(Krozek)<br/>&nbsp;&nbsp;location:&nbsp;class&nbsp;Ucenec<br/>Test04.java:42:&nbsp;error:&nbsp;cannot&nbsp;find&nbsp;symbol<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(ucenci[5].imaCasZa(krozki[2]));<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br/>&nbsp;&nbsp;symbol:&nbsp;&nbsp;&nbsp;method&nbsp;imaCasZa(Krozek)<br/>&nbsp;&nbsp;location:&nbsp;class&nbsp;Ucenec<br/>Test04.java:43:&nbsp;error:&nbsp;cannot&nbsp;find&nbsp;symbol<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(ucenci[5].imaCasZa(krozki[3]));<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br/>&nbsp;&nbsp;symbol:&nbsp;&nbsp;&nbsp;method&nbsp;imaCasZa(Krozek)<br/>&nbsp;&nbsp;location:&nbsp;class&nbsp;Ucenec<br/>Test04.java:46:&nbsp;error:&nbsp;cannot&nbsp;find&nbsp;symbol<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(ucenci[6].imaCasZa(krozki[1]));<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br/>&nbsp;&nbsp;symbol:&nbsp;&nbsp;&nbsp;method&nbsp;imaCasZa(Krozek)<br/>&nbsp;&nbsp;location:&nbsp;class&nbsp;Ucenec<br/>Test04.java:47:&nbsp;error:&nbsp;cannot&nbsp;find&nbsp;symbol<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(ucenci[6].imaCasZa(krozki[2]));<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br/>&nbsp;&nbsp;symbol:&nbsp;&nbsp;&nbsp;method&nbsp;imaCasZa(Krozek)<br/>&nbsp;&nbsp;location:&nbsp;class&nbsp;Ucenec<br/>Test04.java:48:&nbsp;error:&nbsp;cannot&nbsp;find&nbsp;symbol<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(ucenci[6].imaCasZa(krozki[3]));<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br/>&nbsp;&nbsp;symbol:&nbsp;&nbsp;&nbsp;method&nbsp;imaCasZa(Krozek)<br/>&nbsp;&nbsp;location:&nbsp;class&nbsp;Ucenec<br/>Test04.java:49:&nbsp;error:&nbsp;cannot&nbsp;find&nbsp;symbol<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(ucenci[6].imaCasZa(krozki[4]));<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br/>&nbsp;&nbsp;symbol:&nbsp;&nbsp;&nbsp;method&nbsp;imaCasZa(Krozek)<br/>&nbsp;&nbsp;location:&nbsp;class&nbsp;Ucenec<br/>8&nbsp;errors<br/><br/>
+                            false<br/>false<br/>true<br/>true<br/>----------<br/>false<br/>true<br/>true<br/>false<br/><br/>
                         </td>
                     </tr>
                 </tbody>
@@ -241,22 +399,72 @@
 <a href="#summary">Povzetek</a> | 
 <a href="#testcase1">Rezultati</a> ]</div><div style="height: 30px"></div>
         <a name="testcase5"></a>
-        <div style="border: 1px solid #710B0B">
-            <table class="tableCompiler tableCommon" style="width: 100%; border: 3px solid #C00000;">
+        <div style="border: 1px solid #63B563">
+            <table class="tableOK tableCommon" style="width: 100%; border: 3px solid #9F9;">
                 <tbody>
                     <tr>
-                        <td colspan="2" style="background-color: #C00000; color: white;">Testni primer 5</td>
+                        <td colspan="2" style="background-color: #9F9; color: black;">Testni primer 5</td>
                     </tr>
                     <tr>
                         <td style="width: 200px;">Vhod</td>
                         <td class="texttt">
-                            <br/>
+                            <br/>
+<span class="rwordv">public</span> class Test<span class="stevilo">05</span> {<br/>
+<br/>
+<tab><span class="rwordv">public</span> <span class="rwordv">static</span> <span class="rwordv">void</span> main(String[] args) {<br/>
+<br/>
+<tab><tab>Ucenec[] ucenci = {<br/>
+<tab><tab><tab><span class="rwordb">new</span> Ucenec(<span class="niz">"Ana Anclin"</span>,    <span class="stevilo"> 7</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Ucenec(<span class="niz">"Bojan Bizjak"</span>,  <span class="stevilo"> 5</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Ucenec(<span class="niz">"Cene Cajzek"</span>,   <span class="stevilo"> 6</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Ucenec(<span class="niz">"Dejan Dolenc"</span>,  <span class="stevilo"> 6</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Ucenec(<span class="niz">"Eva Ertl"</span>,      <span class="stevilo"> 5</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Ucenec(<span class="niz">"Franci Finžgar"</span>,<span class="stevilo"> 6</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Ucenec(<span class="niz">"Gorazd Gornik"</span>, <span class="stevilo"> 6</span>),<br/>
+<tab><tab>};<br/>
+<br/>
+<tab><tab>Krozek[] krozki = {<br/>
+<tab><tab><tab><span class="rwordb">new</span> Krozek(<span class="niz">"šah"</span>,        <span class="stevilo"> 2</span>,<span class="stevilo"> 15</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Krozek(<span class="niz">"planinstvo"</span>, <span class="stevilo"> 3</span>,<span class="stevilo"> 14</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Krozek(<span class="niz">"rokodelstvo"</span>,<span class="stevilo"> 4</span>,<span class="stevilo"> 12</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Krozek(<span class="niz">"fizika"</span>,     <span class="stevilo"> 2</span>,<span class="stevilo"> 12</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Krozek(<span class="niz">"matematika"</span>, <span class="stevilo"> 2</span>,<span class="stevilo"> 14</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Krozek(<span class="niz">"fizika"</span>,     <span class="stevilo"> 3</span>,<span class="stevilo"> 15</span>),<br/>
+<tab><tab>};<br/>
+<br/>
+<tab><tab>ucenci<span class="stevilo">[0</span>].nastaviKrozke(<span class="rwordb">new</span> Krozek[]{krozki<span class="stevilo">[0</span>], krozki<span class="stevilo">[1</span>]});<br/>
+<tab><tab>ucenci<span class="stevilo">[1</span>].nastaviKrozke(<span class="rwordb">new</span> Krozek[]{krozki<span class="stevilo">[0</span>], krozki<span class="stevilo">[5</span>]});<br/>
+<tab><tab>ucenci<span class="stevilo">[2</span>].nastaviKrozke(<span class="rwordb">new</span> Krozek[]{krozki<span class="stevilo">[0</span>], krozki<span class="stevilo">[1</span>], krozki<span class="stevilo">[2</span>]});<br/>
+<tab><tab>ucenci<span class="stevilo">[3</span>].nastaviKrozke(<span class="rwordb">new</span> Krozek[]{krozki<span class="stevilo">[0</span>], krozki<span class="stevilo">[2</span>], krozki<span class="stevilo">[3</span>]});<br/>
+<tab><tab>ucenci<span class="stevilo">[4</span>].nastaviKrozke(<span class="rwordb">new</span> Krozek[]{krozki<span class="stevilo">[3</span>], krozki<span class="stevilo">[5</span>]});<br/>
+<tab><tab>ucenci<span class="stevilo">[5</span>].nastaviKrozke(<span class="rwordb">new</span> Krozek[]{krozki<span class="stevilo">[4</span>], krozki<span class="stevilo">[5</span>]});<br/>
+<tab><tab>ucenci<span class="stevilo">[6</span>].nastaviKrozke(<span class="rwordb">new</span> Krozek[]{krozki<span class="stevilo">[0</span>], krozki<span class="stevilo">[5</span>]});<br/>
+<br/>
+<tab><tab>krozki<span class="stevilo">[0</span>].nastaviClane(<span class="rwordb">new</span> Ucenec[]{ucenci<span class="stevilo">[0</span>], ucenci<span class="stevilo">[2</span>], ucenci<span class="stevilo">[3</span>], ucenci<span class="stevilo">[1</span>], ucenci<span class="stevilo">[6</span>]});<br/>
+<tab><tab>krozki<span class="stevilo">[1</span>].nastaviClane(<span class="rwordb">new</span> Ucenec[]{ucenci<span class="stevilo">[0</span>], ucenci<span class="stevilo">[2</span>]});<br/>
+<tab><tab>krozki<span class="stevilo">[2</span>].nastaviClane(<span class="rwordb">new</span> Ucenec[]{ucenci<span class="stevilo">[2</span>], ucenci<span class="stevilo">[3</span>]});<br/>
+<tab><tab>krozki<span class="stevilo">[3</span>].nastaviClane(<span class="rwordb">new</span> Ucenec[]{ucenci<span class="stevilo">[3</span>], ucenci<span class="stevilo">[4</span>]});<br/>
+<tab><tab>krozki<span class="stevilo">[4</span>].nastaviClane(<span class="rwordb">new</span> Ucenec[]{ucenci<span class="stevilo">[5</span>]});<br/>
+<tab><tab>krozki<span class="stevilo">[5</span>].nastaviClane(<span class="rwordb">new</span> Ucenec[]{ucenci<span class="stevilo">[1</span>], ucenci<span class="stevilo">[4</span>], ucenci<span class="stevilo">[5</span>], ucenci<span class="stevilo">[6</span>]});<br/>
+<br/>
+<tab><tab><span class="rwordb">for</span> (<span class="rwordv">int</span> i =<span class="stevilo"> 0</span>;  i < krozki.length;  i++) {<br/>
+<tab><tab><tab>System.out.println(ucenci<span class="stevilo">[0</span>].steviloSosolcevVKrozku(krozki[i]));<br/>
+<tab><tab><tab>System.out.println(ucenci<span class="stevilo">[1</span>].steviloSosolcevVKrozku(krozki[i]));<br/>
+<tab><tab><tab>System.out.println(ucenci<span class="stevilo">[2</span>].steviloSosolcevVKrozku(krozki[i]));<br/>
+<tab><tab><tab>System.out.println(<span class="niz">"----------"</span>);<br/>
+<tab><tab>}<br/>
+<br/>
+<tab>}<br/>
+}<br/>
+
+
+<br/>
                         </td>
                     </tr>
                     <tr>
-                        <td>Izhod prevajalnika</td>
+                        <td>Izhod programa</td>
                         <td class="texttt">
-                            Test05.java:41:&nbsp;error:&nbsp;cannot&nbsp;find&nbsp;symbol<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(ucenci[0].steviloSosolcevVKrozku(krozki[i]));<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br/>&nbsp;&nbsp;symbol:&nbsp;&nbsp;&nbsp;method&nbsp;steviloSosolcevVKrozku(Krozek)<br/>&nbsp;&nbsp;location:&nbsp;class&nbsp;Ucenec<br/>Test05.java:42:&nbsp;error:&nbsp;cannot&nbsp;find&nbsp;symbol<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(ucenci[1].steviloSosolcevVKrozku(krozki[i]));<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br/>&nbsp;&nbsp;symbol:&nbsp;&nbsp;&nbsp;method&nbsp;steviloSosolcevVKrozku(Krozek)<br/>&nbsp;&nbsp;location:&nbsp;class&nbsp;Ucenec<br/>Test05.java:43:&nbsp;error:&nbsp;cannot&nbsp;find&nbsp;symbol<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(ucenci[2].steviloSosolcevVKrozku(krozki[i]));<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br/>&nbsp;&nbsp;symbol:&nbsp;&nbsp;&nbsp;method&nbsp;steviloSosolcevVKrozku(Krozek)<br/>&nbsp;&nbsp;location:&nbsp;class&nbsp;Ucenec<br/>3&nbsp;errors<br/><br/>
+                            0<br/>0<br/>2<br/>----------<br/>0<br/>0<br/>0<br/>----------<br/>0<br/>0<br/>1<br/>----------<br/>0<br/>1<br/>1<br/>----------<br/>0<br/>0<br/>1<br/>----------<br/>0<br/>1<br/>2<br/>----------<br/><br/>
                         </td>
                     </tr>
                 </tbody>
@@ -267,22 +475,71 @@
 <a href="#summary">Povzetek</a> | 
 <a href="#testcase1">Rezultati</a> ]</div><div style="height: 30px"></div>
         <a name="testcase6"></a>
-        <div style="border: 1px solid #710B0B">
-            <table class="tableCompiler tableCommon" style="width: 100%; border: 3px solid #C00000;">
+        <div style="border: 1px solid #63B563">
+            <table class="tableOK tableCommon" style="width: 100%; border: 3px solid #9F9;">
                 <tbody>
                     <tr>
-                        <td colspan="2" style="background-color: #C00000; color: white;">Testni primer 6</td>
+                        <td colspan="2" style="background-color: #9F9; color: black;">Testni primer 6</td>
                     </tr>
                     <tr>
                         <td style="width: 200px;">Vhod</td>
                         <td class="texttt">
-                            <br/>
+                            <br/>
+<span class="rwordv">public</span> class Test<span class="stevilo">06</span> {<br/>
+<br/>
+<tab><span class="rwordv">public</span> <span class="rwordv">static</span> <span class="rwordv">void</span> main(String[] args) {<br/>
+<br/>
+<tab><tab>Ucenec[] ucenci = {<br/>
+<tab><tab><tab><span class="rwordb">new</span> Ucenec(<span class="niz">"Ana Anclin"</span>,    <span class="stevilo"> 7</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Ucenec(<span class="niz">"Bojan Bizjak"</span>,  <span class="stevilo"> 5</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Ucenec(<span class="niz">"Cene Cajzek"</span>,   <span class="stevilo"> 6</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Ucenec(<span class="niz">"Dejan Dolenc"</span>,  <span class="stevilo"> 6</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Ucenec(<span class="niz">"Eva Ertl"</span>,      <span class="stevilo"> 5</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Ucenec(<span class="niz">"Franci Finžgar"</span>,<span class="stevilo"> 6</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Ucenec(<span class="niz">"Gorazd Gornik"</span>, <span class="stevilo"> 6</span>),<br/>
+<tab><tab>};<br/>
+<br/>
+<tab><tab>Krozek[] krozki = {<br/>
+<tab><tab><tab><span class="rwordb">new</span> Krozek(<span class="niz">"šah"</span>,        <span class="stevilo"> 2</span>,<span class="stevilo"> 15</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Krozek(<span class="niz">"planinstvo"</span>, <span class="stevilo"> 3</span>,<span class="stevilo"> 14</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Krozek(<span class="niz">"rokodelstvo"</span>,<span class="stevilo"> 4</span>,<span class="stevilo"> 12</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Krozek(<span class="niz">"fizika"</span>,     <span class="stevilo"> 2</span>,<span class="stevilo"> 12</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Krozek(<span class="niz">"matematika"</span>, <span class="stevilo"> 2</span>,<span class="stevilo"> 14</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Krozek(<span class="niz">"fizika"</span>,     <span class="stevilo"> 3</span>,<span class="stevilo"> 15</span>),<br/>
+<tab><tab>};<br/>
+<br/>
+<tab><tab>ucenci<span class="stevilo">[0</span>].nastaviKrozke(<span class="rwordb">new</span> Krozek[]{krozki<span class="stevilo">[0</span>], krozki<span class="stevilo">[1</span>]});<br/>
+<tab><tab>ucenci<span class="stevilo">[1</span>].nastaviKrozke(<span class="rwordb">new</span> Krozek[]{krozki<span class="stevilo">[0</span>], krozki<span class="stevilo">[5</span>]});<br/>
+<tab><tab>ucenci<span class="stevilo">[2</span>].nastaviKrozke(<span class="rwordb">new</span> Krozek[]{krozki<span class="stevilo">[0</span>], krozki<span class="stevilo">[1</span>], krozki<span class="stevilo">[2</span>]});<br/>
+<tab><tab>ucenci<span class="stevilo">[3</span>].nastaviKrozke(<span class="rwordb">new</span> Krozek[]{krozki<span class="stevilo">[0</span>], krozki<span class="stevilo">[2</span>], krozki<span class="stevilo">[3</span>]});<br/>
+<tab><tab>ucenci<span class="stevilo">[4</span>].nastaviKrozke(<span class="rwordb">new</span> Krozek[]{krozki<span class="stevilo">[3</span>], krozki<span class="stevilo">[5</span>]});<br/>
+<tab><tab>ucenci<span class="stevilo">[5</span>].nastaviKrozke(<span class="rwordb">new</span> Krozek[]{krozki<span class="stevilo">[4</span>], krozki<span class="stevilo">[5</span>]});<br/>
+<tab><tab>ucenci<span class="stevilo">[6</span>].nastaviKrozke(<span class="rwordb">new</span> Krozek[]{krozki<span class="stevilo">[0</span>], krozki<span class="stevilo">[5</span>]});<br/>
+<br/>
+<tab><tab>krozki<span class="stevilo">[0</span>].nastaviClane(<span class="rwordb">new</span> Ucenec[]{ucenci<span class="stevilo">[0</span>], ucenci<span class="stevilo">[2</span>], ucenci<span class="stevilo">[3</span>], ucenci<span class="stevilo">[1</span>], ucenci<span class="stevilo">[6</span>]});<br/>
+<tab><tab>krozki<span class="stevilo">[1</span>].nastaviClane(<span class="rwordb">new</span> Ucenec[]{ucenci<span class="stevilo">[0</span>], ucenci<span class="stevilo">[2</span>]});<br/>
+<tab><tab>krozki<span class="stevilo">[2</span>].nastaviClane(<span class="rwordb">new</span> Ucenec[]{ucenci<span class="stevilo">[2</span>], ucenci<span class="stevilo">[3</span>]});<br/>
+<tab><tab>krozki<span class="stevilo">[3</span>].nastaviClane(<span class="rwordb">new</span> Ucenec[]{ucenci<span class="stevilo">[3</span>], ucenci<span class="stevilo">[4</span>]});<br/>
+<tab><tab>krozki<span class="stevilo">[4</span>].nastaviClane(<span class="rwordb">new</span> Ucenec[]{ucenci<span class="stevilo">[5</span>]});<br/>
+<tab><tab>krozki<span class="stevilo">[5</span>].nastaviClane(<span class="rwordb">new</span> Ucenec[]{ucenci<span class="stevilo">[1</span>], ucenci<span class="stevilo">[4</span>], ucenci<span class="stevilo">[5</span>], ucenci<span class="stevilo">[6</span>]});<br/>
+<br/>
+<tab><tab><span class="rwordb">for</span> (<span class="rwordv">int</span> i =<span class="stevilo"> 0</span>;  i < krozki.length;  i++) {<br/>
+<tab><tab><tab>System.out.println(ucenci<span class="stevilo">[3</span>].steviloSosolcevVKrozku(krozki[i]));<br/>
+<tab><tab><tab>System.out.println(ucenci<span class="stevilo">[4</span>].steviloSosolcevVKrozku(krozki[i]));<br/>
+<tab><tab><tab>System.out.println(<span class="niz">"----------"</span>);<br/>
+<tab><tab>}<br/>
+<br/>
+<tab>}<br/>
+}<br/>
+
+
+<br/>
                         </td>
                     </tr>
                     <tr>
-                        <td>Izhod prevajalnika</td>
+                        <td>Izhod programa</td>
                         <td class="texttt">
-                            Test06.java:41:&nbsp;error:&nbsp;cannot&nbsp;find&nbsp;symbol<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(ucenci[3].steviloSosolcevVKrozku(krozki[i]));<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br/>&nbsp;&nbsp;symbol:&nbsp;&nbsp;&nbsp;method&nbsp;steviloSosolcevVKrozku(Krozek)<br/>&nbsp;&nbsp;location:&nbsp;class&nbsp;Ucenec<br/>Test06.java:42:&nbsp;error:&nbsp;cannot&nbsp;find&nbsp;symbol<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(ucenci[4].steviloSosolcevVKrozku(krozki[i]));<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br/>&nbsp;&nbsp;symbol:&nbsp;&nbsp;&nbsp;method&nbsp;steviloSosolcevVKrozku(Krozek)<br/>&nbsp;&nbsp;location:&nbsp;class&nbsp;Ucenec<br/>2&nbsp;errors<br/><br/>
+                            2<br/>1<br/>----------<br/>1<br/>0<br/>----------<br/>1<br/>0<br/>----------<br/>0<br/>0<br/>----------<br/>1<br/>0<br/>----------<br/>2<br/>1<br/>----------<br/><br/>
                         </td>
                     </tr>
                 </tbody>
@@ -293,22 +550,71 @@
 <a href="#summary">Povzetek</a> | 
 <a href="#testcase1">Rezultati</a> ]</div><div style="height: 30px"></div>
         <a name="testcase7"></a>
-        <div style="border: 1px solid #710B0B">
-            <table class="tableCompiler tableCommon" style="width: 100%; border: 3px solid #C00000;">
+        <div style="border: 1px solid #63B563">
+            <table class="tableOK tableCommon" style="width: 100%; border: 3px solid #9F9;">
                 <tbody>
                     <tr>
-                        <td colspan="2" style="background-color: #C00000; color: white;">Testni primer 7</td>
+                        <td colspan="2" style="background-color: #9F9; color: black;">Testni primer 7</td>
                     </tr>
                     <tr>
                         <td style="width: 200px;">Vhod</td>
                         <td class="texttt">
-                            <br/>
+                            <br/>
+<span class="rwordv">public</span> class Test<span class="stevilo">07</span> {<br/>
+<br/>
+<tab><span class="rwordv">public</span> <span class="rwordv">static</span> <span class="rwordv">void</span> main(String[] args) {<br/>
+<br/>
+<tab><tab>Ucenec[] ucenci = {<br/>
+<tab><tab><tab><span class="rwordb">new</span> Ucenec(<span class="niz">"Ana Anclin"</span>,    <span class="stevilo"> 7</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Ucenec(<span class="niz">"Bojan Bizjak"</span>,  <span class="stevilo"> 5</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Ucenec(<span class="niz">"Cene Cajzek"</span>,   <span class="stevilo"> 6</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Ucenec(<span class="niz">"Dejan Dolenc"</span>,  <span class="stevilo"> 6</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Ucenec(<span class="niz">"Eva Ertl"</span>,      <span class="stevilo"> 5</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Ucenec(<span class="niz">"Franci Finžgar"</span>,<span class="stevilo"> 6</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Ucenec(<span class="niz">"Gorazd Gornik"</span>, <span class="stevilo"> 6</span>),<br/>
+<tab><tab>};<br/>
+<br/>
+<tab><tab>Krozek[] krozki = {<br/>
+<tab><tab><tab><span class="rwordb">new</span> Krozek(<span class="niz">"šah"</span>,        <span class="stevilo"> 2</span>,<span class="stevilo"> 15</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Krozek(<span class="niz">"planinstvo"</span>, <span class="stevilo"> 3</span>,<span class="stevilo"> 14</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Krozek(<span class="niz">"rokodelstvo"</span>,<span class="stevilo"> 4</span>,<span class="stevilo"> 12</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Krozek(<span class="niz">"fizika"</span>,     <span class="stevilo"> 2</span>,<span class="stevilo"> 12</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Krozek(<span class="niz">"matematika"</span>, <span class="stevilo"> 2</span>,<span class="stevilo"> 14</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Krozek(<span class="niz">"fizika"</span>,     <span class="stevilo"> 3</span>,<span class="stevilo"> 15</span>),<br/>
+<tab><tab>};<br/>
+<br/>
+<tab><tab>ucenci<span class="stevilo">[0</span>].nastaviKrozke(<span class="rwordb">new</span> Krozek[]{krozki<span class="stevilo">[0</span>], krozki<span class="stevilo">[1</span>]});<br/>
+<tab><tab>ucenci<span class="stevilo">[1</span>].nastaviKrozke(<span class="rwordb">new</span> Krozek[]{krozki<span class="stevilo">[0</span>], krozki<span class="stevilo">[5</span>]});<br/>
+<tab><tab>ucenci<span class="stevilo">[2</span>].nastaviKrozke(<span class="rwordb">new</span> Krozek[]{krozki<span class="stevilo">[0</span>], krozki<span class="stevilo">[1</span>], krozki<span class="stevilo">[2</span>]});<br/>
+<tab><tab>ucenci<span class="stevilo">[3</span>].nastaviKrozke(<span class="rwordb">new</span> Krozek[]{krozki<span class="stevilo">[0</span>], krozki<span class="stevilo">[2</span>], krozki<span class="stevilo">[3</span>]});<br/>
+<tab><tab>ucenci<span class="stevilo">[4</span>].nastaviKrozke(<span class="rwordb">new</span> Krozek[]{krozki<span class="stevilo">[3</span>], krozki<span class="stevilo">[5</span>]});<br/>
+<tab><tab>ucenci<span class="stevilo">[5</span>].nastaviKrozke(<span class="rwordb">new</span> Krozek[]{krozki<span class="stevilo">[4</span>], krozki<span class="stevilo">[5</span>]});<br/>
+<tab><tab>ucenci<span class="stevilo">[6</span>].nastaviKrozke(<span class="rwordb">new</span> Krozek[]{krozki<span class="stevilo">[0</span>], krozki<span class="stevilo">[5</span>]});<br/>
+<br/>
+<tab><tab>krozki<span class="stevilo">[0</span>].nastaviClane(<span class="rwordb">new</span> Ucenec[]{ucenci<span class="stevilo">[0</span>], ucenci<span class="stevilo">[2</span>], ucenci<span class="stevilo">[3</span>], ucenci<span class="stevilo">[1</span>], ucenci<span class="stevilo">[6</span>]});<br/>
+<tab><tab>krozki<span class="stevilo">[1</span>].nastaviClane(<span class="rwordb">new</span> Ucenec[]{ucenci<span class="stevilo">[0</span>], ucenci<span class="stevilo">[2</span>]});<br/>
+<tab><tab>krozki<span class="stevilo">[2</span>].nastaviClane(<span class="rwordb">new</span> Ucenec[]{ucenci<span class="stevilo">[2</span>], ucenci<span class="stevilo">[3</span>]});<br/>
+<tab><tab>krozki<span class="stevilo">[3</span>].nastaviClane(<span class="rwordb">new</span> Ucenec[]{ucenci<span class="stevilo">[3</span>], ucenci<span class="stevilo">[4</span>]});<br/>
+<tab><tab>krozki<span class="stevilo">[4</span>].nastaviClane(<span class="rwordb">new</span> Ucenec[]{ucenci<span class="stevilo">[5</span>]});<br/>
+<tab><tab>krozki<span class="stevilo">[5</span>].nastaviClane(<span class="rwordb">new</span> Ucenec[]{ucenci<span class="stevilo">[1</span>], ucenci<span class="stevilo">[4</span>], ucenci<span class="stevilo">[5</span>], ucenci<span class="stevilo">[6</span>]});<br/>
+<br/>
+<tab><tab><span class="rwordb">for</span> (<span class="rwordv">int</span> i =<span class="stevilo"> 0</span>;  i < krozki.length;  i++) {<br/>
+<tab><tab><tab>System.out.println(ucenci<span class="stevilo">[5</span>].steviloSosolcevVKrozku(krozki[i]));<br/>
+<tab><tab><tab>System.out.println(ucenci<span class="stevilo">[6</span>].steviloSosolcevVKrozku(krozki[i]));<br/>
+<tab><tab><tab>System.out.println(<span class="niz">"----------"</span>);<br/>
+<tab><tab>}<br/>
+<br/>
+<tab>}<br/>
+}<br/>
+
+
+<br/>
                         </td>
                     </tr>
                     <tr>
-                        <td>Izhod prevajalnika</td>
+                        <td>Izhod programa</td>
                         <td class="texttt">
-                            Test07.java:41:&nbsp;error:&nbsp;cannot&nbsp;find&nbsp;symbol<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(ucenci[5].steviloSosolcevVKrozku(krozki[i]));<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br/>&nbsp;&nbsp;symbol:&nbsp;&nbsp;&nbsp;method&nbsp;steviloSosolcevVKrozku(Krozek)<br/>&nbsp;&nbsp;location:&nbsp;class&nbsp;Ucenec<br/>Test07.java:42:&nbsp;error:&nbsp;cannot&nbsp;find&nbsp;symbol<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(ucenci[6].steviloSosolcevVKrozku(krozki[i]));<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br/>&nbsp;&nbsp;symbol:&nbsp;&nbsp;&nbsp;method&nbsp;steviloSosolcevVKrozku(Krozek)<br/>&nbsp;&nbsp;location:&nbsp;class&nbsp;Ucenec<br/>2&nbsp;errors<br/><br/>
+                            3<br/>2<br/>----------<br/>1<br/>1<br/>----------<br/>2<br/>2<br/>----------<br/>1<br/>1<br/>----------<br/>0<br/>1<br/>----------<br/>1<br/>1<br/>----------<br/><br/>
                         </td>
                     </tr>
                 </tbody>
@@ -319,22 +625,67 @@
 <a href="#summary">Povzetek</a> | 
 <a href="#testcase1">Rezultati</a> ]</div><div style="height: 30px"></div>
         <a name="testcase8"></a>
-        <div style="border: 1px solid #710B0B">
-            <table class="tableCompiler tableCommon" style="width: 100%; border: 3px solid #C00000;">
+        <div style="border: 1px solid #63B563">
+            <table class="tableOK tableCommon" style="width: 100%; border: 3px solid #9F9;">
                 <tbody>
                     <tr>
-                        <td colspan="2" style="background-color: #C00000; color: white;">Testni primer 8</td>
+                        <td colspan="2" style="background-color: #9F9; color: black;">Testni primer 8</td>
                     </tr>
                     <tr>
                         <td style="width: 200px;">Vhod</td>
                         <td class="texttt">
-                            <br/>
+                            <br/>
+<span class="rwordv">public</span> class Test<span class="stevilo">08</span> {<br/>
+<br/>
+<tab><span class="rwordv">public</span> <span class="rwordv">static</span> <span class="rwordv">void</span> main(String[] args) {<br/>
+<br/>
+<tab><tab>Ucenec[] ucenci = {<br/>
+<tab><tab><tab><span class="rwordb">new</span> Ucenec(<span class="niz">"Ana Anclin"</span>,    <span class="stevilo"> 7</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Ucenec(<span class="niz">"Bojan Bizjak"</span>,  <span class="stevilo"> 5</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Ucenec(<span class="niz">"Cene Cajzek"</span>,   <span class="stevilo"> 6</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Ucenec(<span class="niz">"Dejan Dolenc"</span>,  <span class="stevilo"> 6</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Ucenec(<span class="niz">"Eva Ertl"</span>,      <span class="stevilo"> 5</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Ucenec(<span class="niz">"Franci Finžgar"</span>,<span class="stevilo"> 6</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Ucenec(<span class="niz">"Gorazd Gornik"</span>, <span class="stevilo"> 6</span>),<br/>
+<tab><tab>};<br/>
+<br/>
+<tab><tab>Krozek[] krozki = {<br/>
+<tab><tab><tab><span class="rwordb">new</span> Krozek(<span class="niz">"šah"</span>,        <span class="stevilo"> 2</span>,<span class="stevilo"> 15</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Krozek(<span class="niz">"planinstvo"</span>, <span class="stevilo"> 3</span>,<span class="stevilo"> 14</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Krozek(<span class="niz">"rokodelstvo"</span>,<span class="stevilo"> 4</span>,<span class="stevilo"> 12</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Krozek(<span class="niz">"fizika"</span>,     <span class="stevilo"> 2</span>,<span class="stevilo"> 12</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Krozek(<span class="niz">"matematika"</span>, <span class="stevilo"> 2</span>,<span class="stevilo"> 14</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Krozek(<span class="niz">"fizika"</span>,     <span class="stevilo"> 3</span>,<span class="stevilo"> 15</span>),<br/>
+<tab><tab>};<br/>
+<br/>
+<tab><tab>ucenci<span class="stevilo">[0</span>].nastaviKrozke(<span class="rwordb">new</span> Krozek[]{krozki<span class="stevilo">[0</span>], krozki<span class="stevilo">[1</span>]});<br/>
+<tab><tab>ucenci<span class="stevilo">[1</span>].nastaviKrozke(<span class="rwordb">new</span> Krozek[]{krozki<span class="stevilo">[0</span>], krozki<span class="stevilo">[5</span>]});<br/>
+<tab><tab>ucenci<span class="stevilo">[2</span>].nastaviKrozke(<span class="rwordb">new</span> Krozek[]{krozki<span class="stevilo">[0</span>], krozki<span class="stevilo">[1</span>], krozki<span class="stevilo">[2</span>]});<br/>
+<tab><tab>ucenci<span class="stevilo">[3</span>].nastaviKrozke(<span class="rwordb">new</span> Krozek[]{krozki<span class="stevilo">[0</span>], krozki<span class="stevilo">[2</span>], krozki<span class="stevilo">[3</span>]});<br/>
+<tab><tab>ucenci<span class="stevilo">[4</span>].nastaviKrozke(<span class="rwordb">new</span> Krozek[]{krozki<span class="stevilo">[3</span>], krozki<span class="stevilo">[5</span>]});<br/>
+<tab><tab>ucenci<span class="stevilo">[5</span>].nastaviKrozke(<span class="rwordb">new</span> Krozek[]{krozki<span class="stevilo">[4</span>], krozki<span class="stevilo">[5</span>]});<br/>
+<tab><tab>ucenci<span class="stevilo">[6</span>].nastaviKrozke(<span class="rwordb">new</span> Krozek[]{krozki<span class="stevilo">[0</span>], krozki<span class="stevilo">[5</span>]});<br/>
+<br/>
+<tab><tab>krozki<span class="stevilo">[0</span>].nastaviClane(<span class="rwordb">new</span> Ucenec[]{ucenci<span class="stevilo">[0</span>], ucenci<span class="stevilo">[2</span>], ucenci<span class="stevilo">[3</span>], ucenci<span class="stevilo">[1</span>], ucenci<span class="stevilo">[6</span>]});<br/>
+<tab><tab>krozki<span class="stevilo">[1</span>].nastaviClane(<span class="rwordb">new</span> Ucenec[]{ucenci<span class="stevilo">[0</span>], ucenci<span class="stevilo">[2</span>]});<br/>
+<tab><tab>krozki<span class="stevilo">[2</span>].nastaviClane(<span class="rwordb">new</span> Ucenec[]{ucenci<span class="stevilo">[2</span>], ucenci<span class="stevilo">[3</span>]});<br/>
+<tab><tab>krozki<span class="stevilo">[3</span>].nastaviClane(<span class="rwordb">new</span> Ucenec[]{ucenci<span class="stevilo">[3</span>], ucenci<span class="stevilo">[4</span>]});<br/>
+<tab><tab>krozki<span class="stevilo">[4</span>].nastaviClane(<span class="rwordb">new</span> Ucenec[]{ucenci<span class="stevilo">[5</span>]});<br/>
+<tab><tab>krozki<span class="stevilo">[5</span>].nastaviClane(<span class="rwordb">new</span> Ucenec[]{ucenci<span class="stevilo">[1</span>], ucenci<span class="stevilo">[4</span>], ucenci<span class="stevilo">[5</span>], ucenci<span class="stevilo">[6</span>]});<br/>
+<br/>
+<tab><tab>System.out.println(krozki<span class="stevilo">[0</span>].steviloRazlicnihDejavnosti());<br/>
+<tab><tab>System.out.println(krozki<span class="stevilo">[1</span>].steviloRazlicnihDejavnosti());<br/>
+<tab>}<br/>
+}<br/>
+
+
+<br/>
                         </td>
                     </tr>
                     <tr>
-                        <td>Izhod prevajalnika</td>
+                        <td>Izhod programa</td>
                         <td class="texttt">
-                            Test08.java:40:&nbsp;error:&nbsp;cannot&nbsp;find&nbsp;symbol<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(krozki[0].steviloRazlicnihDejavnosti());<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br/>&nbsp;&nbsp;symbol:&nbsp;&nbsp;&nbsp;method&nbsp;steviloRazlicnihDejavnosti()<br/>&nbsp;&nbsp;location:&nbsp;class&nbsp;Krozek<br/>Test08.java:41:&nbsp;error:&nbsp;cannot&nbsp;find&nbsp;symbol<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(krozki[1].steviloRazlicnihDejavnosti());<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br/>&nbsp;&nbsp;symbol:&nbsp;&nbsp;&nbsp;method&nbsp;steviloRazlicnihDejavnosti()<br/>&nbsp;&nbsp;location:&nbsp;class&nbsp;Krozek<br/>2&nbsp;errors<br/><br/>
+                            4<br/>3<br/><br/>
                         </td>
                     </tr>
                 </tbody>
@@ -345,22 +696,67 @@
 <a href="#summary">Povzetek</a> | 
 <a href="#testcase1">Rezultati</a> ]</div><div style="height: 30px"></div>
         <a name="testcase9"></a>
-        <div style="border: 1px solid #710B0B">
-            <table class="tableCompiler tableCommon" style="width: 100%; border: 3px solid #C00000;">
+        <div style="border: 1px solid #63B563">
+            <table class="tableOK tableCommon" style="width: 100%; border: 3px solid #9F9;">
                 <tbody>
                     <tr>
-                        <td colspan="2" style="background-color: #C00000; color: white;">Testni primer 9</td>
+                        <td colspan="2" style="background-color: #9F9; color: black;">Testni primer 9</td>
                     </tr>
                     <tr>
                         <td style="width: 200px;">Vhod</td>
                         <td class="texttt">
-                            <br/>
+                            <br/>
+<span class="rwordv">public</span> class Test<span class="stevilo">09</span> {<br/>
+<br/>
+<tab><span class="rwordv">public</span> <span class="rwordv">static</span> <span class="rwordv">void</span> main(String[] args) {<br/>
+<br/>
+<tab><tab>Ucenec[] ucenci = {<br/>
+<tab><tab><tab><span class="rwordb">new</span> Ucenec(<span class="niz">"Ana Anclin"</span>,    <span class="stevilo"> 7</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Ucenec(<span class="niz">"Bojan Bizjak"</span>,  <span class="stevilo"> 5</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Ucenec(<span class="niz">"Cene Cajzek"</span>,   <span class="stevilo"> 6</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Ucenec(<span class="niz">"Dejan Dolenc"</span>,  <span class="stevilo"> 6</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Ucenec(<span class="niz">"Eva Ertl"</span>,      <span class="stevilo"> 5</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Ucenec(<span class="niz">"Franci Finžgar"</span>,<span class="stevilo"> 6</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Ucenec(<span class="niz">"Gorazd Gornik"</span>, <span class="stevilo"> 6</span>),<br/>
+<tab><tab>};<br/>
+<br/>
+<tab><tab>Krozek[] krozki = {<br/>
+<tab><tab><tab><span class="rwordb">new</span> Krozek(<span class="niz">"šah"</span>,        <span class="stevilo"> 2</span>,<span class="stevilo"> 15</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Krozek(<span class="niz">"planinstvo"</span>, <span class="stevilo"> 3</span>,<span class="stevilo"> 14</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Krozek(<span class="niz">"rokodelstvo"</span>,<span class="stevilo"> 4</span>,<span class="stevilo"> 12</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Krozek(<span class="niz">"fizika"</span>,     <span class="stevilo"> 2</span>,<span class="stevilo"> 12</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Krozek(<span class="niz">"matematika"</span>, <span class="stevilo"> 2</span>,<span class="stevilo"> 14</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Krozek(<span class="niz">"fizika"</span>,     <span class="stevilo"> 3</span>,<span class="stevilo"> 15</span>),<br/>
+<tab><tab>};<br/>
+<br/>
+<tab><tab>ucenci<span class="stevilo">[0</span>].nastaviKrozke(<span class="rwordb">new</span> Krozek[]{krozki<span class="stevilo">[0</span>], krozki<span class="stevilo">[1</span>]});<br/>
+<tab><tab>ucenci<span class="stevilo">[1</span>].nastaviKrozke(<span class="rwordb">new</span> Krozek[]{krozki<span class="stevilo">[0</span>], krozki<span class="stevilo">[5</span>]});<br/>
+<tab><tab>ucenci<span class="stevilo">[2</span>].nastaviKrozke(<span class="rwordb">new</span> Krozek[]{krozki<span class="stevilo">[0</span>], krozki<span class="stevilo">[1</span>], krozki<span class="stevilo">[2</span>]});<br/>
+<tab><tab>ucenci<span class="stevilo">[3</span>].nastaviKrozke(<span class="rwordb">new</span> Krozek[]{krozki<span class="stevilo">[0</span>], krozki<span class="stevilo">[2</span>], krozki<span class="stevilo">[3</span>]});<br/>
+<tab><tab>ucenci<span class="stevilo">[4</span>].nastaviKrozke(<span class="rwordb">new</span> Krozek[]{krozki<span class="stevilo">[3</span>], krozki<span class="stevilo">[5</span>]});<br/>
+<tab><tab>ucenci<span class="stevilo">[5</span>].nastaviKrozke(<span class="rwordb">new</span> Krozek[]{krozki<span class="stevilo">[4</span>], krozki<span class="stevilo">[5</span>]});<br/>
+<tab><tab>ucenci<span class="stevilo">[6</span>].nastaviKrozke(<span class="rwordb">new</span> Krozek[]{krozki<span class="stevilo">[0</span>], krozki<span class="stevilo">[5</span>]});<br/>
+<br/>
+<tab><tab>krozki<span class="stevilo">[0</span>].nastaviClane(<span class="rwordb">new</span> Ucenec[]{ucenci<span class="stevilo">[0</span>], ucenci<span class="stevilo">[2</span>], ucenci<span class="stevilo">[3</span>], ucenci<span class="stevilo">[1</span>], ucenci<span class="stevilo">[6</span>]});<br/>
+<tab><tab>krozki<span class="stevilo">[1</span>].nastaviClane(<span class="rwordb">new</span> Ucenec[]{ucenci<span class="stevilo">[0</span>], ucenci<span class="stevilo">[2</span>]});<br/>
+<tab><tab>krozki<span class="stevilo">[2</span>].nastaviClane(<span class="rwordb">new</span> Ucenec[]{ucenci<span class="stevilo">[2</span>], ucenci<span class="stevilo">[3</span>]});<br/>
+<tab><tab>krozki<span class="stevilo">[3</span>].nastaviClane(<span class="rwordb">new</span> Ucenec[]{ucenci<span class="stevilo">[3</span>], ucenci<span class="stevilo">[4</span>]});<br/>
+<tab><tab>krozki<span class="stevilo">[4</span>].nastaviClane(<span class="rwordb">new</span> Ucenec[]{ucenci<span class="stevilo">[5</span>]});<br/>
+<tab><tab>krozki<span class="stevilo">[5</span>].nastaviClane(<span class="rwordb">new</span> Ucenec[]{ucenci<span class="stevilo">[1</span>], ucenci<span class="stevilo">[4</span>], ucenci<span class="stevilo">[5</span>], ucenci<span class="stevilo">[6</span>]});<br/>
+<br/>
+<tab><tab>System.out.println(krozki<span class="stevilo">[2</span>].steviloRazlicnihDejavnosti());<br/>
+<tab><tab>System.out.println(krozki<span class="stevilo">[3</span>].steviloRazlicnihDejavnosti());<br/>
+<tab>}<br/>
+}<br/>
+
+
+<br/>
                         </td>
                     </tr>
                     <tr>
-                        <td>Izhod prevajalnika</td>
+                        <td>Izhod programa</td>
                         <td class="texttt">
-                            Test09.java:40:&nbsp;error:&nbsp;cannot&nbsp;find&nbsp;symbol<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(krozki[2].steviloRazlicnihDejavnosti());<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br/>&nbsp;&nbsp;symbol:&nbsp;&nbsp;&nbsp;method&nbsp;steviloRazlicnihDejavnosti()<br/>&nbsp;&nbsp;location:&nbsp;class&nbsp;Krozek<br/>Test09.java:41:&nbsp;error:&nbsp;cannot&nbsp;find&nbsp;symbol<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(krozki[3].steviloRazlicnihDejavnosti());<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br/>&nbsp;&nbsp;symbol:&nbsp;&nbsp;&nbsp;method&nbsp;steviloRazlicnihDejavnosti()<br/>&nbsp;&nbsp;location:&nbsp;class&nbsp;Krozek<br/>2&nbsp;errors<br/><br/>
+                            4<br/>3<br/><br/>
                         </td>
                     </tr>
                 </tbody>
@@ -371,22 +767,67 @@
 <a href="#summary">Povzetek</a> | 
 <a href="#testcase1">Rezultati</a> ]</div><div style="height: 30px"></div>
         <a name="testcase10"></a>
-        <div style="border: 1px solid #710B0B">
-            <table class="tableCompiler tableCommon" style="width: 100%; border: 3px solid #C00000;">
+        <div style="border: 1px solid #63B563">
+            <table class="tableOK tableCommon" style="width: 100%; border: 3px solid #9F9;">
                 <tbody>
                     <tr>
-                        <td colspan="2" style="background-color: #C00000; color: white;">Testni primer 10</td>
+                        <td colspan="2" style="background-color: #9F9; color: black;">Testni primer 10</td>
                     </tr>
                     <tr>
                         <td style="width: 200px;">Vhod</td>
                         <td class="texttt">
-                            <br/>
+                            <br/>
+<span class="rwordv">public</span> class Test<span class="stevilo">10</span> {<br/>
+<br/>
+<tab><span class="rwordv">public</span> <span class="rwordv">static</span> <span class="rwordv">void</span> main(String[] args) {<br/>
+<br/>
+<tab><tab>Ucenec[] ucenci = {<br/>
+<tab><tab><tab><span class="rwordb">new</span> Ucenec(<span class="niz">"Ana Anclin"</span>,    <span class="stevilo"> 7</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Ucenec(<span class="niz">"Bojan Bizjak"</span>,  <span class="stevilo"> 5</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Ucenec(<span class="niz">"Cene Cajzek"</span>,   <span class="stevilo"> 6</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Ucenec(<span class="niz">"Dejan Dolenc"</span>,  <span class="stevilo"> 6</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Ucenec(<span class="niz">"Eva Ertl"</span>,      <span class="stevilo"> 5</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Ucenec(<span class="niz">"Franci Finžgar"</span>,<span class="stevilo"> 6</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Ucenec(<span class="niz">"Gorazd Gornik"</span>, <span class="stevilo"> 6</span>),<br/>
+<tab><tab>};<br/>
+<br/>
+<tab><tab>Krozek[] krozki = {<br/>
+<tab><tab><tab><span class="rwordb">new</span> Krozek(<span class="niz">"šah"</span>,        <span class="stevilo"> 2</span>,<span class="stevilo"> 15</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Krozek(<span class="niz">"planinstvo"</span>, <span class="stevilo"> 3</span>,<span class="stevilo"> 14</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Krozek(<span class="niz">"rokodelstvo"</span>,<span class="stevilo"> 4</span>,<span class="stevilo"> 12</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Krozek(<span class="niz">"fizika"</span>,     <span class="stevilo"> 2</span>,<span class="stevilo"> 12</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Krozek(<span class="niz">"matematika"</span>, <span class="stevilo"> 2</span>,<span class="stevilo"> 14</span>),<br/>
+<tab><tab><tab><span class="rwordb">new</span> Krozek(<span class="niz">"fizika"</span>,     <span class="stevilo"> 3</span>,<span class="stevilo"> 15</span>),<br/>
+<tab><tab>};<br/>
+<br/>
+<tab><tab>ucenci<span class="stevilo">[0</span>].nastaviKrozke(<span class="rwordb">new</span> Krozek[]{krozki<span class="stevilo">[0</span>], krozki<span class="stevilo">[1</span>]});<br/>
+<tab><tab>ucenci<span class="stevilo">[1</span>].nastaviKrozke(<span class="rwordb">new</span> Krozek[]{krozki<span class="stevilo">[0</span>], krozki<span class="stevilo">[5</span>]});<br/>
+<tab><tab>ucenci<span class="stevilo">[2</span>].nastaviKrozke(<span class="rwordb">new</span> Krozek[]{krozki<span class="stevilo">[0</span>], krozki<span class="stevilo">[1</span>], krozki<span class="stevilo">[2</span>]});<br/>
+<tab><tab>ucenci<span class="stevilo">[3</span>].nastaviKrozke(<span class="rwordb">new</span> Krozek[]{krozki<span class="stevilo">[0</span>], krozki<span class="stevilo">[2</span>], krozki<span class="stevilo">[3</span>]});<br/>
+<tab><tab>ucenci<span class="stevilo">[4</span>].nastaviKrozke(<span class="rwordb">new</span> Krozek[]{krozki<span class="stevilo">[3</span>], krozki<span class="stevilo">[5</span>]});<br/>
+<tab><tab>ucenci<span class="stevilo">[5</span>].nastaviKrozke(<span class="rwordb">new</span> Krozek[]{krozki<span class="stevilo">[4</span>], krozki<span class="stevilo">[5</span>]});<br/>
+<tab><tab>ucenci<span class="stevilo">[6</span>].nastaviKrozke(<span class="rwordb">new</span> Krozek[]{krozki<span class="stevilo">[0</span>], krozki<span class="stevilo">[5</span>]});<br/>
+<br/>
+<tab><tab>krozki<span class="stevilo">[0</span>].nastaviClane(<span class="rwordb">new</span> Ucenec[]{ucenci<span class="stevilo">[0</span>], ucenci<span class="stevilo">[2</span>], ucenci<span class="stevilo">[3</span>], ucenci<span class="stevilo">[1</span>], ucenci<span class="stevilo">[6</span>]});<br/>
+<tab><tab>krozki<span class="stevilo">[1</span>].nastaviClane(<span class="rwordb">new</span> Ucenec[]{ucenci<span class="stevilo">[0</span>], ucenci<span class="stevilo">[2</span>]});<br/>
+<tab><tab>krozki<span class="stevilo">[2</span>].nastaviClane(<span class="rwordb">new</span> Ucenec[]{ucenci<span class="stevilo">[2</span>], ucenci<span class="stevilo">[3</span>]});<br/>
+<tab><tab>krozki<span class="stevilo">[3</span>].nastaviClane(<span class="rwordb">new</span> Ucenec[]{ucenci<span class="stevilo">[3</span>], ucenci<span class="stevilo">[4</span>]});<br/>
+<tab><tab>krozki<span class="stevilo">[4</span>].nastaviClane(<span class="rwordb">new</span> Ucenec[]{ucenci<span class="stevilo">[5</span>]});<br/>
+<tab><tab>krozki<span class="stevilo">[5</span>].nastaviClane(<span class="rwordb">new</span> Ucenec[]{ucenci<span class="stevilo">[1</span>], ucenci<span class="stevilo">[4</span>], ucenci<span class="stevilo">[5</span>], ucenci<span class="stevilo">[6</span>]});<br/>
+<br/>
+<tab><tab>System.out.println(krozki<span class="stevilo">[4</span>].steviloRazlicnihDejavnosti());<br/>
+<tab><tab>System.out.println(krozki<span class="stevilo">[5</span>].steviloRazlicnihDejavnosti());<br/>
+<tab>}<br/>
+}<br/>
+
+
+<br/>
                         </td>
                     </tr>
                     <tr>
-                        <td>Izhod prevajalnika</td>
+                        <td>Izhod programa</td>
                         <td class="texttt">
-                            Test10.java:40:&nbsp;error:&nbsp;cannot&nbsp;find&nbsp;symbol<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(krozki[4].steviloRazlicnihDejavnosti());<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br/>&nbsp;&nbsp;symbol:&nbsp;&nbsp;&nbsp;method&nbsp;steviloRazlicnihDejavnosti()<br/>&nbsp;&nbsp;location:&nbsp;class&nbsp;Krozek<br/>Test10.java:41:&nbsp;error:&nbsp;cannot&nbsp;find&nbsp;symbol<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(krozki[5].steviloRazlicnihDejavnosti());<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^<br/>&nbsp;&nbsp;symbol:&nbsp;&nbsp;&nbsp;method&nbsp;steviloRazlicnihDejavnosti()<br/>&nbsp;&nbsp;location:&nbsp;class&nbsp;Krozek<br/>2&nbsp;errors<br/><br/>
+                            2<br/>3<br/><br/>
                         </td>
                     </tr>
                 </tbody>
@@ -457,6 +898,6 @@
         </div>
     </body>
     <!-- java class tester version "1.40.2" -->
-    <!-- 3.2.2020 18:42.9 -->
+    <!-- 7.2.2020 15:50.3 -->
     <!-- DESKTOP-624KS5K, fe80::f593:9b0a:30a4:e526%17 -->
 </html>
