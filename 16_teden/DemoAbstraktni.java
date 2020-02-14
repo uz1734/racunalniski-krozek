@@ -48,6 +48,11 @@ class Krava extends Zival {
 
 class DemoAbstraktni {
   public static void main(String[] args) {
+	  
+	  /**
+		Dinamicno povezovanje metod.
+	  */
+	  
 	  Zival z;  //Staticni tip, ki se navede na zacetku ob deklaraciji.
 	  
 	  //Kreiranje novih objekotv v aplikacijskem razredu
@@ -79,7 +84,9 @@ class DemoAbstraktni {
 		  System.out.println("--------");
 	  }
 	  
-	  
+	/**
+	Konkretno klicanje metod
+	*/
 	  
    /* Pes p=new Pes("Fifi");
     Macka m=new Macka("Miki");
