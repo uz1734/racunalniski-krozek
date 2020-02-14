@@ -11,9 +11,12 @@ interface ZivalInterface {
 
 class Mamut implements ZivalInterface {
 	
-	Mamut() {	
-		System.out.println(this.a);
+	Mamut() {
+			
+		System.out.println("staticna spremenljivka: " 
+		+  Integer.toString(this.a));
 	}
+	
 	@Override
 	public void pojej() {
 		System.out.println("Mamut zeli hrano");

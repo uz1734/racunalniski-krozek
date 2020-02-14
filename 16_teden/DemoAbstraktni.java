@@ -48,7 +48,6 @@ class Krava extends Zival {
 
 class DemoAbstraktni {
   public static void main(String[] args) {
-	  
 	  Zival z;  //Staticni tip, ki se navede na zacetku ob deklaraciji.
 	  
 	  //Kreiranje novih objekotv v aplikacijskem razredu
@@ -65,15 +64,19 @@ class DemoAbstraktni {
 	  z = k;
 	  z.oglasanje();
 	  
+	  
+	  
 	  Zival[] tabelaZival=new Zival [3];
 	  tabelaZival[0] = p;
 	  tabelaZival[1] = m;
 	  tabelaZival[2] = k;
 	  
 	  System.out.println();
+	  System.out.println("DINAMICNE TABELE");
 	  for (Zival z1 : tabelaZival) {
 		  System.out.println(z1.vrniIme());
 		  z1.oglasanje();
+		  System.out.println("--------");
 	  }
 	  
 	  

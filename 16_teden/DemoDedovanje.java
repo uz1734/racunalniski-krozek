@@ -6,9 +6,11 @@ class Student {
   public void vpisiVpisnaSt(int vpisnaSt) {
     this.vpisnaSt=vpisnaSt;
   }
+  
   public void vpisiPriimek(String priimek) {
     this.priimek=priimek;
   }
+  
   public void vpisiIme(String ime) {
     this.ime=ime;
   }

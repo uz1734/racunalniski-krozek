@@ -67,6 +67,8 @@ class DemoKonstruktor {
     Student s=new Student(63150999,"Novak","Janez");
     s.izpisiVse();
 	
+	System.out.println("--------------------");
+	
     IzredniStudent is=new IzredniStudent(63150888,"Petek","Peter",1200);
     is.izpisiVse();
   }
