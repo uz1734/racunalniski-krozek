@@ -1,0 +1,5 @@
+Povezani seznami (ang. Linked list):
+ - princip delovanja,
+ - vstavljanje v povezan seznam (na začetek, na konec, nekje vmes)
+ - izpis elementov povezanega seznama
+ - izbris elementa v povezanem seznamu
