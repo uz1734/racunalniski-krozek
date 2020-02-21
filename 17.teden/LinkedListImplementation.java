@@ -1,22 +1,23 @@
 import java.io.*; 
-  
+
 // Java program to implement 
-// a Singly Linked List 
+// a Singly Linked List
+ 
 class LinkedList { 
   
-    Node head; 
-   
-    static class Node { 
-  
-        int data; 
-        Node next; 
-   
-        Node(int d) 
-        { 
-            data = d; 
-            next = null; 
-        } 
-    } 
+    Node head;
+
+	static class Node { 
+
+		int data; 
+		Node next; 
+
+		Node(int d) 
+		{ 
+			data = d; 
+			next = null; 
+		} 
+	}
    
     public static LinkedList insert(LinkedList list, int data) 
     { 
@@ -65,8 +66,7 @@ class LinkedList {
 			int tmpPosition = 0;
             while (last.next != null && tmpPosition != position - 1) { 
                 last = last.next; 
-				tmpPosition++;
-				
+				tmpPosition++;				
             } 
 			
 			if (last.next == null) {
@@ -125,8 +125,6 @@ class LinkedList {
     }  
 } 
 
-
-
 public class LinkedListImplementation {
 	
 	public static void main(String[] args) {
@@ -135,7 +133,6 @@ public class LinkedListImplementation {
 
         LinkedList list = new LinkedList(); 
   
- 
         list = LinkedList.insert(list, 1); 
         list = LinkedList.insert(list, 2); 
         list = LinkedList.insert(list, 3); 
