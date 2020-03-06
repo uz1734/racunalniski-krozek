@@ -72,5 +72,4 @@ class DemoKonstruktor {
     IzredniStudent is=new IzredniStudent(63150888,"Petek","Peter",1200);
     is.izpisiVse();
   }
-  
 }
