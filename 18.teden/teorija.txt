@@ -1,0 +1,257 @@
+Koncept dedovanja
+-	mehanizem, ki omogoča, da nek razred podeduje atribute in metode nekega drugega razreda
+o	osnovni razred (ang. base class): razred, ki služi kot osnova za dedovanje
+o	izpeljan razred (ang. derived class): razred, ki je bil izpeljan iz osnovnega razreda (tj. razred, ki deduje)
+	nadrazred (ang. superclass) – podrazred (ang. subclass)
+	starš (ang. parent class) – otrok (ang. child class)
+o	izpeljan razred je poseben primer bolj splošnega osnovnega razreda
+-	primer: razreda Student in IzredniStudent
+o	razred Student je osnovni razred (nadrazred)
+o	razred IzredniStudent je izpeljan razred (podrazred)
+-	razred Student ima
+o	3 atribute: vpisna številka, priimek, ime
+o	6 metod: 3 za vpis vrednosti, 3 za branje vrednosti vsakega atributa
+-	razred IzredniStudent
+o	potrebuje vse atribute in metode razreda Student
+o	zahteva še dodatni atribut znesekSolnine
+o	koncept dedovanja omogoča, da atributov in metod razreda Student ni treba še enkrat deklarirati
+o	na novo je treba deklarirati le atribut znesekSolnine ter metodi za vpis in branje zneska šolnine
+-	prednosti dedovanja
+o	krajši čas razvoja (uporabimo atribute in metode, ki že obstajajo)
+o	manj napak (podedovane metode so že preizkušene in stestirane)
+o	večja razumljivost (programer že razume delovanje podedovanih metod)
+-	deklaracija izpeljanega razreda
+o	osnovni razred mora že obstajati
+o	uporabimo rezervirano besedo extends
+public class IzredniStudent extends Student
+o	deklariramo samo dodatne atribute
+o	deklariramo samo dodatne metode
+-	dedovanje poteka samo v eni smeri: otroci vedno podedujejo od staršev
+o	nadrazred ima dostop do atributov in metod, ki so bili deklarirani v nadrazredu
+o	podrazred ima dostop do atributov in metod, deklariranih v nadrazredu in podrazredu
+
+Redefinicija metod (Redefinicija podedovanih metod (ang. overriding))
+-	če neka podedovana metoda ne ustreza zahtevam podrazreda, jo lahko v podrazredu ponovno definiramo
+o	ob redefiniciji moramo metodo deklarirati z enakim imenom in enakim seznamom parametrov
+o	objektom nadrazreda pripada metoda, deklarirana v nadrazredu
+o	objektom podrazreda pripada redefinirana metoda, deklarirana v podrazredu
+-	razlika med redefinicijo metod (overriding) in večkratnim definiranjem metod (overloading)
+o	overriding: nadrazred in podrazred imata metodo z enakim imenom in enakim seznamom parametrov
+o	overloading: v istem razredu obstaja več metod z enakim imenom, a različnim seznamom parametrov
+-	preprost primer redefinicije
+o	recimo, da razred Student vsebuje metodo izpisTipa, ki izpiše ime razreda
+public void izpisTipa ()
+{
+    System.out.println ("Student");
+}
+o	razred IzredniStudent to metodo podeduje, vendar ni uporabna, ker bi morala izpisati drugačno ime razreda
+o	rešitev: v razredu IzredniStudent to metodo redefiniramo
+-	uporaba metode nadrazreda v podrazredu
+o	kljub temu, da smo metodo, ki je deklarirana v nadrazredu, redefinirali, jo lahko še vedno pokličemo
+o	uporabimo rezervirano besedo super: super.<ime metode>
+-	primer uporabe super
+o	recimo, da razred Student vsebuje metodo izpisiVse (), ki izpiše vrednosti vseh atributov
+o	v razredu IzredniStudent moramo to metodo redefinirati tako, da bo izpisala tudi atribut znesekSolnine 
+o	redefinirana metoda je sestavljena iz dveh delov:
+	iz klica super.izpisiVse ()
+	iz stavka za izpis zneska šolnine
+public void izpisiVse ()
+{
+    super.izpisiVse ();
+    System.out.println (znesekSolnine);
+}
+-	zaključek: uporaba super nam pogosto olajša pisanje redefiniranih metod
+o	metoda nadrazreda, ki jo pokličemo s super, opravi tisti del postopka, ki je skupen nadrazredu in podrazredu
+o	sprogramirati moramo samo preostali del postopka, ki je specifičen za podrazred
+-	primerjava med this in super v podrazredu
+o	super se nanaša na metodo nadrazreda
+	super.izpisiVse () pokliče metodo razreda Student
+o	this se nanaša na metodo podrazreda
+	this.izpisiVse () pokliče metodo razreda IzredniStudent
+	referenco this običajno izpustimo
+
+Uporaba konstruktorjev
+-	ob kreiranju objekta, ki pripada nekemu podrazredu, se dejansko kličeta dva konstruktorja
+o	konstruktor osnovnega razreda
+o	konstruktor podrazreda
+o	vedno se najprej izvede konstruktor nadrazreda, nato konstruktor podrazreda
+o	v našem primeru: najprej konstruktor Student (), nato konstruktor IzredniStudent ()
+-	splošno pravilo pri pisanju lastnih konstruktorjev
+o	konstruktor nadrazreda naj poskrbi za inicializacijo atributov, ki so deklarirani v nadrazredu
+o	konstruktor podrazreda naj poskrbi za inicializacijo atributov, ki so deklarirani v podrazredu
+-	konstruktorji z argumenti
+o	izhodišče: kreirati želimo objekt podrazreda, konstruktor nadrazreda pa zahteva argumente
+o	podrazred mora poskrbeti, da dobi konstruktor nadrazreda ustrezne argumente
+o	obvezno je treba napisati konstruktor podrazreda, ki pokliče konstruktor nadrazreda z ustreznimi argumenti
+	klic konstruktorja nadrazreda se izvede z rezervirano besedo super in ne z imenom konstruktorja
+	stavek super (<seznam argumentov>); mora biti prvi stavek v konstruktorju podrazreda (niti deklaracije spremenljivk ne smejo biti pred njim)
+o	primer: če konstruktor nadrazreda Student zahteva tri argumente, ga pokličemo s super (63020888, "Novak", "Janez");
+
+Dostopno določilo protected
+-	koncept skrivanja informacij (doslej)
+o	atributi razreda so deklarirani z dostopnim določilom private
+o	metode razreda so deklarirane z dostopnim določilom public
+o	ostali razredi lahko dostopajo do atributov samo preko metod
+-	posledice pri dedovanju
+o	podrazredi nimajo direktnega dostopa do podedovanih atributov
+o	do njih lahko dostopajo samo preko metod
+-	rešitev: uporaba dostopnega določila protected
+o	vmesna stopnja zaščite med public in private
+o	podrazredom dovoljuje neposreden dostop do atributov (in metod) nadrazreda
+o	ostalim razredom (ki niso izpeljani iz nadrazreda) dostop do protected atributov in metod ni dovoljen
+
+Metode, ki jih ni moč redefinirati
+-	obstajajo 4 tipi metod, ki jih ni moč redefinirati
+o	metode private
+	v podrazredu niso dostopne (se ne podedujejo)
+	v podrazredu lahko še enkrat deklariramo metodo z enakim imenom in parametri, vendar to ni redifinicija
+o	metode static
+	so metode razreda in niso vezane na posamezne objekte
+	kličemo jih z imenom razreda, ne z imenom objekta:
+<ime razreda>.<ime metode>
+	metoda je ena sama za osnovni razred in vse naslednike
+o	metode final
+	final pomeni, da je neka komponenta (npr. spremenljivka, metoda ali razred) dokončna
+	razlika med static in final
+•	static se uporablja, kadar želimo preprečiti redefinicijo metod razreda
+•	final se uporablja, kadar želimo preprečiti redefinicijo metod objekta
+o	metode znotraj razredov final
+	če je razred deklariran kot final, potem so avtomatično vse njegove metode final
+	razred final ne more biti uporabljen kot osnova za dedovanje
+	primer razreda final: razred Math
+
+Abstraktni razred in abstraktne metode
+-	abstraktni razred je nek splošen nadrazred, ki predstavlja osnovo za izpeljavo različnih podrazredov
+o	deklariramo ga izključno z namenom, da bomo iz njega izpeljali različne metode
+o	ne moremo generirati objektov tega razreda, ampak samo objekte podrazredov
+o	po zgradbi je podoben ostalim razredom (vsebuje atribute in metode) s tem da je ena ali več metod abstraktnih
+o	abstraktne razrede in abstraktne metode deklariramo z rezervirano besedo abstract, npr.
+public abstract class Zival
+public abstract void oglasanje ()
+-	abstraktna metoda ima samo glavo brez stavkov
+o	 jo, kadar na nivoju nadrazreda ne moremo opisati operacije, ki jo ta metoda izvede, vendar želimo doseči, da to metodo vsebujejo vsi podrazredi
+o	v podrazredu je treba abstraktno metodo redefinirati
+o	če podrazred ne redefinira abstraktne metode, je tudi podrazred abstrakten
+o	če je razred abstrakten, je prazna metoda vedno abstraktna, četudi izpustimo rezervirano besedo abstract
+-	primer: abstraktni razred Zival
+o	služi kot osnova za izpeljavo podrazredov Pes, Krava in Kaca
+o	vsebuje abstraktno metodo oglasanje (), ki pove kako se žival oglaša
+-	vsak objekt podrazreda je istočasno tudi objekt nadrazreda
+o	Pes je Zival, Avto je Vozilo ("is a")
+o	obratno ni možno
+-	posledica: spremenljivki tipa nadrazred lahko priredimo naslov objekta, ki pripada kateremukoli podrazredu
+o	imamo spremenljivko z, ki je deklarirana kot Zival z;
+o	imamo 3 objekte, ki pripadajo razredom Pes, Krava in Kaca
+Pes p=new Pes ("Luks");
+Krava kr=new Krava ("Liska");
+Kaca ka=new Kaca ("Klopotaca");
+o	potem so dovoljeni naslednji prireditveni stavki z=p; z=kr; z=ka;
+o	vprašanje: katera metoda se izvede ob klicu z.oglasanje ()
+	odgovor: izvede se metoda tistega podrazreda, katerega objekt je trenutno shranjen v spremenljivki z
+
+Dinamično povezovanje metod
+-	je sposobnost programa, da izbere metodo, ki pripada pravemu podrazredu
+-	metoda se izbere med izvajanjem programa, odvisno od dejanskega tipa objekta
+-	pojem statičnega in dinamičnega tipa
+o	statični tip je naveden ob deklaraciji (spremenljivka z je tipa Zival)
+o	dinamični tip je določen med izvajanjem programa (spremenljivka z je lahko dinamičnega tipa Pes, Krava ali Kaca)
+-	dinamični tip spremenljivke z določa, katera metoda oglasanje () se bo izvedla
+-	tabele objektov, ki pripadajo različnim podrazredom
+o	dedovanje omogoča, da v tabeli hranimo objekte, ki pripadajo različnim podrazredom
+	zahteva: vsi objekti v tabeli morajo biti istega tipa
+	tabelo deklariramo kot tabelo objektov, ki pripadajo osnovnemu razredu 
+	v resnici generiramo objekte, ki pripadajo posameznim podrazredom
+	ko so objekti vstavljeni v tabelo, jih lahko obdelujemo v zanki, kot da bi bili vsi istega tipa
+	edina omejitev: vsi podrazredi morajo biti izpeljani iz istega osnovnega razreda
+o	primer: tabela podatkov o živalih  Zival []z=new Zival [10];
+
+Razred Object in njegove metode
+-	razred Object – univerzalni nadrazred
+o	je osnovni razred, deklariran v paketu java.lang, iz katerega so (neposredno ali posredno) izpeljani vsi drugi razredi
+	vsak razred v Javi (razen razreda Object) je v resnici podrazred
+	če razred ni deklariran kot razširitev nekega nadrazreda, se avtomatsko privzame, da je razširitev razreda Object
+o	vsebuje metode, ki jih avtomatsko podedujejo vsi podrazredi
+-	metoda toString ()
+o	pretvori vsebino objekta v niz tipa String, ki vsebuje
+	ime razreda, kateremu pripada objekt
+	naslov, kjer je ta objekt shranjen v pomnilnik, npr. @ba34f2
+o	pri delu z objekti je priporočljivo to metodo redefinirati
+	vrne naj vrednost atributov kot en sam niz znakov
+	ta niz lahko kasneje izpišemo
+-	metoda equals ()
+o	zahteva en argument, ki mora biti istega tipa kot objekt, iz katerega je bila metoda poklicana: <ime objekta>.equals(<imeDrugegaObjekta>)
+o	če metode ne redefiniramo, velja, da sta objekta enaka, če imata enak naslov (preverja se enakost naslovov, ne enakost vsebine)
+o	primer 1:
+Pes pes1=new Pes ("Fifi");
+Pes pes2=new Pes ("Fifi");
+pes1.equals (pes2) vrne false
+o	primer 2:
+StringBuffer niz1=new StringBuffer ("Fifi");
+StringBuffer niz2=new StringBuffer ("Fifi");
+niz1.equals (niz2) vrne false
+-	redefinicija metode equals ()
+o	če s podedovano metodo equals () nismo zadovoljni, napišemo svojo metodo z enakim seznamom argumentov in istim tipom rezultata
+o	za primer 1:
+public boolean equals (Pes p2)
+{
+	if (vrniIme().equals (p2.vrniIme()))
+	    return true;
+	else
+	    return false;
+}
+o	krajše: return vrniIme ().equals (p2.vrniIme())
+o	uporaba this:  this.vrniIme().equals (p2.vrniIme())
+-	kam vkomponirati redefinirano metodo equals ()
+o	v razred Pes: redefinirana metoda velja samo za pse
+	dva psa sta enaka, če imata enako ime
+	za ostale živali velja, da sta dva objekta enaka, če imata enak naslov
+o	v razred Zival: redefinirana metoda velja za vse živali
+	katerikoli dve živali sta enaki, če imata enako ime
+-	druge metode razreda Object
+o	getClass (): vrne objekt tipa Class, ki vsebuje ime razreda
+o	hashCode (): izračuna hash kodo (za shranjevanje objektov v razpršenih tabelah)
+o	nitify (), notifyAll (), wait (): pri delu z nitmi (ang. threads)
+o	clone (): za kopiranje objekta
+o	finalize (): metoda, ki se izvede ob uničenju objekta
+
+
+Koncept vmesnika kot nadomestek za večkratno dedovanje (vmesnik – ang. interface)
+-	večkratno dedovanje
+o	podrazred podeduje atribute in metode več kot enega nadrazreda
+o	C++ omogoča večkratno dedovanje, Java pa ne
+o	problemi pri večkratnem dedovanju
+	kaj narediti, če imajo atributi in metode v nadrazredih eneka imena
+	konstruktor katerega nadrazreda naj se kliče pri klicu super()
+-	rešitev, ki jo ponuja Java: koncept vmesnika
+-	vmesnik je zelo podoben razredu, s to razliko, da
+o	vse metode morajo biti abstraktne
+o	vsi atributi (če jih ima), morajo biti static final
+-	z vmesnikom predpišemo metode, ki jih mora implementirati podrazred (določimo obnašanje podrazreda)
+-	splošno pravilo
+o	podrazred lahko deduje samo od enega nadrazreda
+o	implementira lahko več vmesnikov
+-	primer deklaracije
+public class Podrazred extends Nadrazred
+implements Vmesnik1, Vmesnik2
+-	s stališča dedovanja Podrazred
+o	podeduje atribute in metode razreda Nadrazred
+o	dodatno lahko deklarira nove atribute in metode
+o	redefinira lahko podedovane metode
+-	s stališča implementacije vmesnika
+o	v podrazredu moramo deklarirati vse metode, specificirane v vmesnikih Vmesnik1 in Vmesnik2
+o	podrazred lahko uporablja statične spremenljivke iz obeh vmesnikov
+-	primerjava: abstraktni razred – vmesnik
+o	podobnost: ne moremo generirati objektov, ki bi pripadali abstraktnemu razredu ali vmesniku
+o	razlika: v abstraktnem razredu so lahko samo nekatere metode abstraktne, v vmesniku pa morajo biti abstraktne vse metode
+o	razlika: atributi abstraktnega razreda so vezani na posamezne objekte, atributi vmesnika pa so statični (vezani na razred) in nespremenljivi
+-	kdaj uporabimo abstraktni razred
+o	kadar lahko že na najvišjem nivoju sprogramiramo metode, ki so skupne različnim podrazredom
+o	primer: igre s kartami
+	metoda mešaj() je enaka za vse podrazrede, zato jo lahko sprogramiramo v nadrazredu
+	metoda deli() je za vsak podrazred drugačna, zato je v nadrazredu abstraktna
+-	kdaj uporabimo vmesnik
+o	ko vemo, katere operacije mora izvajati podrazred, vendar dovolimo, da jih vsak podrazred sprogramira po svoje
+o	primer: glasbeni instrumenti
+	v vmesniku predpišemo metodo zaigrajTon(), ki jo lahko vsak instrument realizira po svoje
+
+
