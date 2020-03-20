@@ -1,0 +1,80 @@
+---------------------------------------------------
+BINARNA ISKALNA DREVES
+-------------------------------------------------------
+         100                             
+        /   \             
+      20     500             
+     /  \                               
+    10   30                                
+
+TEORIJA:
+
+Binarno iskalno drevo je z vozlišči povezno drevo, kjer ima vsako vozlišče levega in desnega soseda:
+1. levo podrevo danega vozlišča vsebuje ključe, ki so manjši od trenutnega kluča
+2. desno podrevo vozlišča ima ključe, ki so večji od trenutnega kluča vozlišča
+3. za vsako levo in desno podrevo danega vozliča morata tudi rekurzivno veljati prve dva izreka
+
+** poglej sliko: "binarno_iskalno_drevo.PNG", da si izjavi 1. 2. in 3. lažje predstavljaš.
+- Taka urejenost klučev (vrednosti) v drevesu omogoča hitro iskanje, pridovivanje max in min kluča iz drevesa.
+
+ISKANJE KLUČA
+- trenutno vrednost kluča primerjamo s korenom drevesa.
+	- če je vrednost enaka kluči v korenu drevesa vrnemo korenom
+	- če je trenutni ključ večji od kluča v korenu se premaknemo rekurzivno v desno podrevo
+	- če je trenutni ključ manjši od kluča v korenu se premaknemo rekurzivno v levo podrevo
+	
+VSTAVLJANJE NOVEGA KLUČA V DREVO
+- nov ključ zmeraj vstavio na koncu drevesa, temu se reče v list drevesa. Ko Najdemo primeren list po pravilu
+1. 2. in 3. , se novo vozlišče doda kot otrok najdenega.
+
+         100                               100
+        /   \         Vstavi 40          /    \
+      20     500    --------->          20     500 
+     /  \                              /  \  
+    10   30                           10   30
+                                              \   
+                                              40
+
+NAČINI IZPISA DREVES
+
+         100                             
+        /   \             
+      20     500             
+     /  \                               
+    10   30  
+
+
+a) "INORDER" izpis
+- najprej izpišemo levo podrevo, nato koren in nato desno podrevo (left, root, right)
+- Izhod za dano drevo: 10, 20, 30, 100, 500
+
+b) "PREORDER" izpis
+- najprej izpišemo koren, nato levo in nato desno podrevo (root, left, right)
+- Izhod za dano drevo: 100, 20, 10, 30, 500
+
+c) "POSTORDER" izpis
+- izpiši levo poddrevo, nato desno in na koncu koren.
+- Izhod za dano drevo: 10, 30, 20, 500, 100
+
+--------------------------------------------------------------
+NALOGA:
+
+Napišite program, ki bo iz vhoda prebral števila 50, 30, 20, 40, 70, 60, 80 in ustvaril binarno iskalno drevo oblike:
+         
+              50 
+           /     \ 
+          30      70 
+         /  \    /  \ 
+       20   40  60   80 
+
+Nato izpišite elemente v in "INNORDER" obliki, saj boste s tem izpisali elemente od najmanjšega do največjega,
+kar pa je na koncu način urejanja.
+
+Pričakovani izhod programa: 
+20
+30
+40
+50
+60
+70
+80
