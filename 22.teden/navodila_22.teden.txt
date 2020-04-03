@@ -1,0 +1,64 @@
+REKURZIJA: utrjevanje
+
+Cilj tega tedna je utrditi znanje iz rekurzije. Rešili bomo nekaj programskih izivov.
+
+----------------------------------------------------------------
+1. Naloga  -- KOMBINACIJE
+----------------------------------------------------------------
+
+Napišite program, ki prebere pozitivni celi števili n in k in izpiše vse kombinacije k števil
+nad množico {1, 2, . . . , n}.
+Vhod je sestavljen iz ene same vrstice, ta pa vsebuje števili n (velikostni red med 1 in 20) 
+in k (med 1 in n) ločeni s presledkom.
+Izpišite vse kombinacije v leksikografskem vrstnem redu. Vsaka kombinacija naj bo izpisana
+v svoji vrstici, števila, ki tvorijo posamezno kombinacijo, pa naj bodo ločena s presledki.
+Vsaka vrstica naj se konča s presledkom.
+
+Testni vhod:
+5 3
+
+Pričakovani izhod:
+1 2 3
+1 2 4
+1 2 5
+1 3 4
+1 3 5
+1 4 5
+2 3 4
+2 3 5
+2 4 5
+3 4 5
+
+---------------------------------------------------------------
+2. Naloga -- PODMNOŽICE
+--------------------------------------------------------------
+
+Napišite program, ki prebere pozitivno celo število n in izpiše vse podmnožice množice {1,
+2, . . . , n}.
+Na vhodu lahko pričakujete število n velikostnega reda med 1 in 10.
+Izpišite vse podmnožice, vsako v svojo vrstico. Elementi posamezne podmnožice naj bodo
+med seboj ločeni s presledki. Vsaka vrstica (razen tiste, ki prikazuje prazno podmnožico)
+naj se konča s presledkom. Podmnožice naj bodo izpisane v leksikografskem vrstnem redu,
+pri čemer naj bo odsotnost elementa leksikografsko na zadnjem mestu. Podmnožica {1,
+2, 4} naj se torej izpiše pred podmnožico {1, 3, 4}, ta pa pred podmnožico {1, 3}, saj se
+število 4 leksikografsko nahaja pred odsotnostjo elementa.
+
+Testni vhod:
+4
+
+Pričakovani izhod:
+1 2 3 4
+1 2 3
+1 2 4
+1 2
+1 3 4
+1 3
+1 4
+1
+2 3 4
+2 3
+2 4
+2
+3 4
+3
+4
