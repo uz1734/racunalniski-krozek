@@ -42,7 +42,7 @@ NAMIGI PRI REŠAVANJU NALOGE:
 -----------------------------
 KORAK 1: 
 	1. Pri branju si pravokotnike uredite tako, da je na prvem mestu večja izmed dveh stranic
-	2. Tabelo pravoknotnikov si uredite po velikosti od najmanjse do največje stranice.
+	2. Tabelo pravoknotnikov si uredite po velikosti od največje do najmanjse stranice.
 
 KORAK 2:
 	1. Poskusite vse možnosti, s katerim prvokotnikom bi se lahko piramida začela
