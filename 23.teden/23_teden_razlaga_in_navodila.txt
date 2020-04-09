@@ -1,0 +1,54 @@
+23. teden krožka programiranja
+
+-----------------------------------------
+NALOGA -- Piramida pravokotnikov
+----------------------------------------
+
+Enako debele pravokotne plošče različnih velikosti želimo zložiti na kup tako,
+da nobena izmed plošč ne sega do robov ali preko robov plošče na kateri leži.
+Prav lahko se zgodi, da zaradi zahtevanega pravila, vseh plošč ne moremo zložiti
+na isti kup.
+
+Napišite program, ki na podlagi podatkov o velikosti podanih pravoknotnih plošč, izračuna število plošč, 
+ki sestavljajo najvišji kup, ki ga je možno zgraditi.
+
+Vhod
+-----
+Program naj vhodne podatke prebere iz standardnega vhoda, kjer naj pro-
+gram najprej prebere število vseh podanih pravokotnikov, nato pa naj za vsak
+pravokotnik prebere njegovo širino in dolžino. Dolžina in širina sta podani s
+celim številom.
+
+npr: 
+
+5
+2 7
+6 9
+3 2
+6 6
+1 2
+
+Izhod
+----------
+Program naj izračunano število plošč, ki sestavljajo najvišji kup, izpiše na
+standardni izhod.
+
+npr:
+
+3
+
+
+NAMIGI PRI REŠAVANJU NALOGE:
+-----------------------------
+KORAK 1: 
+	1. Pri branju si pravokotnike uredite tako, da je na prvem mestu manjsa izmed dveh stranic
+	2. Tabelo pravoknotnikov si uredite po velikosti od najmanjse do največje stranice.
+
+KORAK 2:
+	1. Poskusite vse možnosti, s katerim prvokotnikom bi se lahko piramida začela
+	2. Napište rekurzivno funkcijo, ki začne z enim pravokonikom na kupu in in poskuša dodajat pravokotnike na
+		kup ali iz njega (imate tri možnosti: dodaj ali ne dodaj na kup ali pa preskoči prvokotnik in pojdi na naslednjega).
+		V funkciji preštejete koliko pravokotnikom je bilo dodanih.
+	3. Z rekurzivno funkcijo preizkusite vse možne začetke -- ni nujno, da bo največji kup pravokotnikov nastal če začnemo
+		s prvim pravokotnikom v tabeli.
+-----------------------------------
