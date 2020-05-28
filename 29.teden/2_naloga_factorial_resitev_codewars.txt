@@ -1,0 +1,20 @@
+
+// Resitev 2. naloga
+
+public class Factorial {
+
+  public int factorial(int n) throws IllegalArgumentException {
+    // Happy coding :-)
+    
+    if (n < 0 || n > 12) {
+      throw new IllegalArgumentException("Java");
+    }
+    
+    int factorial = 1;
+    for (int num = 1; num <= n; num++) {
+      factorial *= num;
+    }
+    
+    return factorial;
+  }
+}

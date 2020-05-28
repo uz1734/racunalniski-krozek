@@ -1,0 +1,41 @@
+// 7. naloga resitev
+
+import java.util.*;
+
+public class PangramChecker {
+  public boolean check(String sentence){
+    //code
+    char[] alphabet = new char[]{'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'};
+    boolean[] isLetter = new boolean[alphabet.length];
+    
+    sentence = sentence.toLowerCase();
+    // System.out.println(sentence);
+    
+    for (char c : sentence.toCharArray()) {
+      // System.out.println(c);
+      int pos = -1;
+      // check position
+      for (int i = 0; i < alphabet.length; i++) {
+        if (alphabet[i] == c) {
+          pos = i;
+          break;
+        }
+      }
+      
+      if (pos >= 0) {
+        isLetter[pos] = true;
+      }
+      
+    }
+    
+    // System.out.println(Arrays.toString(isLetter));
+    
+    for (boolean include: isLetter) {
+      if (!include) {
+        return false;
+      }
+    }
+    
+    return true;
+  }
+}

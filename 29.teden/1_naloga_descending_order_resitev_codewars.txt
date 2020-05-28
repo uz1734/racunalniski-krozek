@@ -1,0 +1,46 @@
+// reistve 1.naloga
+
+import java.util.*;
+public class DescendingOrder {
+  public static int sortDesc(final int num) {
+    
+    if (num == 0) {
+      return num;
+    }
+    
+    ArrayList<Number> digitsArray = new ArrayList<Number>();
+    
+    int st = num;
+    while (st > 0) {
+      int digit = st % 10;
+      st = st / 10;
+      // System.out.println(digit);  
+      // insert digit at the right place
+      
+      boolean isFind = false;
+      for (int i = 0; i < digitsArray.size(); i++) {
+        if (digitsArray.get(i).intValue() < digit ) {
+          digitsArray.add(i, digit);
+          isFind = true;
+          break;
+        }
+      }
+      
+      if (!isFind) {
+        digitsArray.add(digit);
+      }
+      
+    }
+    
+    // System.out.println(Arrays.toString(digitsArray.toArray()));
+    
+    int newNumber = 0;
+    for (Number n : digitsArray) {
+      newNumber = newNumber * 10 + n.intValue();
+    }
+    
+    // System.out.println(newNumber);
+    
+    return newNumber;
+  }
+}

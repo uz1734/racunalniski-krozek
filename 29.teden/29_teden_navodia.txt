@@ -1,0 +1,12 @@
+Ta teden se bomo ukvarjali s progamskimi problemi na strani codewars.
+Če si še niste ustvarili računa si to naredite na https://www.codewars.com/
+Vadili bomo osnovne programske naloge v jeziku java:
+
+Seznam nalog na codewars:
+1) Descending Order:  https://www.codewars.com/kata/5467e4d82edf8bbf40000155/train/java 
+2) Factorial: https://www.codewars.com/kata/54ff0d1f355cfd20e60001fc/train/java
+3) Persistent Bugger: https://www.codewars.com/kata/55bf01e5a717a0d57e0000ec/train/java
+4) Your order, please: https://www.codewars.com/kata/55c45be3b2079eccff00010f/train/java
+5) Beginner Series #3 Sum of Numbers: https://www.codewars.com/kata/55f2b110f61eb01779000053/train/java
+6) Break camelCase: https://www.codewars.com/kata/5208f99aee097e6552000148/train/java
+7) Detect Pangram: https://www.codewars.com/kata/545cedaa9943f7fe7b000048/train/java

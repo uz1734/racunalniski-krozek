@@ -1,0 +1,27 @@
+// Naloga 5 resitev
+
+  public class Sum
+  {
+     public int GetSum(int a, int b)
+     {
+      //Good luck!
+      int start;
+      int end;
+      
+      if (a <= b) {
+        start = a;
+        end = b;
+      } else {
+        start = b;
+        end = a;
+      }
+      
+      int sum = 0;
+      
+      for (int start1 = start; start1 <= end; start1++) {
+        sum += start1;
+      }
+      
+      return sum;
+     }
+  }

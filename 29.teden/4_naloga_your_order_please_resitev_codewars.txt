@@ -1,0 +1,39 @@
+// 4.naloga resitev
+
+import java.util.*;
+
+public class Order {
+  public static String order(String words) {
+    // ...
+    if (words == "") {
+      return "";
+    }
+    
+    String[] arrayString = words.split(" "); 
+    
+    String[] sortedArray = new String[arrayString.length];
+    
+    // System.out.println(Arrays.toString(arrayString));
+    // System.out.println(Arrays.toString(sortedArray));
+    
+    for (String word : arrayString) {
+      char[] stringChars = word.toCharArray();
+      // System.out.println(Arrays.toString(stringChars));
+      
+      int pos = -1;
+      for (int charIndex = 0; charIndex < stringChars.length; charIndex++) {
+         if (Character.isDigit(stringChars[charIndex])) {
+           pos = Character.getNumericValue(stringChars[charIndex]);
+           break;
+         }
+      }
+      
+      sortedArray[pos - 1] = word;
+      
+    }
+    
+    // System.out.println(Arrays.toString(sortedArray));
+    
+    return String.join(" ", sortedArray);
+  }
+}
